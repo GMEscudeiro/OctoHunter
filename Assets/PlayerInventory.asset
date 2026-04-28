@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: Assembly-CSharp::WeaponInventory
   obtainedWeapons:
-  - {fileID: 1927029596633988363, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
-  - {fileID: 1927029596633988363, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
-  - {fileID: 1927029596633988363, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
+  - {fileID: 3242821774164006700, guid: 40b92f3c67a64aa93b7407260905ce5f, type: 3}
