@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Enemy : MonoBehaviour
     public Color damageColor = Color.red;
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
+
+    public static event Action OnEnemyDied;
 
     void Start()
     {
@@ -54,6 +57,8 @@ public class Enemy : MonoBehaviour
         {
             playerEvents.AddScore(10);
         }
+
+        OnEnemyDied?.Invoke();
 
         Destroy(gameObject);
     }

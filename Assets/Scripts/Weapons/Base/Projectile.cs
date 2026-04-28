@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour
         }
         else if (other.CompareTag("Wall"))
         {
+            _hasHit = true;
             Destroy(gameObject);
         }
     }

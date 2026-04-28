@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Weapons : MonoBehaviour
+public class WeaponManager : MonoBehaviour
 {
     [Header("Data")]
     public WeaponInventory inventory;
