@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1477874965107783177}
   - component: {fileID: 7208905703485808835}
   - component: {fileID: 6391615834860323036}
+  - component: {fileID: 6534705912957037191}
+  - component: {fileID: -2499186389821477545}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -124,7 +126,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -194,3 +196,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   moveSpeed: 2
+--- !u!114 &6534705912957037191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037047060153579998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991a483cfe819394395a28000402e502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMelee
+  damage: 1
+  attackCooldown: 1
+--- !u!114 &-2499186389821477545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037047060153579998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c826b79873cf1c42bbd10ab17563b22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinDrop
+  coinPrefab: {fileID: 7649442551854462850, guid: 274fe381d82a95e4cbd920b44264caf8, type: 3}
+  minCoins: 1
+  maxCoins: 3
+  scatterRadius: 0.5

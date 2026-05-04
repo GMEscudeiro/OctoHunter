@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class WaveSpawner : MonoBehaviour
 {
     [Header("References")]
-    public GameObject enemyPrefab;
+    public List<GameObject> enemyPrefabs;
     public Transform playerTransform;
 
     [Header("Wave Settings")]
@@ -56,6 +57,8 @@ public class WaveSpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        if (playerTransform == null)
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         if (playerTransform == null) return;
 
         float angle = Random.Range(0, Mathf.PI * 2);
@@ -64,7 +67,8 @@ public class WaveSpawner : MonoBehaviour
             playerTransform.position.y + Mathf.Sin(angle) * 12f
         );
 
-        Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+        GameObject prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
+        Instantiate(prefab, spawnPos, Quaternion.identity);
     }
 
     private void HandleEnemyDeath()
