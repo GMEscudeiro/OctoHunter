@@ -19,7 +19,6 @@ public class PlayerWallet : MonoBehaviour
     {
         walletData.coins += amount;
         OnCoinsChanged?.Invoke(Coins);
-        Debug.Log($"[Wallet] +{amount} moedas. Total: {Coins}");
     }
 
     public bool SpendCoins(int amount)
@@ -32,7 +31,6 @@ public class PlayerWallet : MonoBehaviour
 
         walletData.coins -= amount;
         OnCoinsChanged?.Invoke(Coins);
-        Debug.Log($"[Wallet] -{amount} moedas. Total: {Coins}");
         return true;
     }
 }

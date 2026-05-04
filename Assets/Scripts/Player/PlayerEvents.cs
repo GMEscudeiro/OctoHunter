@@ -8,6 +8,5 @@ public class PlayerEvents : MonoBehaviour
     public void AddScore(int amount)
     {
         OnScoreGained?.Invoke(amount);
-        Debug.Log($"Score: {amount} points gained!");
     }
 }

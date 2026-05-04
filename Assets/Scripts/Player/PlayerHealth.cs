@@ -27,7 +27,6 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentLives -= amount;
         OnLivesChanged?.Invoke(CurrentLives);
-        Debug.Log($"[Player] Tomou dano! Vidas restantes: {CurrentLives}");
 
         if (CurrentLives <= 0)
         {

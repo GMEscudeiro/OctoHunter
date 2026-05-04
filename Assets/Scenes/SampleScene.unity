@@ -230,13 +230,20 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6037047060153579998, guid: 130ac84eecfa95945b6365ea3515864a, type: 3}
   - {fileID: 2069345689531541719, guid: e0ee485fa4d8cf049b353b0f80fd9230, type: 3}
-  playerTransform: {fileID: 1678148348}
-  currentWave: 1
+  bossPrefab: {fileID: 6802183786486168160, guid: f2b482cf3b6d6fb4f9b0a15a6954928b, type: 3}
+  spawnRadius: 12
+  timeBetweenHordes: 3
+  timeBetweenRounds: 2
   baseEnemyCount: 5
-  enemiesPerWaveMultiplier: 1.5
-  baseSpawnInterval: 2
-  speedIncreasePerWave: 0.1
+  enemiesPerRound: 2
+  enemiesPerHorde: 1
+  walletData: {fileID: 11400000, guid: 3e1ae5b5f0cf56444b52b4a82a4304bd, type: 2}
+  baseSpawnInterval: 0.5
   minSpawnInterval: 0.3
+  intervalReduction: 0.05
+  _currentRound: 1
+  _currentHorde: 1
+  _isBossRound: 0
 --- !u!4 &443116803
 Transform:
   m_ObjectHideFlags: 0
@@ -1348,7 +1355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195c74ee81f68bd4bacb14b74bde00b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxLives: 3
+  maxLives: 10
   invincibilityDuration: 1.5
 --- !u!1 &1720621628
 GameObject:

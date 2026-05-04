@@ -8,9 +8,8 @@ public class CasinoLoader : MonoBehaviour
     [Header("Scene Name")]
     public string casinoSceneName = "CassinoScene";  // nome exato da cena no Build Settings
 
-    public void OpenCasino()
+    public static void OpenCasino(string casinoSceneName)
     {
-        Time.timeScale = 0f;  // pausa o jogo
         SceneManager.LoadScene(casinoSceneName);
     }
 

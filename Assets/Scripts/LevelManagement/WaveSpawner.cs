@@ -2,91 +2,198 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+// Estrutura seguindo o GDD:
+// - Cada Round possui 3 Hordas de inimigos comuns
+// - A cada 3 Rounds ocorre um Boss Round
+// - Entre os Rounds o jogador visita o cassino
+
 public class WaveSpawner : MonoBehaviour
 {
-    [Header("References")]
-    public List<GameObject> enemyPrefabs;
-    public Transform playerTransform;
+    [Header("Enemy Prefabs")]
+    public List<GameObject> enemyPrefabs;   // inimigos comuns
+    public GameObject bossPrefab;           // prefab do boss
 
-    [Header("Wave Settings")]
-    public int currentWave = 1;
-    public int baseEnemyCount = 5;
-    public float enemiesPerWaveMultiplier = 1.5f;
-    
-    [Header("Spawn Rate Settings")]
-    public float baseSpawnInterval = 2.0f;
-    public float speedIncreasePerWave = 0.1f;
-    public float minSpawnInterval = 0.3f;
+    [Header("Spawn Settings")]
+    public float spawnRadius       = 12f;   // distância do player para spawnar
+    public float timeBetweenHordes = 3f;    // segundos entre hordas do mesmo round
+    public float timeBetweenRounds = 2f;    // segundos antes de ir ao cassino
 
-    [Header("State")]
-    private int _enemiesToSpawn;
-    private int _enemiesAlive;
-    private bool _isSpawning = false;
+    [Header("Horde Scaling (linear)")]
+    public int baseEnemyCount      = 5;     // inimigos na horde 1 do round 1
+    public int enemiesPerRound     = 2;     // inimigos extras adicionados por round
+    public int enemiesPerHorde     = 1;     // inimigos extras adicionados por horde dentro do round
 
-    void OnEnable() => Enemy.OnEnemyDied += HandleEnemyDeath;
+    [Header("Data")]
+    public WalletData walletData;
+    [Header("Spawn Interval Scaling")]
+    public float baseSpawnInterval = 1.5f;
+    public float minSpawnInterval  = 0.4f;
+    public float intervalReduction = 0.05f; // redução por round
+
+    [Header("State (read-only)")]
+    [SerializeField] private int  _currentRound = 1;
+    [SerializeField] private int  _currentHorde = 1;
+    [SerializeField] private bool _isBossRound  = false;
+
+    private Transform _playerTransform;
+    private bool      _isSpawning = false;
+    private int       _enemiesAlive = 0;
+
+    // Eventos para outros sistemas escutarem
+    public static event System.Action<int, int> OnHordeStarted;   // round, horde
+    public static event System.Action<int>      OnRoundCompleted; // round
+    public static event System.Action           OnBossRoundStarted;
+
+    void OnEnable()  => Enemy.OnEnemyDied += HandleEnemyDeath;
     void OnDisable() => Enemy.OnEnemyDied -= HandleEnemyDeath;
 
     void Start()
     {
-        StartNextWave();
+        FindPlayer();
+        _currentRound = walletData.currentRound;
+        StartCoroutine(StartRound());
     }
 
-    public void StartNextWave()
+    // ── Encontrar Player ─────────────────────────────────────────────
+    private void FindPlayer()
     {
-        _isSpawning = true;
-        
-        _enemiesToSpawn = Mathf.RoundToInt(baseEnemyCount * Mathf.Pow(enemiesPerWaveMultiplier, currentWave - 1));
-        _enemiesAlive = _enemiesToSpawn;
-        
-        float currentInterval = Mathf.Max(minSpawnInterval, baseSpawnInterval - (currentWave * speedIncreasePerWave));
-
-        Debug.Log($"Wave {currentWave} Started! Total Enemies: {_enemiesToSpawn}");
-        
-        StartCoroutine(SpawnWaveRoutine(currentInterval));
+        GameObject p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null) _playerTransform = p.transform;
     }
 
-    private IEnumerator SpawnWaveRoutine(float interval)
+    // ── Fluxo principal ──────────────────────────────────────────────
+    private IEnumerator StartRound()
     {
-        for (int i = 0; i < _enemiesToSpawn; i++)
+        _isBossRound = (_currentRound % 3 == 0);
+
+        if (_isBossRound)
+        {
+            Debug.Log($"[WaveSpawner] BOSS ROUND! Round {_currentRound}");
+            OnBossRoundStarted?.Invoke();
+            yield return StartCoroutine(RunBossRound());
+        }
+        else
+        {
+            Debug.Log($"[WaveSpawner] Round {_currentRound} iniciado (3 hordas)");
+            yield return StartCoroutine(RunNormalRound());
+        }
+
+        // Round concluído
+        OnRoundCompleted?.Invoke(_currentRound);
+        Debug.Log($"[WaveSpawner] Round {_currentRound} concluído!");
+        _currentRound++;
+
+        // Aguarda antes de ir ao cassino / próximo round
+        yield return new WaitForSeconds(timeBetweenRounds);
+
+        // Aqui você pode chamar o CasinoLoader futuramente
+        // Por enquanto inicia o próximo round automaticamente
+        if (!_isBossRound)
+        {
+            // Salva o round atual e abre o cassino
+            walletData.currentRound = _currentRound;
+            CasinoLoader.OpenCasino("CassinoScene");
+            yield break;
+        }
+        else
+        {
+            StartCoroutine(StartRound());
+        }
+    }
+
+    // ── Round normal: 3 hordas ───────────────────────────────────────
+    private IEnumerator RunNormalRound()
+    {
+        for (int horde = 1; horde <= 3; horde++)
+        {
+            _currentHorde = horde;
+            OnHordeStarted?.Invoke(_currentRound, horde);
+
+            int enemyCount = CalculateHordeSize(horde);
+            float interval = CalculateSpawnInterval();
+
+            Debug.Log($"[WaveSpawner] Horde {horde}/3 — {enemyCount} inimigos");
+
+            yield return StartCoroutine(SpawnHorde(enemyCount, interval));
+
+            // Aguarda todos morrerem antes da próxima horde
+            yield return new WaitUntil(() => _enemiesAlive <= 0);
+            yield return new WaitUntil(() => _enemiesAlive <= 0 && !_isSpawning);
+
+            if (horde < 3)
+                yield return new WaitForSeconds(timeBetweenHordes);
+        }
+    }
+
+    // ── Boss Round ───────────────────────────────────────────────────
+    private IEnumerator RunBossRound()
+    {
+        if (bossPrefab == null)
+        {
+            Debug.LogWarning("[WaveSpawner] bossPrefab não atribuído! Pulando boss round.");
+            yield break;
+        }
+
+        if (_playerTransform == null) FindPlayer();
+        if (_playerTransform == null) yield break;
+
+        float angle = Random.Range(0f, Mathf.PI * 2f);
+        Vector2 spawnPos = (Vector2)_playerTransform.position +
+        new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * spawnRadius;
+        _enemiesAlive = 1;
+        Instantiate(bossPrefab, spawnPos, Quaternion.identity);
+
+        Debug.Log("[WaveSpawner] Boss spawnado!");
+        yield return new WaitUntil(() => _enemiesAlive <= 0);
+    }
+
+    // ── Spawnar uma horde ────────────────────────────────────────────
+    private IEnumerator SpawnHorde(int count, float interval)
+    {
+        _isSpawning   = true;
+        _enemiesAlive = count;
+
+        for (int i = 0; i < count; i++)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(interval);
         }
+
         _isSpawning = false;
     }
 
     private void SpawnEnemy()
     {
-        if (playerTransform == null)
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        if (playerTransform == null) return;
+        if (_playerTransform == null) FindPlayer();
+        if (_playerTransform == null || enemyPrefabs.Count == 0) return;
 
-        float angle = Random.Range(0, Mathf.PI * 2);
-        Vector2 spawnPos = new Vector2(
-            playerTransform.position.x + Mathf.Cos(angle) * 12f,
-            playerTransform.position.y + Mathf.Sin(angle) * 12f
-        );
+        float   angle    = Random.Range(0f, Mathf.PI * 2f);
+        Vector2 spawnPos = (Vector2)_playerTransform.position +
+                           new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * spawnRadius;
 
         GameObject prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
         Instantiate(prefab, spawnPos, Quaternion.identity);
     }
 
+    // ── Morte de inimigo ─────────────────────────────────────────────
     private void HandleEnemyDeath()
     {
-        _enemiesAlive--;
-
-        // Check if wave is over
-        if (_enemiesAlive <= 0 && !_isSpawning)
-        {
-            EndWave();
-        }
+        if (_enemiesAlive > 0)
+            _enemiesAlive--;
     }
 
-    private void EndWave()
+    // ── Cálculos de scaling (linear) ─────────────────────────────────
+    private int CalculateHordeSize(int hordeIndex)
     {
-        Debug.Log($"Wave {currentWave} Completed!");
-        currentWave++;
-        
-        Invoke(nameof(StartNextWave), 3.0f);
+        // Base + bônus por round + bônus por horde dentro do round
+        return baseEnemyCount
+             + (_currentRound - 1) * enemiesPerRound
+             + (hordeIndex  - 1) * enemiesPerHorde;
+    }
+
+    private float CalculateSpawnInterval()
+    {
+        return Mathf.Max(minSpawnInterval,
+               baseSpawnInterval - (_currentRound - 1) * intervalReduction);
     }
 }

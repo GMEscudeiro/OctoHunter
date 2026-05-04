@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     private Color _originalColor;
 
     public static event Action OnEnemyDied;
-
+    public event Action OnDied;
     void Start()
     {
         _currentHealth = maxHealth;
@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour
         }
 
         OnEnemyDied?.Invoke();
-
+        OnDied?.Invoke();
         Destroy(gameObject);
     }
 }
