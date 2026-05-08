@@ -1,0 +1,2004 @@
+fileFormatVersion: 2
+guid: 7bb241145be74ee4f8bdf146eabecdc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5699590694866938961
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_0
+  - first:
+      213: 1429027431645497764
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_1
+  - first:
+      213: 3848193902580890617
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_2
+  - first:
+      213: 265588774512970635
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_3
+  - first:
+      213: 4550326667927045350
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_4
+  - first:
+      213: 272962967218058742
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_5
+  - first:
+      213: -1648831243237674887
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_6
+  - first:
+      213: 924655871302978629
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_7
+  - first:
+      213: -6861314296818317878
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_8
+  - first:
+      213: -6330155920875866848
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_9
+  - first:
+      213: 8990530519655389429
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_10
+  - first:
+      213: -7414639171917358222
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_11
+  - first:
+      213: -2326825315406941601
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_12
+  - first:
+      213: 2186724171366181791
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_13
+  - first:
+      213: -2390212027923786395
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_14
+  - first:
+      213: -2404248296524957968
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_15
+  - first:
+      213: 5305129847578528005
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_16
+  - first:
+      213: -186587405161719171
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_17
+  - first:
+      213: 5970909954881937584
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_18
+  - first:
+      213: 6883905285265418352
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_19
+  - first:
+      213: 515229494641639344
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_20
+  - first:
+      213: 571857890191937414
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_21
+  - first:
+      213: -2156300667767215561
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_22
+  - first:
+      213: -3915767385823473121
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_23
+  - first:
+      213: 4515085200608730091
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_24
+  - first:
+      213: 5380002366480817272
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_25
+  - first:
+      213: 1946675597666721590
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_26
+  - first:
+      213: 4202806199416550739
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_27
+  - first:
+      213: 3869545607883162148
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_28
+  - first:
+      213: 914299510413711873
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_29
+  - first:
+      213: 6757927233305885738
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_30
+  - first:
+      213: -8110232501005280500
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_31
+  - first:
+      213: 6690319815979903186
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_32
+  - first:
+      213: -533218006230659180
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_33
+  - first:
+      213: 943649833301138605
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_34
+  - first:
+      213: -8155907829369919629
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_35
+  - first:
+      213: 2529752928170900511
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_36
+  - first:
+      213: 1311597223888422
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_37
+  - first:
+      213: 8705739830963281870
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_38
+  - first:
+      213: -4752218930386677461
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_39
+  - first:
+      213: -6097550543062769097
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_40
+  - first:
+      213: 8336998521908597843
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_41
+  - first:
+      213: -4050499574912561752
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_42
+  - first:
+      213: 6874774010729959655
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_43
+  - first:
+      213: 4318043133722964902
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_44
+  - first:
+      213: -273533986233025814
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_45
+  - first:
+      213: 6343644897969671602
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_46
+  - first:
+      213: -2911437675658414150
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_47
+  - first:
+      213: 3374363953531104550
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_48
+  - first:
+      213: 5951247763137623976
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_49
+  - first:
+      213: 213618949219883806
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_50
+  - first:
+      213: 1079978095052076235
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_51
+  - first:
+      213: -3561439650765597628
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_52
+  - first:
+      213: 8653073356843794674
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_53
+  - first:
+      213: 8624199990282295211
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_54
+  - first:
+      213: 1045346130993343909
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_55
+  - first:
+      213: -6233605254502497379
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_56
+  - first:
+      213: -5505556986939665170
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_57
+  - first:
+      213: -4012807344592794629
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_58
+  - first:
+      213: -458316364446862863
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_59
+  - first:
+      213: -6175517053272810191
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_60
+  - first:
+      213: 5826255170654370826
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_61
+  - first:
+      213: -302194828519408942
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_62
+  - first:
+      213: -774285225608825663
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_63
+  - first:
+      213: -6947816139350491210
+    second: PC _ Computer - Graveyard Keeper - Monsters - Spider_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 678
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa39553f57cf6e0b0800000000000000
+      internalID: -5699590694866938961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 421
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9c485b0ece4d310800000000000000
+      internalID: 1429027431645497764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 736
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb782e37f7876530800000000000000
+      internalID: 3848193902580890617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 536
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b4d21559f8fa300800000000000000
+      internalID: 265588774512970635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_4
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 537
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e447cdeef1062f30800000000000000
+      internalID: 4550326667927045350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 423
+        width: 416
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f57ed95f52c9c300800000000000000
+      internalID: 272962967218058742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 575
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970b04c58bc2e19e0800000000000000
+      internalID: -1648831243237674887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 403
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c4e7cad9905dc00800000000000000
+      internalID: 924655871302978629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 446
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5c5d5fff6b7c0a0800000000000000
+      internalID: -6861314296818317878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 990
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025bb538ab4c628a0800000000000000
+      internalID: -6330155920875866848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 871
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f81e5eafd7c4cc70800000000000000
+      internalID: 8990530519655389429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 886
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b5b2425f8e91990800000000000000
+      internalID: -7414639171917358222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 265
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5278c424b475bfd0800000000000000
+      internalID: -2326825315406941601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 42
+        width: 275
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9baa005c0ec85e10800000000000000
+      internalID: 2186724171366181791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_14
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 42
+        width: 285
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5659cb113d244ded0800000000000000
+      internalID: -2390212027923786395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_15
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 63
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6bacd99e462aed0800000000000000
+      internalID: -2404248296524957968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_16
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 85
+        width: 81
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5098d341d7b9f9940800000000000000
+      internalID: 5305129847578528005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_17
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 63
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a16cb5ebb196df0800000000000000
+      internalID: -186587405161719171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_18
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0e49ef7feecd250800000000000000
+      internalID: 5970909954881937584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_19
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078edab626b888f50800000000000000
+      internalID: 6883905285265418352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_20
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 66
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf3bedde76762700800000000000000
+      internalID: 515229494641639344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_21
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f05e6a8b5afe700800000000000000
+      internalID: 571857890191937414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_22
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a2ccc97f74312e0800000000000000
+      internalID: -2156300667767215561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_23
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f129ee82f4668a9c0800000000000000
+      internalID: -3915767385823473121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb18e8611ec8ae30800000000000000
+      internalID: 4515085200608730091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_25
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c99d8d5ab99aa40800000000000000
+      internalID: 5380002366480817272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_26
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f98d3642bf30b10800000000000000
+      internalID: 1946675597666721590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_27
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355780098fd535a30800000000000000
+      internalID: 4202806199416550739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_28
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4228c088a3363b530800000000000000
+      internalID: 3869545607883162148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ad5808f8e30bc00800000000000000
+      internalID: 914299510413711873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_30
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cb22f730bf8cd50800000000000000
+      internalID: 6757927233305885738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_31
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 74
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b90cb928aa27f80800000000000000
+      internalID: -8110232501005280500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_32
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d82d310d6ac8dc50800000000000000
+      internalID: 6690319815979903186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_33
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f87c66c01a998f0800000000000000
+      internalID: -533218006230659180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_34
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac55421684881d00800000000000000
+      internalID: 943649833301138605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_35
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 0
+        width: 137
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37724918a0560de80800000000000000
+      internalID: -8155907829369919629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_36
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c712d82ec7b1320800000000000000
+      internalID: 2529752928170900511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_37
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6264e9604e8a40000800000000000000
+      internalID: 1311597223888422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_38
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf1983504001d870800000000000000
+      internalID: 8705739830963281870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_39
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 51
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b215a67af0abc0eb0800000000000000
+      internalID: -4752218930386677461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_40
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 51
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732e0c85616216ba0800000000000000
+      internalID: -6097550543062769097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_41
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354915ffbf7f2b370800000000000000
+      internalID: 8336998521908597843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_42
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad477ad81cb9c7c0800000000000000
+      internalID: -4050499574912561752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_43
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e095a4e98a186f50800000000000000
+      internalID: 6874774010729959655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_44
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a33f562a55cceb30800000000000000
+      internalID: 4318043133722964902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_45
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea759ce946343cf0800000000000000
+      internalID: -273533986233025814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd83b4bc67290850800000000000000
+      internalID: 6343644897969671602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_47
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7f0b40cde7897d0800000000000000
+      internalID: -2911437675658414150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_48
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62daa19332624de20800000000000000
+      internalID: 3374363953531104550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_49
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7f72c3f44179250800000000000000
+      internalID: 5951247763137623976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_50
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b1b817d4de6f200800000000000000
+      internalID: 213618949219883806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_51
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc438c00b5adcfe00800000000000000
+      internalID: 1079978095052076235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_52
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 51
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4441027c189339ec0800000000000000
+      internalID: -3561439650765597628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_53
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f042124f54e51870800000000000000
+      internalID: 8653073356843794674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_54
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba714bcb2305fa770800000000000000
+      internalID: 8624199990282295211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_55
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adef2584c0d18e00800000000000000
+      internalID: 1045346130993343909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_56
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93ce5f4c09cd79a0800000000000000
+      internalID: -6233605254502497379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_57
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee49ace07155893b0800000000000000
+      internalID: -5505556986939665170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_58
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfbc7791bf4af48c0800000000000000
+      internalID: -4012807344592794629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_59
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1756ed1bbb3a9f0800000000000000
+      internalID: -458316364446862863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_60
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d9e4795f72c4aa0800000000000000
+      internalID: -6175517053272810191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_61
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cf2a975340bd050800000000000000
+      internalID: 5826255170654370826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_62
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daf32197636ecbf0800000000000000
+      internalID: -302194828519408942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 322
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4b0cc80bf2145f0800000000000000
+      internalID: -774285225608825663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_64
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 145
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfb9494806649f90800000000000000
+      internalID: -6947816139350491210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 537
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754c28bf633c4f34f998adab6f70faa4
+      internalID: 1924088600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_66
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 537
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ac431eb345e9845abd6f8e833a8c8f
+      internalID: 1113310419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_67
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 534
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c41c71e88071d489dedb7d490e801f
+      internalID: 2126458765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_68
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 533
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9b9fb9065a8d1449dbbf4645a42710
+      internalID: -128520724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_69
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 533
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f2c25d532d8f04aa14a82dc13b65c3
+      internalID: 1320166837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_70
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 535
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddec26a8e5939a845b332c170b989113
+      internalID: 314603910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_71
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 534
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3230187dab8fffd4b8b210792955cc33
+      internalID: -1928902088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Graveyard Keeper - Monsters - Spider_72
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 534
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c9e5df0523ec74d83a775db70cf436
+      internalID: -1257029382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7f8dccc21b2fd334ba2a4f6767dbd35b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_0: -5699590694866938961
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_1: 1429027431645497764
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_10: 8990530519655389429
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_11: -7414639171917358222
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_12: -2326825315406941601
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_13: 2186724171366181791
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_14: -2390212027923786395
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_15: -2404248296524957968
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_16: 5305129847578528005
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_17: -186587405161719171
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_18: 5970909954881937584
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_19: 6883905285265418352
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_2: 3848193902580890617
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_20: 515229494641639344
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_21: 571857890191937414
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_22: -2156300667767215561
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_23: -3915767385823473121
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_24: 4515085200608730091
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_25: 5380002366480817272
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_26: 1946675597666721590
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_27: 4202806199416550739
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_28: 3869545607883162148
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_29: 914299510413711873
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_3: 265588774512970635
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_30: 6757927233305885738
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_31: -8110232501005280500
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_32: 6690319815979903186
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_33: -533218006230659180
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_34: 943649833301138605
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_35: -8155907829369919629
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_36: 2529752928170900511
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_37: 1311597223888422
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_38: 8705739830963281870
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_39: -4752218930386677461
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_4: 4550326667927045350
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_40: -6097550543062769097
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_41: 8336998521908597843
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_42: -4050499574912561752
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_43: 6874774010729959655
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_44: 4318043133722964902
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_45: -273533986233025814
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_46: 6343644897969671602
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_47: -2911437675658414150
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_48: 3374363953531104550
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_49: 5951247763137623976
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_5: 272962967218058742
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_50: 213618949219883806
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_51: 1079978095052076235
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_52: -3561439650765597628
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_53: 8653073356843794674
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_54: 8624199990282295211
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_55: 1045346130993343909
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_56: -6233605254502497379
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_57: -5505556986939665170
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_58: -4012807344592794629
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_59: -458316364446862863
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_6: -1648831243237674887
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_60: -6175517053272810191
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_61: 5826255170654370826
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_62: -302194828519408942
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_63: -774285225608825663
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_64: -6947816139350491210
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_65: 1924088600
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_66: 1113310419
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_67: 2126458765
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_68: -128520724
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_69: 1320166837
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_7: 924655871302978629
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_70: 314603910
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_71: -1928902088
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_72: -1257029382
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_8: -6861314296818317878
+      PC _ Computer - Graveyard Keeper - Monsters - Spider_9: -6330155920875866848
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

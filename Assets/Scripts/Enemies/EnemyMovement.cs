@@ -28,6 +28,6 @@ public class EnemyMovement : MonoBehaviour
         _rb.linearVelocity = direction * moveSpeed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        _rb.rotation = angle;
+        _rb.rotation = angle + 90;
     }
 }

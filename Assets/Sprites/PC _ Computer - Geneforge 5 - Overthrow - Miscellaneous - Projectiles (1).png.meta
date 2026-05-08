@@ -1,0 +1,1288 @@
+fileFormatVersion: 2
+guid: bcc4d91c5110b33478a2ce21ff7d317b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6844165406588553519
+    second: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+      (1)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f294ab3ec2c5bfe50800000000000000
+      internalID: 6844165406588553519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1991fc2eb787ec44f93e5a4178c12347
+      internalID: -1296865734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d41dde22868d28409f64e2a9bbff321
+      internalID: -574698696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d25b3b28ae9c247969dfc40564d770
+      internalID: -1823520780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b287bd62217ed4eaa0d73a3395d0db
+      internalID: 759256555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_5
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbcef28cbd19f64780f0bc910c2d487
+      internalID: 1852769313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2d895fb1f254e46af392455503cb24
+      internalID: -362700320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457a470d7ffd4c140969a6919f23cc97
+      internalID: 1412021538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a06003cd9e509344ab293c668a68c86
+      internalID: -1635864107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257f712aba1f09148987bf580861212d
+      internalID: 651971729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd93b7a73ed3a840afe03f664d2dc42
+      internalID: -1912806421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_11
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6791a7e72ae7a42812be5cd7898eea
+      internalID: 76618578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecbf552e378d0e4f96acfcfa422bac9
+      internalID: -512880091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff614c54c5c3fce40bde09e1ad952d00
+      internalID: 659094893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de131dadb29eb384b85b6be578bb9d0b
+      internalID: 1413364986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dc2a654f3c6ac439367a5232776cf2
+      internalID: 2108587003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_16
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60deed6d957e1248b1be568f21b14d8
+      internalID: -1585692960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_17
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8359dbb419a8e14881cba49a6b5ab51
+      internalID: 102413313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30c0df85125144584dabb0a7e226e4
+      internalID: -542783807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_19
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef894d318b2cff43999c930140ad3d0
+      internalID: 1858777341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7add983c02b1e2a4e88d1ceac6990e85
+      internalID: -1259089871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6b7372e7c253b40866cf81af8793d6
+      internalID: 28857318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_22
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a43870f4f4f174bb4714c783183927
+      internalID: 1411617249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_23
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c001407c7a9bb4fa748fb0bbae6cab
+      internalID: 1648522655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809904aa8162e5b42afee4e008d88239
+      internalID: -298120342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dcceebd8c23a544837b4924e019d43
+      internalID: -22696737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386e155bae567a64187a61ee68724e15
+      internalID: -1475252018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2208925f303356d4aa45d1b15455d082
+      internalID: 107615942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_28
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6990cda3624fac3498db1a4e1e3473a3
+      internalID: 436389116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_29
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685549697c18c3044bba98b5d8f5fa92
+      internalID: -1945625024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df4423d24c83d64bb0d2dbe59692b99
+      internalID: -780707902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe22fe5b05f85db43aa418140f1dd96f
+      internalID: -1979124460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_32
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf71e353e299e204ab478923b3382aec
+      internalID: -2065496576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_33
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ed2b06bcde5d042bdfa093419ff227
+      internalID: -2061781211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_34
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35997425363c98b4ca1636c853c246f6
+      internalID: -200834947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_35
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a0a53442a6610449f95d04ba58bcb5
+      internalID: 827460227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59da291b4998e64d81b156edbb828f8
+      internalID: -1605848052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_37
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee61f32ebfbc51145b19c34dfeb33ea9
+      internalID: -1361503005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_38
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019693e157d6e5043afff93e5915fd55
+      internalID: 849524687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_39
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9c76f6eb5716440af724278690a7d3
+      internalID: 63433645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_40
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a176d65135b16d745bfe81393aafe6b8
+      internalID: -873222533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_41
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f404fad1d145c40a5c58c923a0523f
+      internalID: 1649306370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d7774ac1f82c648a6dbd5fae45d9db
+      internalID: -1308738836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_43
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec37abf97c69d44bbf26298f2a79a7f
+      internalID: 1616547534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_44
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462c1b0e13a6e62469dcfe2872b521c8
+      internalID: 311088940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_45
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7ed1fe80214594baaad17bf5766311
+      internalID: 496837860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5c3760e36412141a86fecc4e2a15a0
+      internalID: -1732115345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+        (1)_47
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8f816f6fad344fa04800b431787a6
+      internalID: 89805650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f0944d1e42103f84eae45b21555c6621
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":26.0,"y":26.0},"gridSpriteOffset":{"x":2.0,"y":2.0},"gridSpritePadding":{"x":3.0,"y":3.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_0: 6844165406588553519
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_1: -1296865734
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_10: -1912806421
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_11: 76618578
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_12: -512880091
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_13: 659094893
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_14: 1413364986
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_15: 2108587003
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_16: -1585692960
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_17: 102413313
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_18: -542783807
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_19: 1858777341
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_2: -574698696
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_20: -1259089871
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_21: 28857318
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_22: 1411617249
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_23: 1648522655
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_24: -298120342
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_25: -22696737
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_26: -1475252018
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_27: 107615942
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_28: 436389116
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_29: -1945625024
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_3: -1823520780
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_30: -780707902
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_31: -1979124460
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_32: -2065496576
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_33: -2061781211
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_34: -200834947
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_35: 827460227
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_36: -1605848052
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_37: -1361503005
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_38: 849524687
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_39: 63433645
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_4: 759256555
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_40: -873222533
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_41: 1649306370
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_42: -1308738836
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_43: 1616547534
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_44: 311088940
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_45: 496837860
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_46: -1732115345
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_47: 89805650
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_5: 1852769313
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_6: -362700320
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_7: 1412021538
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_8: -1635864107
+      PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles (1)_9: 651971729
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

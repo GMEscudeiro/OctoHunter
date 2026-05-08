@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: f6bb4c97d1328d74aa096b1752ccfa66
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8022376379589072840
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_0
+  - first:
+      213: -3290924775180418009
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_1
+  - first:
+      213: 6530939749013800717
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_2
+  - first:
+      213: 8510081929135497595
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_3
+  - first:
+      213: -7483809336204204133
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_4
+  - first:
+      213: -1641764479965543684
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_5
+  - first:
+      213: 1405885312654903006
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_6
+  - first:
+      213: -5042058725403722824
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_7
+  - first:
+      213: -7733124442204796875
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_8
+  - first:
+      213: 477336609907959052
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_9
+  - first:
+      213: 6305957647672405554
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_10
+  - first:
+      213: 7825874271509394702
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_11
+  - first:
+      213: -4085857404953229378
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_12
+  - first:
+      213: 5609383173777450071
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_13
+  - first:
+      213: -2690599450731814678
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_14
+  - first:
+      213: -1269363706928959428
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_15
+  - first:
+      213: 8933215418818844334
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_16
+  - first:
+      213: 7606692752857692819
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_17
+  - first:
+      213: -8309904811081050394
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_18
+  - first:
+      213: 7850649198053751631
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_19
+  - first:
+      213: -7132399784153398685
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_20
+  - first:
+      213: 1842266016857004043
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_21
+  - first:
+      213: 7020906221941398949
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_22
+  - first:
+      213: -5080245090192437346
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_23
+  - first:
+      213: -6671390210560448828
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_24
+  - first:
+      213: -2937132777494796753
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_25
+  - first:
+      213: 4067128392555257233
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_26
+  - first:
+      213: -6280791860757258865
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_27
+  - first:
+      213: 3135509242226002217
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_28
+  - first:
+      213: 4844958195458346826
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_29
+  - first:
+      213: 558082809614621374
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_30
+  - first:
+      213: 7627598524014016103
+    second: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 151
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c714e710d4355f60800000000000000
+      internalID: 8022376379589072840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 150
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724c6d06a594452d0800000000000000
+      internalID: -3290924775180418009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 152
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07427d691f82aa50800000000000000
+      internalID: 6530939749013800717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 150
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71a79b1d62e91670800000000000000
+      internalID: 8510081929135497595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 151
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97ebc44f0b242890800000000000000
+      internalID: -7483809336204204133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 150
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2ccc667e74739e0800000000000000
+      internalID: -1641764479965543684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 153
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed60cbf3e35b28310800000000000000
+      internalID: 1405885312654903006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 152
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbf6af9d42070ab0800000000000000
+      internalID: -5042058725403722824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 103
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5380e7aaa4c6ea490800000000000000
+      internalID: -7733124442204796875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 102
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c056adf1e17df9600800000000000000
+      internalID: 477336609907959052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 103
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23eeb26f113438750800000000000000
+      internalID: 6305957647672405554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 101
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05bf2acf271b9c60800000000000000
+      internalID: 7825874271509394702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 103
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb70dd6865e1c47c0800000000000000
+      internalID: -4085857404953229378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_13
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 101
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754ee0ad64888dd40800000000000000
+      internalID: 5609383173777450071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 103
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0e4421e0219aad0800000000000000
+      internalID: -2690599450731814678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_15
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 103
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30f9b51f60526ee0800000000000000
+      internalID: -1269363706928959428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 53
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea65dbcd71829fb70800000000000000
+      internalID: 8933215418818844334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_17
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 52
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39afe99b1c6609960800000000000000
+      internalID: 7606692752857692819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 54
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e654322a994dac80800000000000000
+      internalID: -8309904811081050394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 53
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bf232e9db13fc60800000000000000
+      internalID: 7850649198053751631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 53
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362c6757f20a40d90800000000000000
+      internalID: -7132399784153398685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_21
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 53
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08198c7e2b019910800000000000000
+      internalID: 1842266016857004043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_22
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 55
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad9520b2054f6160800000000000000
+      internalID: 7020906221941398949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_23
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 54
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f482bb1085f79b0800000000000000
+      internalID: -5080245090192437346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6a68533f57a63a0800000000000000
+      internalID: -6671390210560448828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 4
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26244bec453d37d0800000000000000
+      internalID: -2937132777494796753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d592679b7517830800000000000000
+      internalID: 4067128392555257233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d1667641526d8a0800000000000000
+      internalID: -6280791860757258865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_28
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 5
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929c5dc0b01938b20800000000000000
+      internalID: 3135509242226002217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_29
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f89ef1fcfbc3340800000000000000
+      internalID: 4844958195458346826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_30
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebad456cb55beb700800000000000000
+      internalID: 558082809614621374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_31
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 4
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7663621e17caad960800000000000000
+      internalID: 7627598524014016103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_0: 8022376379589072840
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_1: -3290924775180418009
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_10: 6305957647672405554
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_11: 7825874271509394702
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_12: -4085857404953229378
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_13: 5609383173777450071
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_14: -2690599450731814678
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_15: -1269363706928959428
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_16: 8933215418818844334
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_17: 7606692752857692819
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_18: -8309904811081050394
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_19: 7850649198053751631
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_2: 6530939749013800717
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_20: -7132399784153398685
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_21: 1842266016857004043
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_22: 7020906221941398949
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_23: -5080245090192437346
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_24: -6671390210560448828
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_25: -2937132777494796753
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_26: 4067128392555257233
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_27: -6280791860757258865
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_28: 3135509242226002217
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_29: 4844958195458346826
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_3: 8510081929135497595
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_30: 558082809614621374
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_31: 7627598524014016103
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_4: -7483809336204204133
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_5: -1641764479965543684
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_6: 1405885312654903006
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_7: -5042058725403722824
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_8: -7733124442204796875
+      PC _ Computer - Puzzle Quest - Monsters - Scorpion (1)_9: 477336609907959052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

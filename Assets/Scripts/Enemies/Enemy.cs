@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
 
     public static event Action OnEnemyDied;
     public event Action OnDied;
+    
     void Start()
     {
         _currentHealth = maxHealth;

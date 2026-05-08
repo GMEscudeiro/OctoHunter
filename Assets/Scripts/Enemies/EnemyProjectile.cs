@@ -13,10 +13,14 @@ public class EnemyProjectile : MonoBehaviour
     private Vector2 _direction;
     private bool    _hasHit;
 
+    [Header("Visual Correction")]
+    public float rotationOffset = 0f;
+
     public void Setup(int damage, Vector2 direction)
     {
         _damage    = damage;
         _direction = direction.normalized;
+        transform.Rotate(0,0,rotationOffset);
         Destroy(gameObject, lifetime);
     }
 

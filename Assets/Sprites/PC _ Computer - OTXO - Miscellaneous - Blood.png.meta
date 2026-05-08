@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 661c3cae682dd724595cb3e1bdc55639
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5505671966570553491
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_0
+  - first:
+      213: 8221985892011143306
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_1
+  - first:
+      213: -398359515762332128
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_2
+  - first:
+      213: -5411229066263836512
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_3
+  - first:
+      213: -8737942382028978581
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_4
+  - first:
+      213: -6139739596606795904
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_5
+  - first:
+      213: -5027197652856768117
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_6
+  - first:
+      213: 322821750462816936
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_7
+  - first:
+      213: 5928518694268984737
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_8
+  - first:
+      213: -2927111180871676211
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_9
+  - first:
+      213: 1254925574696515492
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_10
+  - first:
+      213: 6476215767625504240
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_11
+  - first:
+      213: -1245257833788817272
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_12
+  - first:
+      213: 2297905536253234878
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_13
+  - first:
+      213: 650421835811774775
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_14
+  - first:
+      213: 620568937156477703
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_15
+  - first:
+      213: 7537506804919729152
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_16
+  - first:
+      213: 2037856567897560696
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_17
+  - first:
+      213: 4598750041420575698
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_18
+  - first:
+      213: 6238996091701660763
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_19
+  - first:
+      213: -7137753688835806938
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_20
+  - first:
+      213: -1764706510824351637
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_21
+  - first:
+      213: 3205400994148217521
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_22
+  - first:
+      213: -8498911046026808430
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_23
+  - first:
+      213: 164435463294378591
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_24
+  - first:
+      213: -7257294060840072311
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_25
+  - first:
+      213: 7420857134306895721
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_26
+  - first:
+      213: -1697373973103163358
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_27
+  - first:
+      213: -1618680400700864666
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_28
+  - first:
+      213: -499015793653482300
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_29
+  - first:
+      213: -5155783831884248299
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_30
+  - first:
+      213: -7484593115109391540
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_31
+  - first:
+      213: 2151041756113135008
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_32
+  - first:
+      213: -3393528043092947342
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_33
+  - first:
+      213: 6421372009456380255
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_34
+  - first:
+      213: 4247029001254435815
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_35
+  - first:
+      213: 4310962087553519384
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_36
+  - first:
+      213: -8312203089346767301
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_37
+  - first:
+      213: -7276968744817709720
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_38
+  - first:
+      213: -1214641836242264229
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_39
+  - first:
+      213: -4592792794438643700
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_40
+  - first:
+      213: -517477973999233709
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_41
+  - first:
+      213: 7174418408531803662
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_42
+  - first:
+      213: -4712602677126890435
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_43
+  - first:
+      213: 2286788623942631748
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_44
+  - first:
+      213: 5780468231197326186
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_45
+  - first:
+      213: -306527338874212287
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_46
+  - first:
+      213: -3569446143411649516
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_47
+  - first:
+      213: -7524188325644872121
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_48
+  - first:
+      213: 195247472645058754
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_49
+  - first:
+      213: -6895229381866582126
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_50
+  - first:
+      213: -5982057920577067838
+    second: PC _ Computer - OTXO - Miscellaneous - Blood_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 208
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f5cb6448ce793b0800000000000000
+      internalID: -5505671966570553491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 208
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80f8995b9c5a1270800000000000000
+      internalID: 8221985892011143306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 208
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ee61a812eb87af0800000000000000
+      internalID: -398359515762332128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8431b85d377e4b0800000000000000
+      internalID: -5411229066263836512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 208
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66055bf2b79cb680800000000000000
+      internalID: -8737942382028978581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 77
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f0adadd534bcaa0800000000000000
+      internalID: -6139739596606795904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 77
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b897bc5be5ecb3ab0800000000000000
+      internalID: -5027197652856768117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 77
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a22b12fba4ea7400800000000000000
+      internalID: 322821750462816936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_8
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 77
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad5a208754564250800000000000000
+      internalID: 5928518694268984737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 77
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcec116b3efc067d0800000000000000
+      internalID: -2927111180871676211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 77
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7b65b49246a6110800000000000000
+      internalID: 1254925574696515492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 77
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f51a1e9de320e950800000000000000
+      internalID: 6476215767625504240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 108
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880ce3b0994f7bee0800000000000000
+      internalID: -1245257833788817272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 79
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe07cf09ecc3ef10800000000000000
+      internalID: 2297905536253234878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_14
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 77
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731e7bda633c60900800000000000000
+      internalID: 650421835811774775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7038ad11924bc9800800000000000000
+      internalID: 620568937156477703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_16
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 66
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c745fe08a9a9860800000000000000
+      internalID: 7537506804919729152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 77
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8761bb060cbe74c10800000000000000
+      internalID: 2037856567897560696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_18
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 77
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3bfa52cca02df30800000000000000
+      internalID: 4598750041420575698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_19
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 77
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c8de8c3ed559650800000000000000
+      internalID: 6238996091701660763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_20
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 77
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62925b266da91fc90800000000000000
+      internalID: -7137753688835806938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_21
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 77
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68de7937c08287e0800000000000000
+      internalID: -1764706510824351637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_22
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 77
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b273e2a83fdb7c20800000000000000
+      internalID: 3205400994148217521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_23
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 77
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293bdebce6dcd0a80800000000000000
+      internalID: -8498911046026808430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_24
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 77
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f526322ce21384200800000000000000
+      internalID: 164435463294378591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 77
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b4311a089e84b90800000000000000
+      internalID: -7257294060840072311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_26
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 77
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967294b0f3e2cf660800000000000000
+      internalID: 7420857134306895721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_27
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 77
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22841325d57b178e0800000000000000
+      internalID: -1697373973103163358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_28
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 78
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667865f60ca4989e0800000000000000
+      internalID: -1618680400700864666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 77
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc79f197c32319f0800000000000000
+      internalID: -499015793653482300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_30
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 77
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b46d1ebe9f278b0800000000000000
+      internalID: -5155783831884248299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 23
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4302958732612890800000000000000
+      internalID: -7484593115109391540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_32
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 45
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5e72a94190add10800000000000000
+      internalID: 2151041756113135008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 23
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e4e187934c7e0d0800000000000000
+      internalID: -3393528043092947342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_34
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 48
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59a84a12db4d1950800000000000000
+      internalID: 6421372009456380255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb7d8aff5a70fa30800000000000000
+      internalID: 4247029001254435815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_36
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 33
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fcdcc9d2d93db30800000000000000
+      internalID: 4310962087553519384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36d496845f15ac80800000000000000
+      internalID: -8312203089346767301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_38
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d258b4b73030b90800000000000000
+      internalID: -7276968744817709720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_39
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f93757fa9b42fe0800000000000000
+      internalID: -1214641836242264229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 10
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00d280894f1340c0800000000000000
+      internalID: -4592792794438643700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_41
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355dfac368c81d8f0800000000000000
+      internalID: -517477973999233709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_42
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 10
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ebf86e787a09360800000000000000
+      internalID: 7174418408531803662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_43
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cfb4665d8799eb0800000000000000
+      internalID: -4712602677126890435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_44
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 10
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4414186332e4cbf10800000000000000
+      internalID: 2286788623942631748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_45
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b72f3ea39583050800000000000000
+      internalID: 5780468231197326186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_46
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140f474620ffebbf0800000000000000
+      internalID: -306527338874212287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_47
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4148f01f4a7c67ec0800000000000000
+      internalID: -3569446143411649516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_48
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746dbca2596b49790800000000000000
+      internalID: -7524188325644872121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_49
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c03d4aba88a5b200800000000000000
+      internalID: 195247472645058754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_50
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f8101e8693f40a0800000000000000
+      internalID: -6895229381866582126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - OTXO - Miscellaneous - Blood_51
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4213af3067bfca0800000000000000
+      internalID: -5982057920577067838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - OTXO - Miscellaneous - Blood_0: -5505671966570553491
+      PC _ Computer - OTXO - Miscellaneous - Blood_1: 8221985892011143306
+      PC _ Computer - OTXO - Miscellaneous - Blood_10: 1254925574696515492
+      PC _ Computer - OTXO - Miscellaneous - Blood_11: 6476215767625504240
+      PC _ Computer - OTXO - Miscellaneous - Blood_12: -1245257833788817272
+      PC _ Computer - OTXO - Miscellaneous - Blood_13: 2297905536253234878
+      PC _ Computer - OTXO - Miscellaneous - Blood_14: 650421835811774775
+      PC _ Computer - OTXO - Miscellaneous - Blood_15: 620568937156477703
+      PC _ Computer - OTXO - Miscellaneous - Blood_16: 7537506804919729152
+      PC _ Computer - OTXO - Miscellaneous - Blood_17: 2037856567897560696
+      PC _ Computer - OTXO - Miscellaneous - Blood_18: 4598750041420575698
+      PC _ Computer - OTXO - Miscellaneous - Blood_19: 6238996091701660763
+      PC _ Computer - OTXO - Miscellaneous - Blood_2: -398359515762332128
+      PC _ Computer - OTXO - Miscellaneous - Blood_20: -7137753688835806938
+      PC _ Computer - OTXO - Miscellaneous - Blood_21: -1764706510824351637
+      PC _ Computer - OTXO - Miscellaneous - Blood_22: 3205400994148217521
+      PC _ Computer - OTXO - Miscellaneous - Blood_23: -8498911046026808430
+      PC _ Computer - OTXO - Miscellaneous - Blood_24: 164435463294378591
+      PC _ Computer - OTXO - Miscellaneous - Blood_25: -7257294060840072311
+      PC _ Computer - OTXO - Miscellaneous - Blood_26: 7420857134306895721
+      PC _ Computer - OTXO - Miscellaneous - Blood_27: -1697373973103163358
+      PC _ Computer - OTXO - Miscellaneous - Blood_28: -1618680400700864666
+      PC _ Computer - OTXO - Miscellaneous - Blood_29: -499015793653482300
+      PC _ Computer - OTXO - Miscellaneous - Blood_3: -5411229066263836512
+      PC _ Computer - OTXO - Miscellaneous - Blood_30: -5155783831884248299
+      PC _ Computer - OTXO - Miscellaneous - Blood_31: -7484593115109391540
+      PC _ Computer - OTXO - Miscellaneous - Blood_32: 2151041756113135008
+      PC _ Computer - OTXO - Miscellaneous - Blood_33: -3393528043092947342
+      PC _ Computer - OTXO - Miscellaneous - Blood_34: 6421372009456380255
+      PC _ Computer - OTXO - Miscellaneous - Blood_35: 4247029001254435815
+      PC _ Computer - OTXO - Miscellaneous - Blood_36: 4310962087553519384
+      PC _ Computer - OTXO - Miscellaneous - Blood_37: -8312203089346767301
+      PC _ Computer - OTXO - Miscellaneous - Blood_38: -7276968744817709720
+      PC _ Computer - OTXO - Miscellaneous - Blood_39: -1214641836242264229
+      PC _ Computer - OTXO - Miscellaneous - Blood_4: -8737942382028978581
+      PC _ Computer - OTXO - Miscellaneous - Blood_40: -4592792794438643700
+      PC _ Computer - OTXO - Miscellaneous - Blood_41: -517477973999233709
+      PC _ Computer - OTXO - Miscellaneous - Blood_42: 7174418408531803662
+      PC _ Computer - OTXO - Miscellaneous - Blood_43: -4712602677126890435
+      PC _ Computer - OTXO - Miscellaneous - Blood_44: 2286788623942631748
+      PC _ Computer - OTXO - Miscellaneous - Blood_45: 5780468231197326186
+      PC _ Computer - OTXO - Miscellaneous - Blood_46: -306527338874212287
+      PC _ Computer - OTXO - Miscellaneous - Blood_47: -3569446143411649516
+      PC _ Computer - OTXO - Miscellaneous - Blood_48: -7524188325644872121
+      PC _ Computer - OTXO - Miscellaneous - Blood_49: 195247472645058754
+      PC _ Computer - OTXO - Miscellaneous - Blood_5: -6139739596606795904
+      PC _ Computer - OTXO - Miscellaneous - Blood_50: -6895229381866582126
+      PC _ Computer - OTXO - Miscellaneous - Blood_51: -5982057920577067838
+      PC _ Computer - OTXO - Miscellaneous - Blood_6: -5027197652856768117
+      PC _ Computer - OTXO - Miscellaneous - Blood_7: 322821750462816936
+      PC _ Computer - OTXO - Miscellaneous - Blood_8: 5928518694268984737
+      PC _ Computer - OTXO - Miscellaneous - Blood_9: -2927111180871676211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

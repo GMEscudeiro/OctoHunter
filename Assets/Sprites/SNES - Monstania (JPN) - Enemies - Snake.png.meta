@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: afd6d60323b041841957fb1567ca32d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6725154316183834240
+    second: SNES - Monstania (JPN) - Enemies - Snake_0
+  - first:
+      213: -2411964702677793296
+    second: SNES - Monstania (JPN) - Enemies - Snake_1
+  - first:
+      213: -3843358599458938768
+    second: SNES - Monstania (JPN) - Enemies - Snake_2
+  - first:
+      213: 7343311867693606609
+    second: SNES - Monstania (JPN) - Enemies - Snake_3
+  - first:
+      213: 5923033965781640575
+    second: SNES - Monstania (JPN) - Enemies - Snake_4
+  - first:
+      213: 2140463024676462467
+    second: SNES - Monstania (JPN) - Enemies - Snake_5
+  - first:
+      213: 2539153181357093498
+    second: SNES - Monstania (JPN) - Enemies - Snake_6
+  - first:
+      213: -2522651437018139754
+    second: SNES - Monstania (JPN) - Enemies - Snake_7
+  - first:
+      213: -2439005330682844856
+    second: SNES - Monstania (JPN) - Enemies - Snake_8
+  - first:
+      213: 3843658494529219559
+    second: SNES - Monstania (JPN) - Enemies - Snake_9
+  - first:
+      213: 5521298839659544827
+    second: SNES - Monstania (JPN) - Enemies - Snake_10
+  - first:
+      213: 7055968404243678541
+    second: SNES - Monstania (JPN) - Enemies - Snake_11
+  - first:
+      213: 4926135346321807585
+    second: SNES - Monstania (JPN) - Enemies - Snake_12
+  - first:
+      213: 8060526690224521457
+    second: SNES - Monstania (JPN) - Enemies - Snake_13
+  - first:
+      213: 7990103628560668253
+    second: SNES - Monstania (JPN) - Enemies - Snake_14
+  - first:
+      213: -853836195647252021
+    second: SNES - Monstania (JPN) - Enemies - Snake_15
+  - first:
+      213: -5143175426887179830
+    second: SNES - Monstania (JPN) - Enemies - Snake_16
+  - first:
+      213: -2741596355945018398
+    second: SNES - Monstania (JPN) - Enemies - Snake_17
+  - first:
+      213: -7261706518991579666
+    second: SNES - Monstania (JPN) - Enemies - Snake_18
+  - first:
+      213: 3488896795285958766
+    second: SNES - Monstania (JPN) - Enemies - Snake_19
+  - first:
+      213: 8650092165396645726
+    second: SNES - Monstania (JPN) - Enemies - Snake_20
+  - first:
+      213: 972779216941089651
+    second: SNES - Monstania (JPN) - Enemies - Snake_21
+  - first:
+      213: -3473811108125518271
+    second: SNES - Monstania (JPN) - Enemies - Snake_22
+  - first:
+      213: 4497536365341346028
+    second: SNES - Monstania (JPN) - Enemies - Snake_23
+  - first:
+      213: -220235935303498171
+    second: SNES - Monstania (JPN) - Enemies - Snake_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 236
+        width: 55
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0817d24e7c37ba2a0800000000000000
+      internalID: -6725154316183834240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 236
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f50c1ec1eaf68ed0800000000000000
+      internalID: -2411964702677793296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 220
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070aece77b5a9aac0800000000000000
+      internalID: -3843358599458938768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 220
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6a9c4bc3fa8e560800000000000000
+      internalID: 7343311867693606609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 179
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75ecf2a208d23250800000000000000
+      internalID: 5923033965781640575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 179
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fd2b0c7c374bd10800000000000000
+      internalID: 2140463024676462467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 152
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72b71d8d52ec3320800000000000000
+      internalID: 2539153181357093498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 150
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b76432edbdfcd0800000000000000
+      internalID: -2522651437018139754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 110
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8496d5bf299e62ed0800000000000000
+      internalID: -2439005330682844856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 110
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eba354490b675530800000000000000
+      internalID: 3843658494529219559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 110
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf00fa4aa089f9c40800000000000000
+      internalID: 5521298839659544827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 110
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45035921e5dbe160800000000000000
+      internalID: 7055968404243678541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 110
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8d1096ff52d5440800000000000000
+      internalID: 4926135346321807585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_13
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 110
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f04369715ebcdf60800000000000000
+      internalID: 8060526690224521457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 83
+        width: 55
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d561be2baec82ee60800000000000000
+      internalID: 7990103628560668253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 40
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9131ef0809624f0800000000000000
+      internalID: -853836195647252021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_16
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 40
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac12fdee235cf98b0800000000000000
+      internalID: -5143175426887179830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 40
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb446ec3a4e3f9d0800000000000000
+      internalID: -2741596355945018398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 40
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee55e58256c393b90800000000000000
+      internalID: -7261706518991579666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 40
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60b40d762d0b6030800000000000000
+      internalID: 3488896795285958766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_20
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 40
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e574bd88efc4b0870800000000000000
+      internalID: 8650092165396645726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 55
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37308a63b81008d00800000000000000
+      internalID: 972779216941089651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1465f53c33b8acfc0800000000000000
+      internalID: -3473811108125518271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 12
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8829cce757a6e30800000000000000
+      internalID: 4497536365341346028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Monstania (JPN) - Enemies - Snake_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546857d659091fcf0800000000000000
+      internalID: -220235935303498171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SNES - Monstania (JPN) - Enemies - Snake_0: -6725154316183834240
+      SNES - Monstania (JPN) - Enemies - Snake_1: -2411964702677793296
+      SNES - Monstania (JPN) - Enemies - Snake_10: 5521298839659544827
+      SNES - Monstania (JPN) - Enemies - Snake_11: 7055968404243678541
+      SNES - Monstania (JPN) - Enemies - Snake_12: 4926135346321807585
+      SNES - Monstania (JPN) - Enemies - Snake_13: 8060526690224521457
+      SNES - Monstania (JPN) - Enemies - Snake_14: 7990103628560668253
+      SNES - Monstania (JPN) - Enemies - Snake_15: -853836195647252021
+      SNES - Monstania (JPN) - Enemies - Snake_16: -5143175426887179830
+      SNES - Monstania (JPN) - Enemies - Snake_17: -2741596355945018398
+      SNES - Monstania (JPN) - Enemies - Snake_18: -7261706518991579666
+      SNES - Monstania (JPN) - Enemies - Snake_19: 3488896795285958766
+      SNES - Monstania (JPN) - Enemies - Snake_2: -3843358599458938768
+      SNES - Monstania (JPN) - Enemies - Snake_20: 8650092165396645726
+      SNES - Monstania (JPN) - Enemies - Snake_21: 972779216941089651
+      SNES - Monstania (JPN) - Enemies - Snake_22: -3473811108125518271
+      SNES - Monstania (JPN) - Enemies - Snake_23: 4497536365341346028
+      SNES - Monstania (JPN) - Enemies - Snake_24: -220235935303498171
+      SNES - Monstania (JPN) - Enemies - Snake_3: 7343311867693606609
+      SNES - Monstania (JPN) - Enemies - Snake_4: 5923033965781640575
+      SNES - Monstania (JPN) - Enemies - Snake_5: 2140463024676462467
+      SNES - Monstania (JPN) - Enemies - Snake_6: 2539153181357093498
+      SNES - Monstania (JPN) - Enemies - Snake_7: -2522651437018139754
+      SNES - Monstania (JPN) - Enemies - Snake_8: -2439005330682844856
+      SNES - Monstania (JPN) - Enemies - Snake_9: 3843658494529219559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
