@@ -16,7 +16,20 @@ public class WeaponManager : MonoBehaviour
     {
         if (playerCollider == null) playerCollider = GetComponent<CircleCollider2D>();
         
+        if (inventory != null)
+        {
+            inventory.OnInventoryChanged += LoadWeaponInventory;
+        }
+
         LoadWeaponInventory();
+    }
+
+    void OnDestroy()
+    {
+        if (inventory != null)
+        {
+            inventory.OnInventoryChanged -= LoadWeaponInventory;
+        }
     }
 
     public void LoadWeaponInventory()

@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 6681448865997781737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.37572, y: -4.60163, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,12 +80,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.381132, g: 0.26131454, b: 0.16611601, a: 1}
+  m_Sprite: {fileID: -3990033562354269439, guid: af5cb06cf4329bb26a08d8afd0d5dc99, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.41, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5cc1a66697e3c04dab133246c7ed531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flamethrower
-  damage: 10
-  attackRate: 1
-  specialEffect: {fileID: 0}
-  range: 2.5
-  coneAngle: 45
+  damage: 1
+  attackRate: 0.05
+  specialEffect: {fileID: 11400000, guid: 5f7ed742f96c5d0b5a1a554f005e7e4a, type: 2}
+  projectilePrefab: {fileID: 6654461722700053096, guid: 92c953c8bc02f034e8bb10ab9a2aac85, type: 3}
+  firePoint: {fileID: 0}

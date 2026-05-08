@@ -1,37 +1,29 @@
 using UnityEngine;
 
 // Prefab precisa de: SpriteRenderer, Rigidbody2D (Kinematic), Collider2D (Is Trigger)
-public class BazookaProjectile : MonoBehaviour
+public class BazookaProjectile : Projectile
 {
-    private HitData  _hitData;
-    private float    _speed;
     private float    _explosionRadius;
     private int      _explosionDamage;
-    private GameObject _attacker;
     private bool     _hasExploded;
 
-    public void Setup(HitData hitData, float speed, float explosionRadius, int explosionDamage, GameObject attacker)
+    public void Setup(HitData hitData, float projectileSpeed, float explosionRadius, int explosionDamage)
     {
-        _hitData         = hitData;
-        _speed           = speed;
+        base.Setup(hitData);
+        speed = projectileSpeed;
+        
         _explosionRadius = explosionRadius;
         _explosionDamage = explosionDamage;
-        _attacker        = attacker;
 
-        Destroy(gameObject, 5f);
-    }
-
-    void Update()
-    {
-        transform.Translate(Vector3.right * _speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_hasExploded) return;
+        if (_hasHit || _hasExploded) return;
 
         if (other.TryGetComponent(out Enemy _) || other.CompareTag("Wall"))
         {
+            _hasHit = true; // Use base hit flag
             Explode();
         }
     }
@@ -40,7 +32,6 @@ public class BazookaProjectile : MonoBehaviour
     {
         _hasExploded = true;
 
-        // Dano em área — acerta todos os inimigos no raio
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, _explosionRadius);
         foreach (Collider2D hit in hits)
         {
@@ -49,8 +40,8 @@ public class BazookaProjectile : MonoBehaviour
                 HitData aoeHit = new HitData
                 {
                     Damage   = _explosionDamage,
-                    Attacker = _attacker,
-                    Effect   = _hitData.Effect
+                    Attacker = _data.Attacker,
+                    Effect   = _data.Effect
                 };
                 enemy.TakeDamage(aoeHit);
             }

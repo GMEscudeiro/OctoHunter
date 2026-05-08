@@ -14,7 +14,7 @@ public class Bazooka : WeaponBase
 
         if (bullet.TryGetComponent(out BazookaProjectile bp))
         {
-            bp.Setup(CreateHitData(), projectileSpeed, explosionRadius, explosionDamage, attackerRef);
+            bp.Setup(CreateHitData(), projectileSpeed, explosionRadius, explosionDamage);
         }
     }
 }

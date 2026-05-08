@@ -6,19 +6,25 @@ public class Projectile : MonoBehaviour
     public float speed = 15f;
     public float lifetime = 3f;
 
-    private HitData _data;
-    private bool _hasHit = false;
+    [Header("Visual Correction")]
+    public float rotationOffset = 0f;
 
-    public void Setup(HitData data)
+    protected HitData _data;
+    protected bool _hasHit = false;
+    protected Vector3 _moveDir;
+
+    public virtual void Setup(HitData data)
     {
         _data = data;
+        _moveDir = transform.right;
+        transform.Rotate(0, 0, rotationOffset);
         
         Destroy(gameObject, lifetime);
     }
 
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.position += _moveDir * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
