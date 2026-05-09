@@ -10,6 +10,9 @@ public class WeaponBarUI : MonoBehaviour
     public GameObject slotPrefab;
     public Transform container;
 
+    [Header("Settings")]
+    public int totalSlots = 8;
+
     private List<WeaponSlotUI> _instantiatedSlots = new List<WeaponSlotUI>();
     private int _firstSelectedIndex = -1;
 
@@ -39,18 +42,22 @@ public class WeaponBarUI : MonoBehaviour
 
         if (inventory == null || slotPrefab == null || container == null) return;
 
-        for (int i = 0; i < inventory.obtainedWeapons.Count; i++)
+        for (int i = 0; i < totalSlots; i++)
         {
-            GameObject prefab = inventory.obtainedWeapons[i];
             GameObject slotObj = Instantiate(slotPrefab, container);
             
             if (slotObj.TryGetComponent(out WeaponSlotUI slotScript))
             {
-                // Try to get sprite from the prefab's SpriteRenderer
                 Sprite icon = null;
-                if (prefab.TryGetComponent(out SpriteRenderer sr))
+                
+                // If there's a weapon at this index, get its icon
+                if (i < inventory.obtainedWeapons.Count)
                 {
-                    icon = sr.sprite;
+                    GameObject prefab = inventory.obtainedWeapons[i];
+                    if (prefab != null && prefab.TryGetComponent(out SpriteRenderer sr))
+                    {
+                        icon = sr.sprite;
+                    }
                 }
 
                 slotScript.Setup(i, icon, this);
@@ -61,23 +68,22 @@ public class WeaponBarUI : MonoBehaviour
 
     public void OnSlotClicked(int index)
     {
+        // Only allow selecting slots that actually have weapons
+        if (index >= inventory.obtainedWeapons.Count) return;
+
         if (_firstSelectedIndex == -1)
         {
-            // First selection
             _firstSelectedIndex = index;
             _instantiatedSlots[index].SetSelected(true);
         }
         else if (_firstSelectedIndex == index)
         {
-            // Deselect
             _instantiatedSlots[index].SetSelected(false);
             _firstSelectedIndex = -1;
         }
         else
         {
-            // Second selection - Perform Swap
             inventory.SwapWeapons(_firstSelectedIndex, index);
-            // RefreshUI will be called automatically via the inventory event
         }
     }
 }

@@ -21,7 +21,11 @@ public class WeaponSlotUI : MonoBehaviour, IPointerClickHandler
         _index = index;
         _bar = bar;
         
-        if (iconImage != null) iconImage.sprite = icon;
+        if (iconImage != null) 
+        {
+            iconImage.sprite = icon;
+            iconImage.enabled = (icon != null); // Hide if empty
+        }
         SetSelected(false);
     }
 
