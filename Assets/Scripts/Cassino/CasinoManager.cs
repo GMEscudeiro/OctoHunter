@@ -12,9 +12,13 @@ public class CasinoManager : MonoBehaviour
     public List<WeaponShopItem> allWeapons;   // arraste todos os WeaponShopItems aqui
     public WeaponInventory      weaponInventory;
     public WalletData           walletData;
+    public LevelData            levelData;    // para saber qual cena retornar
 
-    [Header("Casino Scene Name")]
-    public string casinoSceneName = "Casino";
+    [Header("Cenas de jogo (por round)")]
+    [Tooltip("Cena do deserto (rounds 1-3)")]
+    public string desertSceneName  = "SampleScene";
+    [Tooltip("Cena das aranhas (rounds 4+)")]
+    public string spiderSceneName  = "SpiderScene";
 
     [Header("UI - Slots (3 itens)")]
     public Image[]           slotIcons;        // 3 imagens de ícone
@@ -113,14 +117,12 @@ public class CasinoManager : MonoBehaviour
         WeaponShopItem item = _currentOffer[slotIndex];
         if (item == null) return;
 
-        // Verifica slots disponíveis
         if (weaponInventory.obtainedWeapons.Count >= MaxSlots)
         {
             Debug.Log("[Casino] Todos os tentáculos estão ocupados!");
             return;
         }
 
-        // Verifica moedas
         if (walletData.coins < item.price)
         {
             Debug.Log("[Casino] Moedas insuficientes.");
@@ -131,17 +133,29 @@ public class CasinoManager : MonoBehaviour
         weaponInventory.AddWeapon(item.weaponPrefab);
         UpdateCoinsUI();
 
-        // Remove o slot comprado da oferta
         _currentOffer[slotIndex] = null;
         RefreshSlotUI();
 
         Debug.Log($"[Casino] Comprou: {item.weaponName}");
     }
 
-    // ── Sair ──────────────────────────────────────────────────────────
+    // ── Sair: decide qual cena carregar pelo round atual ──────────────
     private void Exit()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("SampleScene");
+
+        // Rounds 1-3 = deserto, rounds 4+ = floresta das aranhas
+        int round = (levelData != null) ? levelData.currentRound : 1;
+
+        if (round > 3)
+        {
+            Debug.Log($"[Casino] Round {round} → voltando para {spiderSceneName}");
+            SceneManager.LoadScene(spiderSceneName);
+        }
+        else
+        {
+            Debug.Log($"[Casino] Round {round} → voltando para {desertSceneName}");
+            SceneManager.LoadScene(desertSceneName);
+        }
     }
 }

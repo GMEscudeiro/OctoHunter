@@ -6,11 +6,12 @@ using System.Collections.Generic;
 // - Cada Round possui 3 Hordas de inimigos comuns
 // - A cada 3 Rounds ocorre um Boss Round
 // - Entre os Rounds o jogador visita o cassino
+// - Ao vencer o Boss Round do Deserto, vai para a SpiderScene
 
 public class WaveSpawner : MonoBehaviour
 {
     [Header("Enemy Prefabs")]
-    public List<GameObject> enemyPrefabs;   // inimigos comuns
+    public List<GameObject> enemyPrefabs;   // inimigos comuns (definidos por cena/bioma)
     public GameObject bossPrefab;           // prefab do boss
 
     [Header("Spawn Settings")]
@@ -26,10 +27,15 @@ public class WaveSpawner : MonoBehaviour
     [Header("Data")]
     public WalletData walletData;
     public LevelData  levelData;
+
     [Header("Spawn Interval Scaling")]
     public float baseSpawnInterval = 1.5f;
     public float minSpawnInterval  = 0.4f;
     public float intervalReduction = 0.05f; // redução por round
+
+    [Header("Próxima cena após Boss Round")]
+    [Tooltip("Nome exato da cena no Build Settings. Ex: SpiderScene ou CassinoScene")]
+    public string nextSceneAfterBoss = "CassinoScene";
 
     [Header("State (read-only)")]
     [SerializeField] private int  _currentRound = 1;
@@ -98,21 +104,20 @@ public class WaveSpawner : MonoBehaviour
         Debug.Log($"[WaveSpawner] Round {_currentRound} concluído!");
         _currentRound++;
 
-        // Aguarda antes de ir ao cassino / próximo round
         yield return new WaitForSeconds(timeBetweenRounds);
 
-        // Aqui você pode chamar o CasinoLoader futuramente
-        // Por enquanto inicia o próximo round automaticamente
-        if (!_isBossRound)
+        if (_isBossRound)
         {
-            // Salva o round atual e abre o cassino
+            // Após boss: salva round e vai para a próxima cena (SpiderScene ou outra)
             if (levelData != null) levelData.currentRound = _currentRound;
-            CasinoLoader.OpenCasino("CassinoScene");
-            yield break;
+            Debug.Log($"[WaveSpawner] Boss derrotado! Indo para: {nextSceneAfterBoss}");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneAfterBoss);
         }
         else
         {
-            StartCoroutine(StartRound());
+            // Rounds normais: vai ao cassino entre rounds
+            if (levelData != null) levelData.currentRound = _currentRound;
+            CasinoLoader.OpenCasino("CassinoScene");
         }
     }
 
@@ -200,7 +205,6 @@ public class WaveSpawner : MonoBehaviour
     // ── Cálculos de scaling (linear) ─────────────────────────────────
     private int CalculateHordeSize(int hordeIndex)
     {
-        // Base + bônus por round + bônus por horde dentro do round
         return baseEnemyCount
              + (_currentRound - 1) * enemiesPerRound
              + (hordeIndex  - 1) * enemiesPerHorde;
