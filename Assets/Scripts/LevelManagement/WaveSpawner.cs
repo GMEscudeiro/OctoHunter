@@ -39,6 +39,7 @@ public class WaveSpawner : MonoBehaviour
     private Transform _playerTransform;
     private bool      _isSpawning = false;
     private int       _enemiesAlive = 0;
+    public int EnemiesAlive => _enemiesAlive;
 
     private static bool _isSessionInitialized = false;
 
