@@ -15,4 +15,7 @@ MonoBehaviour:
   weaponName: Shotgun
   weaponPrefab: {fileID: 8127680015362568567, guid: 117f3cfe0da35794da3ca549734cb2a0, type: 3}
   price: 10
-  icon: {fileID: 3833868380322495972, guid: b00084fc8ac2117429a9070536c83c88, type: 3}
+  icon: {fileID: -4672384823359296031, guid: fcac3a4ad8b891842a081d2dc8a054ee, type: 3}
+  description: "Dispara um leque de proj\xE9teis devastador. Inimigos pr\xF3ximos
+    n\xE3o t\xEAm para onde correr."
+  rarity: 1

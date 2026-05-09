@@ -18,10 +18,11 @@ public class CasinoManager : MonoBehaviour
 
     [Header("UI - Slots (3 itens)")]
     public Image[]           slotIcons;        // 3 imagens de ícone
-    public TextMeshProUGUI[] slotNames;        // 3 textos de nome
     public TextMeshProUGUI[] slotPrices;       // 3 textos de preço
     public Button[]          slotBuyButtons;   // 3 botões de compra
 
+    [Header("Detail Card")]
+    public WeaponDetailCard detailCard;
     [Header("UI - Geral")]
     public TextMeshProUGUI coinsText;
     public Button          rerollButton;
@@ -61,7 +62,7 @@ public class CasinoManager : MonoBehaviour
         RefreshSlotUI();
     }
 
-    private void Reroll()
+    public void Reroll()
     {
         if (walletData.coins < RerollCost)
         {
@@ -84,20 +85,18 @@ public class CasinoManager : MonoBehaviour
 
             if (item == null)
             {
-                slotNames[i].text  = "—";
                 slotPrices[i].text = "";
                 slotBuyButtons[i].interactable = false;
                 continue;
             }
 
-            slotNames[i].text  = item.weaponName;
             slotPrices[i].text = $"{item.price} moedas";
 
             if (slotIcons != null && slotIcons.Length > i && item.icon != null)
                 slotIcons[i].sprite = item.icon;
 
             slotBuyButtons[i].onClick.RemoveAllListeners();
-            slotBuyButtons[i].onClick.AddListener(() => BuyWeapon(index));
+            slotBuyButtons[i].onClick.AddListener(() => detailCard.ShowCard(_currentOffer[index], index));
             slotBuyButtons[i].interactable = true;
         }
     }
@@ -109,7 +108,7 @@ public class CasinoManager : MonoBehaviour
     }
 
     // ── Compra ────────────────────────────────────────────────────────
-    private void BuyWeapon(int slotIndex)
+    public void BuyWeapon(int slotIndex)
     {
         WeaponShopItem item = _currentOffer[slotIndex];
         if (item == null) return;

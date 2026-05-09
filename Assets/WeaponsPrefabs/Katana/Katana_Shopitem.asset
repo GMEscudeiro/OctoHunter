@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
-  m_Name: Bazooka_ShopItem
+  m_Name: Katana_Shopitem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: Bazooka
-  weaponPrefab: {fileID: 1188990985201980781, guid: 9de6308a77f7677428772337262a5e85, type: 3}
-  price: 20
-  icon: {fileID: -7169038486254772558, guid: fcac3a4ad8b891842a081d2dc8a054ee, type: 3}
-  description: "Um \xFAnico disparo capaz de varrer uma sala inteira. Alto risco,
-    alto retorno."
+  weaponName: Katana
+  weaponPrefab: {fileID: 1231761594586788888, guid: 4b7ba074778fa14bdae7f39458ca6c7e, type: 3}
+  price: 15
+  icon: {fileID: -807760169103578807, guid: fcac3a4ad8b891842a081d2dc8a054ee, type: 3}
+  description: "L\xE2mina r\xE1pida e mortal. Requer coragem para chegar perto, mas
+    o dano compensa."
   rarity: 2
