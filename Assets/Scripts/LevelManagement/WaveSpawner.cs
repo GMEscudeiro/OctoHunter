@@ -25,6 +25,7 @@ public class WaveSpawner : MonoBehaviour
 
     [Header("Data")]
     public WalletData walletData;
+    public LevelData  levelData;
     [Header("Spawn Interval Scaling")]
     public float baseSpawnInterval = 1.5f;
     public float minSpawnInterval  = 0.4f;
@@ -39,6 +40,8 @@ public class WaveSpawner : MonoBehaviour
     private bool      _isSpawning = false;
     private int       _enemiesAlive = 0;
 
+    private static bool _isSessionInitialized = false;
+
     // Eventos para outros sistemas escutarem
     public static event System.Action<int, int> OnHordeStarted;   // round, horde
     public static event System.Action<int>      OnRoundCompleted; // round
@@ -50,7 +53,18 @@ public class WaveSpawner : MonoBehaviour
     void Start()
     {
         FindPlayer();
-        _currentRound = walletData.currentRound;
+
+        if (!_isSessionInitialized)
+        {
+            if (walletData != null) walletData.coins = 0;
+            if (levelData != null)  levelData.currentRound = 1;
+            _isSessionInitialized = true;
+            Debug.Log("[WaveSpawner] Nova sessão iniciada: Moedas e Round resetados.");
+        }
+
+        if (levelData != null)
+            _currentRound = levelData.currentRound;
+
         StartCoroutine(StartRound());
     }
 
@@ -91,7 +105,7 @@ public class WaveSpawner : MonoBehaviour
         if (!_isBossRound)
         {
             // Salva o round atual e abre o cassino
-            walletData.currentRound = _currentRound;
+            if (levelData != null) levelData.currentRound = _currentRound;
             CasinoLoader.OpenCasino("CassinoScene");
             yield break;
         }

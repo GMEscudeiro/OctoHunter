@@ -359,6 +359,7 @@ MonoBehaviour:
   enemiesPerRound: 2
   enemiesPerHorde: 1
   walletData: {fileID: 11400000, guid: 3e1ae5b5f0cf56444b52b4a82a4304bd, type: 2}
+  levelData: {fileID: 11400000, guid: b2e52be05cb573b8c968e0230ec7c0fa, type: 2}
   baseSpawnInterval: 0.5
   minSpawnInterval: 0.3
   intervalReduction: 0.05

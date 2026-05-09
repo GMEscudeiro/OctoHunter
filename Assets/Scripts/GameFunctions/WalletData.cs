@@ -4,5 +4,4 @@ using UnityEngine;
 public class WalletData : ScriptableObject
 {
     public int coins = 0;
-    public int currentRound = 1;
 }
