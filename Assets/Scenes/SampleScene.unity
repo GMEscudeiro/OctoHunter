@@ -1437,8 +1437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapons
   inventory: {fileID: 11400000, guid: 7bde58f83bf787b93b2a02bcd3682797, type: 2}
-  playerDistance: 0.1
-  playerCollider: {fileID: 0}
+  playerDistance: 0
+  playerCollider: {fileID: 1678148346}
 --- !u!114 &1678148351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195c74ee81f68bd4bacb14b74bde00b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxLives: 10
+  maxLives: 3
   invincibilityDuration: 1.5
 --- !u!1 &1720621628
 GameObject:

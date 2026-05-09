@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
   m_Name: Flamethrower_ShopItem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: MeltedGun
+  weaponName: Flamethrower
   weaponPrefab: {fileID: 6681448865997781737, guid: a871a0b8a54b251459cb71cbccbf49be, type: 3}
   price: 15
-  icon: {fileID: 0}
+  icon: {fileID: -3990033562354269439, guid: af5cb06cf4329bb26a08d8afd0d5dc99, type: 3}

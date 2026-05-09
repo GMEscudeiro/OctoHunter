@@ -35,7 +35,6 @@ public class WeaponBarUI : MonoBehaviour
 
     public void RefreshUI()
     {
-        // Clear old slots
         foreach (var slot in _instantiatedSlots) Destroy(slot.gameObject);
         _instantiatedSlots.Clear();
         _firstSelectedIndex = -1;
@@ -50,7 +49,6 @@ public class WeaponBarUI : MonoBehaviour
             {
                 Sprite icon = null;
                 
-                // If there's a weapon at this index, get its icon
                 if (i < inventory.obtainedWeapons.Count)
                 {
                     GameObject prefab = inventory.obtainedWeapons[i];
@@ -68,7 +66,6 @@ public class WeaponBarUI : MonoBehaviour
 
     public void OnSlotClicked(int index)
     {
-        // Only allow selecting slots that actually have weapons
         if (index >= inventory.obtainedWeapons.Count) return;
 
         if (_firstSelectedIndex == -1)

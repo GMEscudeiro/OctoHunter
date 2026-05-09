@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
   m_Name: Bazooka_ShopItem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: Zuka
+  weaponName: Bazooka
   weaponPrefab: {fileID: 1188990985201980781, guid: 9de6308a77f7677428772337262a5e85, type: 3}
   price: 20
-  icon: {fileID: 0}
+  icon: {fileID: 983421246343855554, guid: 9fa6b5f4174026e7e825e985c70f3425, type: 3}

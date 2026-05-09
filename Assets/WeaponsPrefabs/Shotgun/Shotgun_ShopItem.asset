@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
   m_Name: Shotgun_ShopItem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: ' OctopusInk'
+  weaponName: Shotgun
   weaponPrefab: {fileID: 8127680015362568567, guid: 117f3cfe0da35794da3ca549734cb2a0, type: 3}
   price: 10
-  icon: {fileID: 0}
+  icon: {fileID: 3833868380322495972, guid: b00084fc8ac2117429a9070536c83c88, type: 3}
