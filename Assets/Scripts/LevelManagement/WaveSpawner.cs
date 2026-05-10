@@ -85,7 +85,7 @@ public class WaveSpawner : MonoBehaviour
     // ── Fluxo principal ──────────────────────────────────────────────
     private IEnumerator StartRound()
     {
-        _isBossRound = (_currentRound % 3 == 0);
+        _isBossRound = (_currentRound % 2 == 0);
 
         if (_isBossRound)
         {
@@ -108,10 +108,15 @@ public class WaveSpawner : MonoBehaviour
 
         if (_isBossRound)
         {
-            // Após boss: salva round e vai para a próxima cena (SpiderScene ou outra)
             if (levelData != null) levelData.currentRound = _currentRound;
-            Debug.Log($"[WaveSpawner] Boss derrotado! Indo para: {nextSceneAfterBoss}");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneAfterBoss);
+            
+            string nextScene = "CassinoScene";
+            if (_currentRound == 3) nextScene = "SpiderScene";
+            else if (_currentRound == 5) nextScene = "ScorpionScene";
+            else if (_currentRound > 5) nextScene = "CassinoScene"; // End or loop
+            
+            Debug.Log($"[WaveSpawner] Boss derrotado! Indo para: {nextScene}");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
         }
         else
         {

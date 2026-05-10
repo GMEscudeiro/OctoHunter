@@ -44,6 +44,31 @@ public class PlayerHealth : MonoBehaviour
         IsInvincible = false;
     }
 
+    public void Infect(float duration)
+    {
+        StartCoroutine(InfectRoutine(duration));
+    }
+
+    private System.Collections.IEnumerator InfectRoutine(float duration)
+    {
+        SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+        if (sr == null) yield break;
+
+        float elapsed = 0f;
+        Color originalColor = sr.color;
+        
+        while (elapsed < duration)
+        {
+            sr.color = new Color(0.5f, 1f, 0.5f, 0.5f); // Greenish and semi-transparent
+            yield return new WaitForSeconds(0.1f);
+            sr.color = originalColor;
+            yield return new WaitForSeconds(0.1f);
+            elapsed += 0.2f;
+        }
+
+        sr.color = originalColor;
+    }
+
     private void Die()
     {
         Debug.Log("[Player] Morreu!");

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 _movementInput;
     private Vector2 _mouseWorldPosition;
+    public bool isParalyzed = false;
 
     void Start()
     {
@@ -57,13 +58,32 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyMovement()
     {
+        if (isParalyzed) 
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
         rb.linearVelocity = _movementInput * moveSpeed;
     }
 
     private void AimAtMouse()
     {
+        if (isParalyzed) return;
         Vector2 lookDirection = _mouseWorldPosition - rb.position;
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
+    }
+
+    public void Paralyze(float duration)
+    {
+        if (!isParalyzed)
+            StartCoroutine(ParalyzeRoutine(duration));
+    }
+
+    private System.Collections.IEnumerator ParalyzeRoutine(float duration)
+    {
+        isParalyzed = true;
+        yield return new WaitForSeconds(duration);
+        isParalyzed = false;
     }
 }

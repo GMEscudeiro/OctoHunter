@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyPrefabs:
-  - {fileID: 6037047060153579998, guid: 130ac84eecfa95945b6365ea3515864a, type: 3}
+  - {fileID: 6037047060153579998, guid: b04056fd7a3262e4aa0fafa639d98f4b, type: 3}
   bossPrefab: {fileID: 6802183786486168160, guid: f2b482cf3b6d6fb4f9b0a15a6954928b, type: 3}
   spawnRadius: 12
   timeBetweenHordes: 3
@@ -469,6 +469,7 @@ MonoBehaviour:
   baseSpawnInterval: 0.5
   minSpawnInterval: 0.3
   intervalReduction: 0.05
+  nextSceneAfterBoss: CassinoScene
   _currentRound: 1
   _currentHorde: 1
   _isBossRound: 0
@@ -1655,6 +1656,7 @@ MonoBehaviour:
   moveRight: 100
   rb: {fileID: 0}
   mainCamera: {fileID: 0}
+  isParalyzed: 0
 --- !u!114 &1678148350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2306,7 +2308,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 5732396196091234807, guid: f52cb960de9b3294fab114c721ca2179, type: 3}
+  m_Sprite: {fileID: -6480784246798494810, guid: d903268b9caf4fe46a5866e4812fa71e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

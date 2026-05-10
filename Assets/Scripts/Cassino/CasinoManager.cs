@@ -111,21 +111,35 @@ public class CasinoManager : MonoBehaviour
             coinsText.text = $"Moedas: {walletData.coins}";
     }
 
+    public static CasinoManager instance;
+    public bool isSwapping = false;
+    private int _pendingSwapSlotIndex = -1;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
     // ── Compra ────────────────────────────────────────────────────────
     public void BuyWeapon(int slotIndex)
     {
         WeaponShopItem item = _currentOffer[slotIndex];
         if (item == null) return;
 
-        if (weaponInventory.obtainedWeapons.Count >= MaxSlots)
-        {
-            Debug.Log("[Casino] Todos os tentáculos estão ocupados!");
-            return;
-        }
-
         if (walletData.coins < item.price)
         {
             Debug.Log("[Casino] Moedas insuficientes.");
+            return;
+        }
+
+        if (weaponInventory.obtainedWeapons.Count >= MaxSlots)
+        {
+            Debug.Log("[Casino] Inventário cheio! Clique em uma arma na barra abaixo para substituir.");
+            isSwapping = true;
+            _pendingSwapSlotIndex = slotIndex;
+            
+            if (coinsText != null)
+                coinsText.text = "Clique em um slot abaixo para trocar!";
             return;
         }
 
@@ -139,22 +153,47 @@ public class CasinoManager : MonoBehaviour
         Debug.Log($"[Casino] Comprou: {item.weaponName}");
     }
 
+    public void ConfirmSwap(int inventoryIndex)
+    {
+        if (!isSwapping || _pendingSwapSlotIndex < 0) return;
+
+        WeaponShopItem item = _currentOffer[_pendingSwapSlotIndex];
+        walletData.coins -= item.price;
+        
+        weaponInventory.obtainedWeapons[inventoryIndex] = item.weaponPrefab;
+        weaponInventory.OnInventoryChanged?.Invoke();
+
+        UpdateCoinsUI();
+        _currentOffer[_pendingSwapSlotIndex] = null;
+        RefreshSlotUI();
+        isSwapping = false;
+        _pendingSwapSlotIndex = -1;
+    }
+
     // ── Sair: decide qual cena carregar pelo round atual ──────────────
     private void Exit()
     {
         Time.timeScale = 1f;
 
-        // Rounds 1-3 = deserto, rounds 4+ = floresta das aranhas
         int round = (levelData != null) ? levelData.currentRound : 1;
 
-        if (round > 3)
+        if (round == 2)
         {
-            Debug.Log($"[Casino] Round {round} → voltando para {spiderSceneName}");
+            Debug.Log($"[Casino] Round {round} → voltando para {desertSceneName} (Boss Cobra)");
+            SceneManager.LoadScene(desertSceneName);
+        }
+        else if (round == 4)
+        {
+            Debug.Log($"[Casino] Round {round} → voltando para {spiderSceneName} (Boss Aranha)");
             SceneManager.LoadScene(spiderSceneName);
+        }
+        else if (round >= 6)
+        {
+            Debug.Log($"[Casino] Round {round} → voltando para ScorpionScene (Boss Escorpiao)");
+            SceneManager.LoadScene("ScorpionScene");
         }
         else
         {
-            Debug.Log($"[Casino] Round {round} → voltando para {desertSceneName}");
             SceneManager.LoadScene(desertSceneName);
         }
     }

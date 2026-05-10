@@ -8,6 +8,11 @@ public class EnemyMovement : MonoBehaviour
     private Transform _playerTransform;
     private Rigidbody2D _rb;
 
+    [Header("Ranged Attack (Optional)")]
+    public GameObject projectilePrefab;
+    public float attackRate = 2.0f;
+    private float _nextAttackTime;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -29,5 +34,17 @@ public class EnemyMovement : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         _rb.rotation = angle + 90;
+
+        if (projectilePrefab != null && Time.time >= _nextAttackTime)
+        {
+            _nextAttackTime = Time.time + attackRate;
+            Vector2 spawnPos = _rb.position + direction * 0.6f;
+            GameObject bullet = Instantiate(projectilePrefab, spawnPos, Quaternion.Euler(0, 0, angle));
+
+            if (bullet.TryGetComponent(out EnemyProjectile ep))
+            {
+                ep.Setup(1, direction); // Dano 1
+            }
+        }
     }
 }

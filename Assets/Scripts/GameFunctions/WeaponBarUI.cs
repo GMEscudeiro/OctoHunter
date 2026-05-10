@@ -68,6 +68,12 @@ public class WeaponBarUI : MonoBehaviour
     {
         if (index >= inventory.obtainedWeapons.Count) return;
 
+        if (CasinoManager.instance != null && CasinoManager.instance.isSwapping)
+        {
+            CasinoManager.instance.ConfirmSwap(index);
+            return;
+        }
+
         if (_firstSelectedIndex == -1)
         {
             _firstSelectedIndex = index;
