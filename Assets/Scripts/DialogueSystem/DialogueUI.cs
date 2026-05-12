@@ -9,6 +9,7 @@ public class DialogueUI : MonoBehaviour
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public GameObject clickIndicator;
+    public Image cutsceneImageContainer;
 
     [Header("Borders")]
     public Image borderImage; // The Image component that shows the border
@@ -74,6 +75,20 @@ public class DialogueUI : MonoBehaviour
         
         if (clickIndicator != null) clickIndicator.SetActive(false);
 
+        // Update image
+        if (cutsceneImageContainer != null)
+        {
+            if (entry.displayImage != null)
+            {
+                cutsceneImageContainer.sprite = entry.displayImage;
+                cutsceneImageContainer.gameObject.SetActive(true);
+            }
+            else
+            {
+                cutsceneImageContainer.gameObject.SetActive(false);
+            }
+        }
+
         foreach (char letter in entry.text.ToCharArray())
         {
             dialogueText.text += letter;
@@ -114,11 +129,17 @@ public class DialogueUI : MonoBehaviour
         _isTyping = false;
     }
 
+    public System.Action OnDialogueEnded;
+
     public void EndDialogue()
     {
         StopCurrentTyping();
         if (dialogueText != null) dialogueText.text = "";
         dialoguePanel.SetActive(false);
+        if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
         _currentData = null;
+
+        OnDialogueEnded?.Invoke();
+        OnDialogueEnded = null; // Clear to prevent accidental double firing
     }
 }

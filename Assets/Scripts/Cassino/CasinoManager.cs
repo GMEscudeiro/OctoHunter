@@ -14,13 +14,19 @@ public class CasinoManager : MonoBehaviour
     public WalletData           walletData;
     public LevelData            levelData;    // para saber qual cena retornar
 
-    [Header("Cenas de jogo (por round)")]
-    [Tooltip("Cena do deserto (rounds 1-3)")]
-    public string desertSceneName  = "SampleScene";
-    [Tooltip("Cena das aranhas (rounds 4+)")]
-    public string spiderSceneName  = "SpiderScene";
-
-    [Header("UI - Slots (3 itens)")]
+    private void Exit()
+    {
+        Time.timeScale = 1f;
+        if (GameFlowManager.Instance != null)
+        {
+            GameFlowManager.Instance.LoadNextLevel();
+        }
+        else
+        {
+            Debug.LogError("[CasinoManager] GameFlowManager não encontrado ao tentar sair!");
+            SceneManager.LoadScene("StartMenu");
+        }
+    }
     public Image[]           slotIcons;        // 3 imagens de ícone
     public TextMeshProUGUI[] slotPrices;       // 3 textos de preço
     public Button[]          slotBuyButtons;   // 3 botões de compra
@@ -32,6 +38,7 @@ public class CasinoManager : MonoBehaviour
     public Button          rerollButton;
     public TextMeshProUGUI rerollPriceText;
     public Button          exitButton;
+    public Button          sellButton;
 
     private const int RerollCost = 5;
     private const int MaxSlots   = 8;
@@ -45,6 +52,7 @@ public class CasinoManager : MonoBehaviour
 
         rerollButton.onClick.AddListener(Reroll);
         exitButton.onClick.AddListener(Exit);
+        if (sellButton != null) sellButton.onClick.AddListener(ToggleSellMode);
 
         RollNewOffers();
     }
@@ -113,6 +121,7 @@ public class CasinoManager : MonoBehaviour
 
     public static CasinoManager instance;
     public bool isSwapping = false;
+    public bool isSelling  = false;
     private int _pendingSwapSlotIndex = -1;
 
     void Awake()
@@ -170,31 +179,40 @@ public class CasinoManager : MonoBehaviour
         _pendingSwapSlotIndex = -1;
     }
 
-    // ── Sair: decide qual cena carregar pelo round atual ──────────────
-    private void Exit()
+    public void ToggleSellMode()
     {
-        Time.timeScale = 1f;
+        if (isSwapping) return; // Não permite vender enquanto está trocando
+        isSelling = !isSelling;
+        UpdateCoinsUI();
 
-        int round = (levelData != null) ? levelData.currentRound : 1;
-
-        if (round == 2)
-        {
-            Debug.Log($"[Casino] Round {round} → voltando para {desertSceneName} (Boss Cobra)");
-            SceneManager.LoadScene(desertSceneName);
-        }
-        else if (round == 4)
-        {
-            Debug.Log($"[Casino] Round {round} → voltando para {spiderSceneName} (Boss Aranha)");
-            SceneManager.LoadScene(spiderSceneName);
-        }
-        else if (round >= 6)
-        {
-            Debug.Log($"[Casino] Round {round} → voltando para ScorpionScene (Boss Escorpiao)");
-            SceneManager.LoadScene("ScorpionScene");
-        }
-        else
-        {
-            SceneManager.LoadScene(desertSceneName);
-        }
+        if (isSelling && coinsText != null)
+            coinsText.text = "MODO VENDA: Clique em uma arma para vender!";
     }
+
+    public void SellWeapon(int inventoryIndex)
+    {
+        if (!isSelling) return;
+        if (inventoryIndex < 0 || inventoryIndex >= weaponInventory.obtainedWeapons.Count) return;
+
+        GameObject prefab = weaponInventory.obtainedWeapons[inventoryIndex];
+        int sellValue = 0;
+
+        // Procura o preço original
+        foreach (var item in allWeapons)
+        {
+            if (item.weaponPrefab == prefab)
+            {
+                sellValue = item.price / 2;
+                break;
+            }
+        }
+
+        walletData.coins += sellValue;
+        weaponInventory.RemoveWeapon(inventoryIndex);
+        UpdateCoinsUI();
+
+        Debug.Log($"[Casino] Vendeu arma por {sellValue} moedas.");
+    }
+
+    // Exit() moved to top
 }

@@ -21,7 +21,10 @@ public class EnemyMelee : MonoBehaviour
     {
         if (Time.time < _nextAttackTime) return;
 
-        if (other.TryGetComponent(out PlayerHealth playerHealth))
+        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+        if (playerHealth == null) playerHealth = other.GetComponentInParent<PlayerHealth>();
+
+        if (playerHealth != null)
         {
             if (playerHealth.IsInvincible) return;
 
@@ -29,7 +32,10 @@ public class EnemyMelee : MonoBehaviour
 
             if (appliesParalysis)
             {
-                if (other.TryGetComponent(out PlayerController controller))
+                PlayerController controller = other.GetComponent<PlayerController>();
+                if (controller == null) controller = other.GetComponentInParent<PlayerController>();
+                
+                if (controller != null)
                 {
                     controller.Paralyze(paralyzeDuration);
                 }

@@ -19,6 +19,13 @@ public class WeaponInventory : ScriptableObject
         OnInventoryChanged?.Invoke();
     }
 
+    public void RemoveWeapon(int index)
+    {
+        if (index < 0 || index >= obtainedWeapons.Count) return;
+        obtainedWeapons.RemoveAt(index);
+        OnInventoryChanged?.Invoke();
+    }
+
     public void SwapWeapons(int indexA, int indexB)
     {
         if (indexA < 0 || indexA >= obtainedWeapons.Count) return;

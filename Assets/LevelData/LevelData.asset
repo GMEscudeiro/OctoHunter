@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b628b5a6637b64f7a262d9c09c7d2fb, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  totalGlobalRounds: 1
+  roundInCurrentSpecies: 1
+  currentSpeciesIndex: 0
+  collectedShipPartsCount: 0
+  allAvailableSpecies:
+  - {fileID: 11400000, guid: 4631aee5b00b62e97a5c69371696e55d, type: 2}
+  - {fileID: 11400000, guid: 33230b92b89ed259c9301ddf3ac029dd, type: 2}
+  - {fileID: 11400000, guid: 7e9f01e0397b2321c98d314adabcfc71, type: 2}
+  shuffledSpeciesList:
+  - {fileID: 11400000, guid: 4631aee5b00b62e97a5c69371696e55d, type: 2}
+  - {fileID: 11400000, guid: 7e9f01e0397b2321c98d314adabcfc71, type: 2}
+  - {fileID: 11400000, guid: 33230b92b89ed259c9301ddf3ac029dd, type: 2}

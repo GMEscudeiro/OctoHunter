@@ -33,7 +33,10 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (_hasHit) return;
 
-        if (other.TryGetComponent(out PlayerHealth playerHealth))
+        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+        if (playerHealth == null) playerHealth = other.GetComponentInParent<PlayerHealth>();
+
+        if (playerHealth != null)
         {
             _hasHit = true;
             playerHealth.TakeDamage(_damage);
