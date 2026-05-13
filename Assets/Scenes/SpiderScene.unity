@@ -551,6 +551,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3609642132502919487, guid: ea2a9f957078e683291d460c7dfe38e4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609642132502919487, guid: ea2a9f957078e683291d460c7dfe38e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 475
+      objectReference: {fileID: 0}
     - target: {fileID: 7940339796242616391, guid: ea2a9f957078e683291d460c7dfe38e4, type: 3}
       propertyPath: m_Name
       value: GameUI
@@ -1289,6 +1297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxLives: 3
   invincibilityDuration: 1.5
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1832756709
 GameObject:
   m_ObjectHideFlags: 0

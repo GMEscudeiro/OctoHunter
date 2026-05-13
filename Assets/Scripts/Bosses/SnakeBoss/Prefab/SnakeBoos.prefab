@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc139c582aa65fe3584aae6e8d671bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 200
+  maxHealth: 400
   damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!50 &1958172594064118246
 Rigidbody2D:
@@ -239,7 +239,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2439005330682844856, guid: afd6d60323b041841957fb1567ca32d9, type: 3}
-  m_Color: {r: 0.2595348, g: 0.509434, b: 0.24894981, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -266,6 +266,7 @@ MonoBehaviour:
   reachTolerance: 0.5
   retreatSpeed: 4
   retreatDuration: 1.2
+  rotationOffset: 0
 --- !u!114 &-24814171114284593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +281,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMelee
   damage: 1
   attackCooldown: 1.5
+  appliesParalysis: 0
+  paralyzeDuration: 2
+  appliesInfection: 0
+  infectDuration: 2
 --- !u!95 &8762515828975951151
 Animator:
   serializedVersion: 7

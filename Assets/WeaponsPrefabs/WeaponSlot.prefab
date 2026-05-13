@@ -92,7 +92,8 @@ MonoBehaviour:
   iconImage: {fileID: 2494644110562469275}
   frameImage: {fileID: 9177125027118442594}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedColor: {r: 1, g: 0.09263802, b: 0.015686274, a: 1}
+  selectedOverlay: {fileID: 0}
 --- !u!1 &8324795952500213029
 GameObject:
   m_ObjectHideFlags: 0

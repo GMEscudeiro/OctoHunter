@@ -19,10 +19,20 @@ public class EnemyMelee : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        TryDealDamage(other.gameObject);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        TryDealDamage(collision.gameObject);
+    }
+
+    private void TryDealDamage(GameObject target)
+    {
         if (Time.time < _nextAttackTime) return;
 
-        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-        if (playerHealth == null) playerHealth = other.GetComponentInParent<PlayerHealth>();
+        PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
+        if (playerHealth == null) playerHealth = target.GetComponentInParent<PlayerHealth>();
 
         if (playerHealth != null)
         {
@@ -32,8 +42,8 @@ public class EnemyMelee : MonoBehaviour
 
             if (appliesParalysis)
             {
-                PlayerController controller = other.GetComponent<PlayerController>();
-                if (controller == null) controller = other.GetComponentInParent<PlayerController>();
+                PlayerController controller = target.GetComponent<PlayerController>();
+                if (controller == null) controller = target.GetComponentInParent<PlayerController>();
                 
                 if (controller != null)
                 {

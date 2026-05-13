@@ -16,11 +16,12 @@ MonoBehaviour:
   roundInCurrentSpecies: 1
   currentSpeciesIndex: 0
   collectedShipPartsCount: 0
+  shipPartPrefab: {fileID: 1046406996732688244, guid: ebb22dc219bcc72968c22382f5d13e39, type: 3}
   allAvailableSpecies:
+  - {fileID: 11400000, guid: 7e9f01e0397b2321c98d314adabcfc71, type: 2}
   - {fileID: 11400000, guid: 4631aee5b00b62e97a5c69371696e55d, type: 2}
   - {fileID: 11400000, guid: 33230b92b89ed259c9301ddf3ac029dd, type: 2}
-  - {fileID: 11400000, guid: 7e9f01e0397b2321c98d314adabcfc71, type: 2}
   shuffledSpeciesList:
-  - {fileID: 11400000, guid: 4631aee5b00b62e97a5c69371696e55d, type: 2}
   - {fileID: 11400000, guid: 7e9f01e0397b2321c98d314adabcfc71, type: 2}
   - {fileID: 11400000, guid: 33230b92b89ed259c9301ddf3ac029dd, type: 2}
+  - {fileID: 11400000, guid: 4631aee5b00b62e97a5c69371696e55d, type: 2}

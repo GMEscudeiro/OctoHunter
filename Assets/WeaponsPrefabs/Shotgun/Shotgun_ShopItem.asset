@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
   weaponName: Shotgun
   weaponPrefab: {fileID: 8127680015362568567, guid: 117f3cfe0da35794da3ca549734cb2a0, type: 3}
-  price: 10
+  price: 20
   icon: {fileID: -4672384823359296031, guid: fcac3a4ad8b891842a081d2dc8a054ee, type: 3}
   description: "Dispara um leque de proj\xE9teis devastador. Inimigos pr\xF3ximos
     n\xE3o t\xEAm para onde correr."

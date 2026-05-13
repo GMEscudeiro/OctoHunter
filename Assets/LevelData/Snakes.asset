@@ -16,7 +16,9 @@ MonoBehaviour:
   sceneName: SnakeScene
   commonEnemies:
   - {fileID: 6037047060153579998, guid: 130ac84eecfa95945b6365ea3515864a, type: 3}
+  - {fileID: 6037047060153579998, guid: 6f47a368620337699b0032281004bbe6, type: 3}
   bossPrefab: {fileID: 6802183786486168160, guid: f2b482cf3b6d6fb4f9b0a15a6954928b, type: 3}
   shipPartIcon: {fileID: 0}
   introDialogue: {fileID: 0}
-  victoryDialogue: {fileID: 0}
+  normalRoundVictoryDialogue: {fileID: 0}
+  bossVictoryDialogues: []

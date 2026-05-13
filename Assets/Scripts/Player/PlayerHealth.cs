@@ -9,6 +9,11 @@ public class PlayerHealth : MonoBehaviour
     [Header("Invincibility")]
     public float invincibilityDuration = 1.5f;
 
+    [Header("Visual Feedback")]
+    public Color damageColor = Color.red;
+    private SpriteRenderer _spriteRenderer;
+    private Color _originalColor = Color.white;
+
     public int CurrentLives { get; private set; }
     public bool IsInvincible { get; private set; }
 
@@ -19,6 +24,9 @@ public class PlayerHealth : MonoBehaviour
     {
         CurrentLives = maxLives;
         OnLivesChanged?.Invoke(CurrentLives);
+
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
     }
 
     public void TakeDamage(int amount = 1)
@@ -27,6 +35,8 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentLives -= amount;
         OnLivesChanged?.Invoke(CurrentLives);
+        
+        FlashDamageEffect();
 
         if (CurrentLives <= 0)
         {
@@ -35,6 +45,19 @@ public class PlayerHealth : MonoBehaviour
         }
 
         StartCoroutine(InvincibilityRoutine());
+    }
+
+    private void FlashDamageEffect()
+    {
+        if (_spriteRenderer == null) return;
+        
+        _spriteRenderer.color = damageColor;
+        Invoke(nameof(ResetColor), 0.1f);
+    }
+
+    private void ResetColor()
+    {
+        if (_spriteRenderer != null) _spriteRenderer.color = _originalColor;
     }
 
     private System.Collections.IEnumerator InvincibilityRoutine()

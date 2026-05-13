@@ -36,6 +36,13 @@ public class DialogueUI : MonoBehaviour
         SetupStyle(data.style);
         
         dialoguePanel.SetActive(true);
+
+        // Garante que o container começa oculto até a primeira entrada definir sua visibilidade
+        if (cutsceneImageContainer != null)
+            cutsceneImageContainer.gameObject.SetActive(false);
+        else
+            Debug.LogWarning("[DialogueUI] cutsceneImageContainer não está referenciado no Inspector!");
+
         DisplayNextEntry();
     }
 
@@ -75,18 +82,33 @@ public class DialogueUI : MonoBehaviour
         
         if (clickIndicator != null) clickIndicator.SetActive(false);
 
+        // Troca a borda de acordo com o personagem da entrada (ou volta ao padrão do estilo)
+        if (borderImage != null)
+        {
+            if (entry.borderSprite != null)
+                borderImage.sprite = entry.borderSprite;
+            else
+                SetupStyle(_currentData.style);
+        }
+
         // Update image
         if (cutsceneImageContainer != null)
         {
             if (entry.displayImage != null)
             {
+                Debug.Log($"[DialogueUI] Exibindo imagem: {entry.displayImage.name}");
                 cutsceneImageContainer.sprite = entry.displayImage;
                 cutsceneImageContainer.gameObject.SetActive(true);
             }
             else
             {
+                Debug.Log("[DialogueUI] Entrada sem imagem — ocultando container.");
                 cutsceneImageContainer.gameObject.SetActive(false);
             }
+        }
+        else
+        {
+            Debug.LogWarning("[DialogueUI] cutsceneImageContainer é null durante TypeEntry!");
         }
 
         foreach (char letter in entry.text.ToCharArray())
@@ -139,7 +161,8 @@ public class DialogueUI : MonoBehaviour
         if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
         _currentData = null;
 
-        OnDialogueEnded?.Invoke();
-        OnDialogueEnded = null; // Clear to prevent accidental double firing
+        System.Action tempAction = OnDialogueEnded;
+        OnDialogueEnded = null; // Clear before invoking to prevent wiping out new chained subscriptions
+        tempAction?.Invoke();
     }
 }

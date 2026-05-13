@@ -16,7 +16,8 @@ MonoBehaviour:
   sceneName: ScorpionScene
   commonEnemies:
   - {fileID: 6037047060153579998, guid: b04056fd7a3262e4aa0fafa639d98f4b, type: 3}
-  bossPrefab: {fileID: 6037047060153579998, guid: b04056fd7a3262e4aa0fafa639d98f4b, type: 3}
+  bossPrefab: {fileID: 7048810587991176437, guid: 8ffc61f5cdc3ead4babfb11ccce0c92a, type: 3}
   shipPartIcon: {fileID: 0}
   introDialogue: {fileID: 0}
-  victoryDialogue: {fileID: 0}
+  normalRoundVictoryDialogue: {fileID: 0}
+  bossVictoryDialogues: []

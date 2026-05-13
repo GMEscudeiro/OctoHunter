@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247017f9670cfc1428f1bca5cf4d1bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bazooka
-  damage: 10
+  damage: 9
   attackRate: 1
   specialEffect: {fileID: 0}
   projectilePrefab: {fileID: 4738388518727071162, guid: cf87cc0892369d51ebe093023337ce11, type: 3}

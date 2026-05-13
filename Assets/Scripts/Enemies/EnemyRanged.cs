@@ -13,6 +13,9 @@ public class EnemyRanged : MonoBehaviour
     public float attackRate     = 2.0f;  // tiros por segundo (1/attackRate = intervalo)
     public int   damage         = 1;     // dano que o projétil causa ao player
 
+    [Header("Visual Correction")]
+    public float rotationOffset = 90f;
+
     private Transform      _playerTransform;
     private Rigidbody2D    _rb;
     private float          _nextAttackTime;
@@ -35,7 +38,7 @@ public class EnemyRanged : MonoBehaviour
 
         // Rotaciona para encarar o player
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        _rb.rotation = angle;
+        _rb.rotation = angle + rotationOffset;
 
         if (distance > attackRange)
         {
@@ -62,9 +65,12 @@ public class EnemyRanged : MonoBehaviour
 
         if (projectilePrefab == null) return;
 
+        // Calcula o ângulo puro (sem offset) para o projétil
+        float pureAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
         // Spawna o projétil levemente à frente do inimigo
         Vector2 spawnPos = _rb.position + direction * 0.6f;
-        GameObject bullet = Instantiate(projectilePrefab, spawnPos, transform.rotation);
+        GameObject bullet = Instantiate(projectilePrefab, spawnPos, Quaternion.Euler(0, 0, pureAngle));
 
         if (bullet.TryGetComponent(out EnemyProjectile ep))
         {

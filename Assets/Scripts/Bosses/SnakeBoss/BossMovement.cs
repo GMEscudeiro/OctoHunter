@@ -12,6 +12,9 @@ public class BossMovement : MonoBehaviour
     public float retreatSpeed    = 4f;
     public float retreatDuration = 1.2f;
 
+    [Header("Visual Correction")]
+    public float rotationOffset = 90f;
+
     public enum BossState { Chasing, Retreating, Idle }
     public BossState CurrentState { get; private set; } = BossState.Chasing;
 
@@ -96,7 +99,7 @@ public class BossMovement : MonoBehaviour
     {
         Vector2 direction = (Vector2)_playerTransform.position - _rb.position;
         float   angle     = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        _rb.rotation      = angle;
+        _rb.rotation      = angle + rotationOffset;
     }
 
     public void SetState(BossState state, float duration = 0f)

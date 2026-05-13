@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85c0599a13c5c13fbefa264abe2cd46, type: 3}
+  m_Name: HistoriaInicial
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  entries:
+  - text: "Estou a caminho do objetivo central, c\xE2mbio."
+    displayImage: {fileID: -7804727594783791085, guid: 62f88cc358f9a2864b968d9b8149419d, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: "Me$#!, o que \xE9 isso agora? Desse jeito a nave n\xE3o vai aguentar!"
+    displayImage: {fileID: -5453799318760675382, guid: 7b849eca5bead100396eb4b255a384e9, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: AAAAAAAAAAHHHH!
+    displayImage: {fileID: 3129370254906604291, guid: 432ea2990a8a98d778d05bb7752aac73, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: ...
+    displayImage: {fileID: -259197137029092164, guid: 177859de12cba57cb914aa6592cbe383, type: 3}
+    borderSprite: {fileID: 2107941376569620652, guid: aab46b2a65251ecef8dc476baf969b9d, type: 3}
+  - text: '*sons de metal batendo*'
+    displayImage: {fileID: -259197137029092164, guid: 177859de12cba57cb914aa6592cbe383, type: 3}
+    borderSprite: {fileID: 2107941376569620652, guid: aab46b2a65251ecef8dc476baf969b9d, type: 3}
+  - text: ONDE EU ESTOU!?
+    displayImage: {fileID: 4106287030408729668, guid: 559206925b179d4b0a5ad855d9eed1bc, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: "Voc\xEA ta no meu ferro velho! Te encontrei jogado no ch\xE3o ali fora."
+    displayImage: {fileID: 4106287030408729668, guid: 559206925b179d4b0a5ad855d9eed1bc, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "Cad\xEA minha nave!? Estava no meio de uma miss\xE3o!"
+    displayImage: {fileID: 133982719826790466, guid: 21e1e3ad051748efa955dc399a37eedf, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: "Pra recuperar aquela lata velha voc\xEA vai ter que enfrentar a turma
+      que roubou ela..."
+    displayImage: {fileID: 133982719826790466, guid: 21e1e3ad051748efa955dc399a37eedf, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: EU FUI ROUBADO!?!? Po$#! como vou explicar isso pra central?
+    displayImage: {fileID: 133982719826790466, guid: 21e1e3ad051748efa955dc399a37eedf, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: "Cada cachorro que lamba sua cac#$!... N\xE3o tenho nada a ver com isso."
+    displayImage: {fileID: 5470931943617588354, guid: 974f60fb3002f2adabd1100b9a21f715, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "Voc\xEA vai me ajudar sim! Preciso sair desse lix\xE3o."
+    displayImage: {fileID: 1518384666275855854, guid: dd949f9ac2740d38bb9cc8098767fa6e, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  - text: "Mer$#, ta bom... Mas s\xF3 porque j\xE1 queria acabar com eles (e porque
+      voc\xEA parece perigoso)."
+    displayImage: {fileID: 1518384666275855854, guid: dd949f9ac2740d38bb9cc8098767fa6e, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: Algum tempo depois...
+    displayImage: {fileID: -259197137029092164, guid: 177859de12cba57cb914aa6592cbe383, type: 3}
+    borderSprite: {fileID: 2107941376569620652, guid: aab46b2a65251ecef8dc476baf969b9d, type: 3}
+  - text: Seguinte, como da pra ver nesse mapa improvisado que fiz...
+    displayImage: {fileID: 9141308658101922390, guid: 3f96e9b532c4721348ee6f7ff2745086, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "Temos 3 gangues de inimigos que voc\xEA deve derrotar pra recuperar suas
+      partes da nave."
+    displayImage: {fileID: 9141308658101922390, guid: 3f96e9b532c4721348ee6f7ff2745086, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "Derrotando todos, voc\xEA traz as partes aqui que eu arrumo sua lata velha."
+    displayImage: {fileID: 9141308658101922390, guid: 3f96e9b532c4721348ee6f7ff2745086, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "Voc\xEA entendeu n\xE9, agora vamo logo pra a\xE7\xE3o que eu t\xF4 ansioso!"
+    displayImage: {fileID: 9141308658101922390, guid: 3f96e9b532c4721348ee6f7ff2745086, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: Pega aqui essa pistola velha, e vamos enfrentar os primeiros deles!
+    displayImage: {fileID: 9141308658101922390, guid: 3f96e9b532c4721348ee6f7ff2745086, type: 3}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  style: 0
+  isCutscene: 1
+  ambientDisplayDuration: 3
+  typingSpeed: 0.05

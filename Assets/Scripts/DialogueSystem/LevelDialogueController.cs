@@ -6,6 +6,7 @@ public class LevelDialogueController : MonoBehaviour
     [Header("Dialogues")]
     public DialogueData levelStartDialogue;
     public DialogueData fewEnemiesDialogue;
+    public DialogueData partsDroppedDialogue;
     public int enemiesThreshold = 2;
 
     [Header("Settings")]
@@ -18,12 +19,14 @@ public class LevelDialogueController : MonoBehaviour
     {
         WaveSpawner.OnHordeStarted += HandleHordeStarted;
         Enemy.OnEnemyDied += HandleEnemyDeath;
+        WaveSpawner.OnBossPartsDropped += HandlePartsDropped;
     }
 
     void OnDisable()
     {
         WaveSpawner.OnHordeStarted -= HandleHordeStarted;
         Enemy.OnEnemyDied -= HandleEnemyDeath;
+        WaveSpawner.OnBossPartsDropped -= HandlePartsDropped;
     }
 
     void Start()
@@ -56,6 +59,14 @@ public class LevelDialogueController : MonoBehaviour
         {
             DialogueManager.Instance.StartDialogue(fewEnemiesDialogue);
             _hasTriggeredFewEnemies = true;
+        }
+    }
+
+    private void HandlePartsDropped()
+    {
+        if (partsDroppedDialogue != null && DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.StartDialogue(partsDroppedDialogue);
         }
     }
 }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5cc1a66697e3c04dab133246c7ed531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flamethrower
-  damage: 1
+  damage: 3
   attackRate: 0.05
   specialEffect: {fileID: 11400000, guid: 5f7ed742f96c5d0b5a1a554f005e7e4a, type: 2}
   projectilePrefab: {fileID: 6654461722700053096, guid: 92c953c8bc02f034e8bb10ab9a2aac85, type: 3}

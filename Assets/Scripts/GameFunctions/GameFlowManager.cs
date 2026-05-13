@@ -13,7 +13,15 @@ public class GameFlowManager : MonoBehaviour
     [SerializeField] private string startMenuSceneName = "StartMenu";
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private List<DialogueData> gameVictoryDialogues;
+    [SerializeField] private List<DialogueData> beforeFirstRoundCutsceneDialogue;
+    [SerializeField] private List<DialogueData> afterFirstRoundCutscene;
+    [SerializeField] private List<DialogueData> gameOverDialogues;
+    
+    [Header("Inventory Settings")]
+    [SerializeField] private WeaponInventory playerInventory;
+    [SerializeField] private GameObject startingWeaponPrefab;
 
+    private bool _firstRoundCutscenePlayed = false;
     private List<DialogueData> _currentSequence;
     private int _currentSequenceIndex;
     private System.Action _onSequenceComplete;
@@ -31,10 +39,45 @@ public class GameFlowManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        PlayerHealth.OnPlayerDied += HandlePlayerDeath;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnPlayerDied -= HandlePlayerDeath;
+    }
+
+    private void HandlePlayerDeath()
+    {
+        if (gameOverDialogues != null && gameOverDialogues.Count > 0)
+        {
+            PlayDialogueSequence(gameOverDialogues, () => 
+            {
+                SceneManager.LoadScene(startMenuSceneName);
+            });
+        }
+        else
+        {
+            SceneManager.LoadScene(startMenuSceneName);
+        }
+    }
+
     public void InitializeSession()
     {
         levelData.ResetProgress();
         if (walletData != null) walletData.coins = 0;
+        _firstRoundCutscenePlayed = false;
+        
+        if (playerInventory != null)
+        {
+            playerInventory.ClearInventory();
+            if (startingWeaponPrefab != null)
+            {
+                playerInventory.AddWeapon(startingWeaponPrefab);
+            }
+        }
         
         // Shuffle species
         levelData.shuffledSpeciesList = levelData.allAvailableSpecies
@@ -107,6 +150,24 @@ public class GameFlowManager : MonoBehaviour
 
     public void HandleNormalRoundVictory()
     {
+        if (!_firstRoundCutscenePlayed && afterFirstRoundCutscene != null && afterFirstRoundCutscene.Count > 0)
+        {
+            _firstRoundCutscenePlayed = true;
+            bool hasGameplayDialogue = beforeFirstRoundCutsceneDialogue != null && beforeFirstRoundCutsceneDialogue.Count > 0;
+            if (hasGameplayDialogue)
+            {
+                PlayDialogueSequence(beforeFirstRoundCutsceneDialogue, () =>
+                {
+                    PlayDialogueSequence(afterFirstRoundCutscene, LoadCasino);
+                });
+            }
+            else
+            {
+                PlayDialogueSequence(afterFirstRoundCutscene, LoadCasino);
+            }
+            return;
+        }
+
         SpeciesData currentSpecies = GetCurrentSpecies();
         if (currentSpecies != null && currentSpecies.normalRoundVictoryDialogue != null)
         {
@@ -121,16 +182,17 @@ public class GameFlowManager : MonoBehaviour
 
     public void HandleBossVictory()
     {
-        levelData.collectedShipPartsCount++;
-        
+        bool isLastBoss = (levelData.shuffledSpeciesList != null && levelData.currentSpeciesIndex >= levelData.shuffledSpeciesList.Count - 1);
+        System.Action onDialogueEnd = isLastBoss ? (System.Action)LoadNextLevel : LoadCasino;
+
         SpeciesData currentSpecies = GetCurrentSpecies();
         if (currentSpecies != null && currentSpecies.bossVictoryDialogues != null && currentSpecies.bossVictoryDialogues.Count > 0)
         {
-            PlayDialogueSequence(currentSpecies.bossVictoryDialogues, LoadCasino);
+            PlayDialogueSequence(currentSpecies.bossVictoryDialogues, onDialogueEnd);
         }
         else
         {
-            LoadCasino();
+            onDialogueEnd?.Invoke();
         }
     }
 

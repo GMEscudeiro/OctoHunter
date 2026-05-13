@@ -9,6 +9,7 @@ public class LevelData : ScriptableObject
     public int roundInCurrentSpecies = 1;
     public int currentSpeciesIndex = 0;
     public int collectedShipPartsCount = 0;
+    public GameObject shipPartPrefab;
 
     [Header("Species Pool")]
     public List<SpeciesData> allAvailableSpecies;

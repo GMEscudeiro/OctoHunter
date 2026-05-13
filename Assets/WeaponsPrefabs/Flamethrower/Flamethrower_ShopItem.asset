@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
   weaponName: Flamethrower
   weaponPrefab: {fileID: 6681448865997781737, guid: a871a0b8a54b251459cb71cbccbf49be, type: 3}
-  price: 15
+  price: 20
   icon: {fileID: 2372594191260796134, guid: fcac3a4ad8b891842a081d2dc8a054ee, type: 3}
   description: "Projeta uma rajada de chamas cont\xEDnua. Perfeito para quem gosta
     de ver os inimigos correrem."
-  rarity: 2
+  rarity: 1

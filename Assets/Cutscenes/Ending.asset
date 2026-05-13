@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85c0599a13c5c13fbefa264abe2cd46, type: 3}
+  m_Name: Ending
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  entries:
+  - text: Depois de coletar todas as partes da nave, Leroy e o Polvo passaram o dia
+      montando a nave...
+    displayImage: {fileID: -6168856860996528158, guid: 18c3a6ff8c008f623a85f6a542d8c33c, type: 3}
+    borderSprite: {fileID: 2107941376569620652, guid: aab46b2a65251ecef8dc476baf969b9d, type: 3}
+  - text: Depois de muito tempo...
+    displayImage: {fileID: -259197137029092164, guid: 177859de12cba57cb914aa6592cbe383, type: 3}
+    borderSprite: {fileID: 2107941376569620652, guid: aab46b2a65251ecef8dc476baf969b9d, type: 3}
+  - text: De volta aos trabalhos....
+    displayImage: {fileID: -7804727594783791085, guid: 62f88cc358f9a2864b968d9b8149419d, type: 3}
+    borderSprite: {fileID: -3789682646235426913, guid: 6b70dd3f8116f81f9bd4c7c58278abf1, type: 3}
+  style: 0
+  isCutscene: 1
+  ambientDisplayDuration: 3
+  typingSpeed: 0.05

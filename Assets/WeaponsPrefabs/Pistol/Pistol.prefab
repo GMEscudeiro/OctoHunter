@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.9800041, a: 1}
+  m_Sprite: {fileID: -8821620907868167463, guid: 14cc310e2b4cf44ea94a7025c213944e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805bb35b3a967cafdb57b0fdafb7b936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pistol
-  damage: 10
+  damage: 8
   attackRate: 0.5
   specialEffect: {fileID: 0}
   projectilePrefab: {fileID: 6438014449361756695, guid: 03c0bb96656865407ba8145cc06bce07, type: 3}

@@ -22,8 +22,12 @@ public class Enemy : MonoBehaviour
         if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
     }
 
+    private bool _isDead = false;
+
     public void TakeDamage(HitData data)
     {
+        if (_isDead) return;
+
         _currentHealth -= data.Damage;
 
         FlashDamageEffect();
@@ -35,6 +39,7 @@ public class Enemy : MonoBehaviour
 
         if (_currentHealth <= 0)
         {
+            _isDead = true;
             Die(data.Attacker);
         }
     }

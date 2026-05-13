@@ -196,7 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee4dbfb43d32b02cb89592ce1b87f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  moveSpeed: 2
+  moveSpeed: 3.5
+  projectilePrefab: {fileID: 0}
+  attackRate: 2
 --- !u!114 &6534705912957037191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +213,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMelee
   damage: 1
   attackCooldown: 1
+  appliesParalysis: 0
+  paralyzeDuration: 2
+  appliesInfection: 0
+  infectDuration: 2
 --- !u!114 &-2499186389821477545
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,9 +8,12 @@ public class WeaponSlotUI : MonoBehaviour, IPointerClickHandler
     public Image iconImage;
     public Image frameImage;
     
-    [Header("Colors")]
+    [Header("Colors (Optional if using Overlay)")]
     public Color normalColor = Color.white;
     public Color selectedColor = Color.yellow;
+
+    [Header("Selection Visual")]
+    public GameObject selectedOverlay; // Se você preferir ativar uma borda/imagem por cima
 
     private int _index;
     private WeaponBarUI _bar;
@@ -21,6 +24,8 @@ public class WeaponSlotUI : MonoBehaviour, IPointerClickHandler
         _index = index;
         _bar = bar;
         
+        if (frameImage == null) frameImage = GetComponent<Image>();
+
         if (iconImage != null) 
         {
             iconImage.sprite = icon;
@@ -32,6 +37,14 @@ public class WeaponSlotUI : MonoBehaviour, IPointerClickHandler
     public void SetSelected(bool selected)
     {
         _isSelected = selected;
+        
+        // Se houver um objeto de "Borda Selecionada", ativa/desativa ele
+        if (selectedOverlay != null)
+        {
+            selectedOverlay.SetActive(selected);
+        }
+
+        // Continua mudando a cor do frame caso seja útil
         if (frameImage != null)
         {
             frameImage.color = selected ? selectedColor : normalColor;

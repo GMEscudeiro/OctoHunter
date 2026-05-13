@@ -45,6 +45,7 @@ public class WaveSpawner : MonoBehaviour
     public static event System.Action<int, int> OnHordeStarted;   // round, horde
     public static event System.Action<int>      OnRoundCompleted; // round
     public static event System.Action           OnBossRoundStarted;
+    public static event System.Action           OnBossPartsDropped;
 
     void OnEnable()  => Enemy.OnEnemyDied += HandleEnemyDeath;
     void OnDisable() => Enemy.OnEnemyDied -= HandleEnemyDeath;
@@ -108,8 +109,7 @@ public class WaveSpawner : MonoBehaviour
         }
         else
         {
-            // Vai ao cassino entre rounds normais
-            GameFlowManager.Instance.LoadCasino();
+            GameFlowManager.Instance.HandleNormalRoundVictory();
         }
     }
 
@@ -148,9 +148,38 @@ public class WaveSpawner : MonoBehaviour
                            new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * spawnRadius;
         
         _enemiesAlive = 1;
-        Instantiate(_currentSpecies.bossPrefab, spawnPos, Quaternion.identity);
+        GameObject boss = Instantiate(_currentSpecies.bossPrefab, spawnPos, Quaternion.identity);
+
+        Vector2 bossDeathPos = spawnPos;
+        if (boss.TryGetComponent(out Enemy bossEnemy))
+        {
+            bossEnemy.OnDied += () => 
+            {
+                if (boss != null) bossDeathPos = boss.transform.position;
+            };
+        }
 
         yield return new WaitUntil(() => _enemiesAlive <= 0);
+
+        if (levelData.shipPartPrefab != null)
+        {
+            Instantiate(levelData.shipPartPrefab, bossDeathPos + new Vector2(1.5f, 0f), Quaternion.identity);
+            Instantiate(levelData.shipPartPrefab, bossDeathPos + new Vector2(-1.5f, 0f), Quaternion.identity);
+            OnBossPartsDropped?.Invoke();
+        }
+        else
+        {
+            Debug.LogWarning("[WaveSpawner] shipPartPrefab não referenciado no LevelData!");
+        }
+
+        int partsCollectedThisRound = 0;
+        System.Action onPartCollected = () => { partsCollectedThisRound++; };
+        ShipPartPickup.OnPartCollected += onPartCollected;
+
+        // Espera o jogador coletar as duas peças, ou ignora se o prefab não estiver setado
+        yield return new WaitUntil(() => partsCollectedThisRound >= 2 || levelData.shipPartPrefab == null);
+
+        ShipPartPickup.OnPartCollected -= onPartCollected;
     }
 
     private IEnumerator SpawnHorde(int count, float interval)

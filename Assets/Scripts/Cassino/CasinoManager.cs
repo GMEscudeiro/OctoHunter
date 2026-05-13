@@ -57,6 +57,11 @@ public class CasinoManager : MonoBehaviour
         RollNewOffers();
     }
 
+    [Header("Probabilidades (Pesos)")]
+    public float chanceComum = 60f;
+    public float chanceRaro = 30f;
+    public float chanceEpico = 10f;
+
     // ── Sorteio ──────────────────────────────────────────────────────
     private void RollNewOffers()
     {
@@ -66,12 +71,39 @@ public class CasinoManager : MonoBehaviour
         {
             if (pool.Count == 0) break;
 
-            int index = Random.Range(0, pool.Count);
-            _currentOffer[i] = pool[index];
-            pool.RemoveAt(index);   // sem repetição na mesma oferta
+            WeaponShopItem.Rarity selectedRarity = GetRandomRarity();
+            List<WeaponShopItem> filteredPool = pool.FindAll(item => item.rarity == selectedRarity);
+
+            if (filteredPool.Count == 0)
+            {
+                // Fallback caso a raridade sorteada não tenha mais itens disponíveis
+                int fallbackIndex = Random.Range(0, pool.Count);
+                _currentOffer[i] = pool[fallbackIndex];
+                pool.RemoveAt(fallbackIndex);
+            }
+            else
+            {
+                int indexInFiltered = Random.Range(0, filteredPool.Count);
+                WeaponShopItem chosenItem = filteredPool[indexInFiltered];
+                _currentOffer[i] = chosenItem;
+                pool.Remove(chosenItem); // Remove para não repetir o mesmo item
+            }
         }
 
         RefreshSlotUI();
+    }
+
+    private WeaponShopItem.Rarity GetRandomRarity()
+    {
+        float totalWeight = chanceComum + chanceRaro + chanceEpico;
+        float roll = Random.Range(0f, totalWeight);
+
+        if (roll <= chanceComum)
+            return WeaponShopItem.Rarity.Comum;
+        else if (roll <= chanceComum + chanceRaro)
+            return WeaponShopItem.Rarity.Raro;
+        else
+            return WeaponShopItem.Rarity.Epico;
     }
 
     public void Reroll()
@@ -79,6 +111,7 @@ public class CasinoManager : MonoBehaviour
         if (walletData.coins < RerollCost)
         {
             Debug.Log("[Casino] Moedas insuficientes para reroll.");
+            CasinoDialogueManager.Instance?.PlayNoCoinsDialogue();
             return;
         }
 
@@ -138,6 +171,7 @@ public class CasinoManager : MonoBehaviour
         if (walletData.coins < item.price)
         {
             Debug.Log("[Casino] Moedas insuficientes.");
+            CasinoDialogueManager.Instance?.PlayNoCoinsDialogue();
             return;
         }
 
@@ -146,7 +180,8 @@ public class CasinoManager : MonoBehaviour
             Debug.Log("[Casino] Inventário cheio! Clique em uma arma na barra abaixo para substituir.");
             isSwapping = true;
             _pendingSwapSlotIndex = slotIndex;
-            
+            CasinoDialogueManager.Instance?.PlayInventoryFullDialogue();
+
             if (coinsText != null)
                 coinsText.text = "Clique em um slot abaixo para trocar!";
             return;

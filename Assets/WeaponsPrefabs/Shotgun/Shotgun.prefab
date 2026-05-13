@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a738897313ac024bbc56454c37e18ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shotgun
-  damage: 50
+  damage: 8
   attackRate: 1
   specialEffect: {fileID: 0}
   projectilePrefab: {fileID: 6438014449361756695, guid: 1a93d13c66ac91a4ba329335121338f2, type: 3}

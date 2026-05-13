@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    void Update()
+    protected virtual void Update()
     {
         transform.position += _moveDir * speed * Time.deltaTime;
     }
