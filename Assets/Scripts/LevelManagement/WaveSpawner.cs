@@ -29,6 +29,13 @@ public class WaveSpawner : MonoBehaviour
     public float minSpawnInterval  = 0.4f;
     public float intervalReduction = 0.05f;
 
+    [Header("Boss Scaling")]
+    public int bossBaseHealth    = 100;
+    public int bossHealthPerRound = 25;
+    public int bossBaseMinCoins  = 5;
+    public int bossBaseMaxCoins  = 10;
+    public int bossCoinsPerRound = 3;
+
     [Header("State (read-only)")]
     [SerializeField] private int  _currentRound = 1;
     [SerializeField] private int  _currentHorde = 1;
@@ -153,10 +160,17 @@ public class WaveSpawner : MonoBehaviour
         Vector2 bossDeathPos = spawnPos;
         if (boss.TryGetComponent(out Enemy bossEnemy))
         {
-            bossEnemy.OnDied += () => 
+            bossEnemy.maxHealth = CalculateBossHealth();
+            bossEnemy.OnDied += () =>
             {
                 if (boss != null) bossDeathPos = boss.transform.position;
             };
+        }
+
+        if (boss.TryGetComponent(out CoinDrop bossCoinDrop))
+        {
+            bossCoinDrop.minCoins = CalculateBossMinCoins();
+            bossCoinDrop.maxCoins = CalculateBossMaxCoins();
         }
 
         yield return new WaitUntil(() => _enemiesAlive <= 0);
@@ -227,5 +241,20 @@ public class WaveSpawner : MonoBehaviour
     {
         return Mathf.Max(minSpawnInterval,
                baseSpawnInterval - (levelData.totalGlobalRounds - 1) * intervalReduction);
+    }
+
+    private int CalculateBossHealth()
+    {
+        return bossBaseHealth + (levelData.totalGlobalRounds - 1) * bossHealthPerRound;
+    }
+
+    private int CalculateBossMinCoins()
+    {
+        return bossBaseMinCoins + (levelData.totalGlobalRounds - 1) * bossCoinsPerRound;
+    }
+
+    private int CalculateBossMaxCoins()
+    {
+        return bossBaseMaxCoins + (levelData.totalGlobalRounds - 1) * bossCoinsPerRound;
     }
 }

@@ -9,6 +9,10 @@ public class Projectile : MonoBehaviour
     [Header("Visual Correction")]
     public float rotationOffset = 0f;
 
+    [Header("Frozen Bonus")]
+    public bool  isIceProjectile       = false;
+    public float frozenDamageMultiplier = 2f;
+
     protected HitData _data;
     protected bool _hasHit = false;
     protected Vector3 _moveDir;
@@ -34,9 +38,12 @@ public class Projectile : MonoBehaviour
         if (other.TryGetComponent(out Enemy enemy))
         {
             _hasHit = true;
-            
-            enemy.TakeDamage(_data);
-            
+
+            HitData finalData = _data;
+            if (!isIceProjectile && enemy.TryGetComponent(out FreezeStatus _))
+                finalData.Damage = Mathf.RoundToInt(_data.Damage * frozenDamageMultiplier);
+
+            enemy.TakeDamage(finalData);
             Destroy(gameObject);
         }
         else if (other.CompareTag("Wall"))

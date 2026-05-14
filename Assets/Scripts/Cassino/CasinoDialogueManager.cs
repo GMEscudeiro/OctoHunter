@@ -10,6 +10,11 @@ public class CasinoDialogueManager : MonoBehaviour
     [SerializeField] private DialogueData inventoryFullDialogue;
     [SerializeField] private DialogueData onEnterDialogue;
 
+    [Header("Diálogos de Compra por Raridade")]
+    [SerializeField] private DialogueData buyComumDialogue;
+    [SerializeField] private DialogueData buyRaroDialogue;
+    [SerializeField] private DialogueData buyEpicoDialogue;
+
     private bool _enterDialoguePlayed = false;
 
     void Awake()
@@ -28,6 +33,16 @@ public class CasinoDialogueManager : MonoBehaviour
 
     public void PlayNoCoinsDialogue()       => Play(noCoinsDialogue);
     public void PlayInventoryFullDialogue() => Play(inventoryFullDialogue);
+
+    public void PlayBuyDialogue(WeaponShopItem.Rarity rarity)
+    {
+        switch (rarity)
+        {
+            case WeaponShopItem.Rarity.Comum: Play(buyComumDialogue); break;
+            case WeaponShopItem.Rarity.Raro:  Play(buyRaroDialogue);  break;
+            case WeaponShopItem.Rarity.Epico: Play(buyEpicoDialogue); break;
+        }
+    }
 
     private void Play(DialogueData data)
     {

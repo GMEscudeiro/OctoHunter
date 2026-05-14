@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   entries:
   - text: Falta pouco Polvo, pega eles car!$#%!
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
   style: 0
   isCutscene: 0
+  randomEntry: 0
   ambientDisplayDuration: 3
   typingSpeed: 0.05

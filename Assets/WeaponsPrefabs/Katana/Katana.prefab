@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5380654731578712733}
   - component: {fileID: 4596709406688450956}
   - component: {fileID: 5513921567312602036}
+  - component: {fileID: 7243992238677530055}
   m_Layer: 0
   m_Name: Katana
   m_TagString: Untagged
@@ -120,6 +121,19 @@ MonoBehaviour:
   - {fileID: -5622905725346173873, guid: efdb8736953a5e5bfa7d648e9bf5007c, type: 3}
   swingDuration: 0.1
   swingVisualAngle: 1
+--- !u!114 &7243992238677530055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231761594586788888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c74d57a28a9e93b6a440b91719d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
+  icon: {fileID: -9098171025932215447, guid: 4abe5c9cca44c0047b06378db9070219, type: 3}
 --- !u!1 &8826473689329469748
 GameObject:
   m_ObjectHideFlags: 0

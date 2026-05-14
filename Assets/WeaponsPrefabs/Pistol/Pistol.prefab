@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6461599282629474222}
   - component: {fileID: 2967572841708340792}
   - component: {fileID: 7762504525510430563}
+  - component: {fileID: -8463566052293492035}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -107,3 +108,16 @@ MonoBehaviour:
   attackRate: 0.5
   specialEffect: {fileID: 0}
   projectilePrefab: {fileID: 6438014449361756695, guid: 03c0bb96656865407ba8145cc06bce07, type: 3}
+--- !u!114 &-8463566052293492035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242821774164006700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c74d57a28a9e93b6a440b91719d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
+  icon: {fileID: -8821620907868167463, guid: 14cc310e2b4cf44ea94a7025c213944e, type: 3}

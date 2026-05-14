@@ -20,6 +20,7 @@ public class DialogueUI : MonoBehaviour
     private bool _isTyping = false;
     private DialogueData _currentData;
     private int _entryIndex = 0;
+    private int _stopAtIndex = 0;
 
     void Awake()
     {
@@ -30,7 +31,17 @@ public class DialogueUI : MonoBehaviour
     public void ShowDialogue(DialogueData data)
     {
         _currentData = data;
-        _entryIndex = 0;
+
+        if (data.randomEntry && data.entries.Count > 0)
+        {
+            _entryIndex  = Random.Range(0, data.entries.Count);
+            _stopAtIndex = _entryIndex + 1;
+        }
+        else
+        {
+            _entryIndex  = 0;
+            _stopAtIndex = data.entries.Count;
+        }
         
         // Setup visual style
         SetupStyle(data.style);
@@ -63,7 +74,7 @@ public class DialogueUI : MonoBehaviour
 
     public void DisplayNextEntry()
     {
-        if (_entryIndex < _currentData.entries.Count)
+        if (_entryIndex < _stopAtIndex)
         {
             StopCurrentTyping();
             _typingCoroutine = StartCoroutine(TypeEntry(_currentData.entries[_entryIndex]));

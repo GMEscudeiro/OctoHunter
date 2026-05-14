@@ -12,6 +12,11 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
 
+    public float SpeedMultiplier { get; private set; } = 1f;
+
+    public void SetSpeedMultiplier(float multiplier) => SpeedMultiplier = Mathf.Clamp01(multiplier);
+    public void ResetSpeedMultiplier()                => SpeedMultiplier = 1f;
+
     public static event Action OnEnemyDied;
     public event Action OnDied;
     

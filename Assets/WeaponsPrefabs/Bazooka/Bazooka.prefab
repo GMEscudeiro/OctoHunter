@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 608743881129255233}
   - component: {fileID: 4062098807814726467}
   - component: {fileID: 2283397877374010395}
+  - component: {fileID: 6770350808431363117}
   m_Layer: 0
   m_Name: Bazooka
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MonoBehaviour:
   projectileSpeed: 5
   explosionRadius: 2.5
   explosionDamage: 30
+--- !u!114 &6770350808431363117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188990985201980781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c74d57a28a9e93b6a440b91719d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
+  icon: {fileID: -1481584174962209553, guid: f911363c4f052b26a8ddc6e8638bf529, type: 3}

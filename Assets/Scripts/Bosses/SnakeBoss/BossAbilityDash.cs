@@ -24,10 +24,13 @@ public class BossAbilityDash : MonoBehaviour
         Vector2 direction = ((Vector2)playerTransform.position - rb.position).normalized;
         Debug.Log("[SnakeBoss] Habilidade: Investida!");
 
+        Enemy enemy = rb.GetComponent<Enemy>();
+        float effectiveDashSpeed = dashSpeed * (enemy != null ? enemy.SpeedMultiplier : 1f);
+
         float elapsed = 0f;
         while (elapsed < dashDuration)
         {
-            rb.MovePosition(rb.position + direction * dashSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * effectiveDashSpeed * Time.fixedDeltaTime);
             elapsed += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }

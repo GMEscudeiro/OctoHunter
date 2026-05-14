@@ -11,6 +11,8 @@ public class DialogueData : ScriptableObject
     [Header("Settings")]
     public DialogueStyle style = DialogueStyle.Default;
     public bool isCutscene = false;
+    [Tooltip("Se true, sorteia uma entry aleatória em vez de reproduzir todas em sequência")]
+    public bool randomEntry = false;
     
     [Tooltip("Time each line stays on screen if it's an ambient dialogue")]
     public float ambientDisplayDuration = 3f;

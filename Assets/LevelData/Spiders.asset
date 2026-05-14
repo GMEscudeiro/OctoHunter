@@ -20,5 +20,6 @@ MonoBehaviour:
   bossPrefab: {fileID: 8868797378389503621, guid: 6dd18c09997cfcb50b161e79b55011ed, type: 3}
   shipPartIcon: {fileID: 0}
   introDialogue: {fileID: 0}
-  normalRoundVictoryDialogue: {fileID: 0}
-  bossVictoryDialogues: []
+  normalRoundVictoryDialogue: {fileID: 11400000, guid: fc486343c0d5a3f22bc18ebb4b62fc1c, type: 2}
+  bossVictoryDialogues:
+  - {fileID: 11400000, guid: 8d4fcaa59655f605db7eda716615507a, type: 2}

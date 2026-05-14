@@ -21,10 +21,12 @@ public class BossMovement : MonoBehaviour
     private Rigidbody2D _rb;
     private Transform   _playerTransform;
     private float       _retreatTimer;
+    private Enemy       _enemy;
 
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        _rb    = GetComponent<Rigidbody2D>();
+        _enemy = GetComponent<Enemy>();
 
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) _playerTransform = p.transform;
@@ -65,7 +67,8 @@ public class BossMovement : MonoBehaviour
         else
             moveDir = wallAvoidance;
 
-        _rb.MovePosition(_rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
+        float speed = moveSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
+        _rb.MovePosition(_rb.position + moveDir * speed * Time.fixedDeltaTime);
     }
 
     private void HandleRetreating()
@@ -73,7 +76,8 @@ public class BossMovement : MonoBehaviour
         _retreatTimer -= Time.fixedDeltaTime;
 
         Vector2 awayFromPlayer = (_rb.position - (Vector2)_playerTransform.position).normalized;
-        _rb.MovePosition(_rb.position + awayFromPlayer * retreatSpeed * Time.fixedDeltaTime);
+        float speed = retreatSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
+        _rb.MovePosition(_rb.position + awayFromPlayer * speed * Time.fixedDeltaTime);
 
         if (_retreatTimer <= 0f)
             SetState(BossState.Chasing);

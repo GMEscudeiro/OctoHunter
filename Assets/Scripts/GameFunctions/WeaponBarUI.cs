@@ -52,10 +52,8 @@ public class WeaponBarUI : MonoBehaviour
                 if (i < inventory.obtainedWeapons.Count)
                 {
                     GameObject prefab = inventory.obtainedWeapons[i];
-                    if (prefab != null && prefab.TryGetComponent(out SpriteRenderer sr))
-                    {
-                        icon = sr.sprite;
-                    }
+                    if (prefab != null && prefab.TryGetComponent(out WeaponInfo info))
+                        icon = info.icon;
                 }
 
                 slotScript.Setup(i, icon, this);

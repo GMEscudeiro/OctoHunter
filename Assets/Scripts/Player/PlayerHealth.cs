@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
 
     public static event Action<int> OnLivesChanged;  // passa as vidas restantes
     public static event Action        OnPlayerDied;
+    public static event Action        OnLastHeart;   // disparado ao chegar em exatamente 1 vida
 
     void Start()
     {
@@ -35,7 +36,10 @@ public class PlayerHealth : MonoBehaviour
 
         CurrentLives -= amount;
         OnLivesChanged?.Invoke(CurrentLives);
-        
+
+        if (CurrentLives == 1)
+            OnLastHeart?.Invoke();
+
         FlashDamageEffect();
 
         if (CurrentLives <= 0)

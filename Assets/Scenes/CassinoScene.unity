@@ -1359,6 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 810602623}
   - component: {fileID: 810602622}
+  - component: {fileID: 810602624}
   m_Layer: 0
   m_Name: CassinoManager
   m_TagString: Untagged
@@ -1385,6 +1386,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 34b1a0f744bd57e4780b4b81b958966c, type: 2}
   - {fileID: 11400000, guid: 6fae6e119d136264cb6beae54259a4cd, type: 2}
   - {fileID: 11400000, guid: 096a012f1f8153e46a077e2e2879bb1f, type: 2}
+  - {fileID: 11400000, guid: 65904a770553d428d98e127d7e86be26, type: 2}
   weaponInventory: {fileID: 11400000, guid: 7bde58f83bf787b93b2a02bcd3682797, type: 2}
   walletData: {fileID: 11400000, guid: 3e1ae5b5f0cf56444b52b4a82a4304bd, type: 2}
   levelData: {fileID: 0}
@@ -1406,6 +1408,9 @@ MonoBehaviour:
   rerollPriceText: {fileID: 1850320871}
   exitButton: {fileID: 173027694}
   sellButton: {fileID: 1035514326}
+  chanceComum: 60
+  chanceRaro: 30
+  chanceEpico: 10
   isSwapping: 0
   isSelling: 0
 --- !u!4 &810602623
@@ -1423,6 +1428,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &810602624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810602621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bbcae65a4d3c76849ff9749c3380f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CasinoDialogueManager
+  noCoinsDialogue: {fileID: 11400000, guid: 89783c046d38fd4ae9cc767a46c3e928, type: 2}
+  inventoryFullDialogue: {fileID: 11400000, guid: 7d141da644c2ee758a1cf39f0f511365, type: 2}
+  onEnterDialogue: {fileID: 0}
+  buyComumDialogue: {fileID: 11400000, guid: 12fec80a27b0e6f97b120dbba898ff9d, type: 2}
+  buyRaroDialogue: {fileID: 11400000, guid: d0c312c6f812385a4ad82bcafd4ac2bb, type: 2}
+  buyEpicoDialogue: {fileID: 11400000, guid: 33817a21ef546cb7b83f4f695485e7b4, type: 2}
 --- !u!1 &827464729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,8 +2561,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3514,7 +3537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Voltar Gameplay
+  m_text: Sair do Cassino
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3523,8 +3546,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

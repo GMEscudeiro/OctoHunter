@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     
     private Transform _playerTransform;
     private Rigidbody2D _rb;
+    private Enemy _enemy;
 
     [Header("Ranged Attack (Optional)")]
     public GameObject projectilePrefab;
@@ -15,8 +16,9 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
-        
+        _rb    = GetComponent<Rigidbody2D>();
+        _enemy = GetComponent<Enemy>();
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -30,7 +32,8 @@ public class EnemyMovement : MonoBehaviour
 
         Vector2 direction = (_playerTransform.position - transform.position).normalized;
 
-        _rb.linearVelocity = direction * moveSpeed;
+        float speed = moveSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
+        _rb.linearVelocity = direction * speed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         _rb.rotation = angle + 90;

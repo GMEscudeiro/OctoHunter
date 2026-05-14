@@ -16,7 +16,14 @@ MonoBehaviour:
   - text: "Sabia que ele n\xE3o ia aguentar, por que perdi meu tempo?"
     displayImage: {fileID: 0}
     borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: Car$%$!, por que fui ajudar esse cara...
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  - text: "N\xE3o me deixa na m\xE3o n\xE3o! Levanta p$#!@!!!"
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
   style: 0
   isCutscene: 1
+  randomEntry: 1
   ambientDisplayDuration: 3
   typingSpeed: 0.05

@@ -137,8 +137,8 @@ public class CasinoManager : MonoBehaviour
 
             slotPrices[i].text = $"{item.price} moedas";
 
-            if (slotIcons != null && slotIcons.Length > i && item.icon != null)
-                slotIcons[i].sprite = item.icon;
+            if (slotIcons != null && slotIcons.Length > i)
+                slotIcons[i].sprite = item.GetIcon();
 
             slotBuyButtons[i].onClick.RemoveAllListeners();
             slotBuyButtons[i].onClick.AddListener(() => detailCard.ShowCard(_currentOffer[index], index));
@@ -190,6 +190,7 @@ public class CasinoManager : MonoBehaviour
         walletData.coins -= item.price;
         weaponInventory.AddWeapon(item.weaponPrefab);
         UpdateCoinsUI();
+        CasinoDialogueManager.Instance?.PlayBuyDialogue(item.rarity);
 
         _currentOffer[slotIndex] = null;
         RefreshSlotUI();

@@ -49,8 +49,9 @@ public class WeaponDetailCard : MonoBehaviour
         weaponNameText.text  = item.weaponName;
         descriptionText.text = item.description;
 
-        if (item.icon != null)
-            weaponIcon.sprite = item.icon;
+        Sprite icon = item.GetIcon();
+        if (icon != null)
+            weaponIcon.sprite = icon;
 
         // Raridade
         switch (item.rarity)

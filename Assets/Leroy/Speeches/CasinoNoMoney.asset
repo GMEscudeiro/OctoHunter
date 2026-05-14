@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85c0599a13c5c13fbefa264abe2cd46, type: 3}
+  m_Name: CasinoNoMoney
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  entries:
+  - text: "T\xE1 duro dorme amig\xE3o!"
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 4473519594338958375, guid: 0541c5db625d5dbf5a9df53c9e9d9bc0, type: 3}
+  style: 0
+  isCutscene: 0
+  randomEntry: 1
+  ambientDisplayDuration: 3
+  typingSpeed: 0.05

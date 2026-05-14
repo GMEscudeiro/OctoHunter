@@ -995,6 +995,7 @@ MonoBehaviour:
   levelStartDialogue: {fileID: 11400000, guid: b5aca9e5947499312ad5bf29f16b7ce5, type: 2}
   fewEnemiesDialogue: {fileID: 11400000, guid: f60ee3bedcf7f06c6bffc4078bdd8019, type: 2}
   partsDroppedDialogue: {fileID: 11400000, guid: 4dfe6445226e7e16ba1fcea1a39ec198, type: 2}
+  lastHeartDialogue: {fileID: 0}
   enemiesThreshold: 3
   triggerStartOnFirstHordeOnly: 1
 --- !u!114 &1593142493

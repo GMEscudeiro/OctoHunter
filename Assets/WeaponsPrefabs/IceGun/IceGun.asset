@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
+  m_Name: IceGun
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
+  weaponName: Ice Gun
+  weaponPrefab: {fileID: 4678125957203506101, guid: 7cb9a615f7492e678bc06ad9461d32d7, type: 3}
+  price: 40
+  description: Cospe gelo, desacelerando inimigos, inimigos congelados sofrem mais
+    dano
+  rarity: 2

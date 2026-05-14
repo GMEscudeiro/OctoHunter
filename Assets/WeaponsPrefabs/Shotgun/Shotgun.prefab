@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 146797630496146631}
   - component: {fileID: 7023856500002682004}
   - component: {fileID: 2125854703433978717}
+  - component: {fileID: 1474809308215356729}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -109,3 +110,16 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6438014449361756695, guid: 1a93d13c66ac91a4ba329335121338f2, type: 3}
   pelletCount: 5
   spreadAngle: 30
+--- !u!114 &1474809308215356729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127680015362568567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10c74d57a28a9e93b6a440b91719d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
+  icon: {fileID: -768360122129859928, guid: a9b0b36e15b45247cb6c00490e7acb9a, type: 3}
