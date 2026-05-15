@@ -138,7 +138,7 @@ public class CasinoManager : MonoBehaviour
                 continue;
             }
 
-            slotPrices[i].text = $"{item.price} moedas";
+            slotPrices[i].text = $"{item.price}";
 
             if (slotIcons != null && slotIcons.Length > i)
                 slotIcons[i].sprite = item.GetIcon();

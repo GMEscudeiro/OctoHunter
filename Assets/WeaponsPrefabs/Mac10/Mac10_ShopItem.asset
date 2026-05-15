@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
   m_Name: Mac10_ShopItem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: Pistol
+  weaponName: Uzi
   weaponPrefab: {fileID: 3242821774164006700, guid: 2e1c681047828b34dbbf63a081e3e067, type: 3}
   price: 5
-  description: "Se uma pistola j\xE1 era boa, imagina duas."
+  description: Alta cadencia, dano baixo.
   rarity: 0
