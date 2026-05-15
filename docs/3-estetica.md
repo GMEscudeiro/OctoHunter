@@ -5,9 +5,9 @@
 OctoHunter adota uma estética de **pixel art** que mistura ficção científica com elementos alienígenas e humor. O Polvo protagonista é desenhado com animações distintas para movimentação e disparo, transmitindo agilidade e personalidade. Leroy, o companheiro anfíbio, aparece nas caixas de diálogo com expressões que reforçam seu papel de guia bem-humorado.
 
 Cada bioma do jogo possui uma identidade visual própria:
-- **Bioma das Cobras:** Ambiente desértico e árido, com tons de areia e rochas sob luz quente.
-- **Bioma das Aranhas:** Floresta densa e sombria, com vegetação densa e iluminação filtrada.
-- **Bioma dos Escorpiões:** Território rochoso e inóspito, com tons escuros e contrastes intensos.
+- **Bioma das Cobras:** Floresta densa e sombria, com vegetação densa e iluminação filtrada
+- **Bioma das Aranhas:** .Território rochoso e inóspito, com tons escuros e contrastes intensos.
+- **Bioma dos Escorpiões:** Ambiente desértico e árido, com tons de areia e rochas sob luz quente.
 
 O **Grande Cassino Intergalático** quebra o tom dos biomas com uma estética exuberante e colorida — luzes neon, elementos dourados e uma interface que remete às slot machines clássicas, reforçando o contraste entre o perigo dos combates e a atmosfera festiva do entre-rounds.
 
