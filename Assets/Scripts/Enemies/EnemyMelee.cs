@@ -30,13 +30,14 @@ public class EnemyMelee : MonoBehaviour
     private void TryDealDamage(GameObject target)
     {
         if (Time.time < _nextAttackTime) return;
+        if (!target.activeInHierarchy) return;
 
         PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
         if (playerHealth == null) playerHealth = target.GetComponentInParent<PlayerHealth>();
 
         if (playerHealth != null)
         {
-            if (playerHealth.IsInvincible) return;
+            if (playerHealth.IsInvincible || playerHealth.IsDead) return;
 
             playerHealth.TakeDamage(damage);
 

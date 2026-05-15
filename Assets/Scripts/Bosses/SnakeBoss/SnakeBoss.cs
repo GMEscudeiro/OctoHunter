@@ -14,11 +14,16 @@ public class SnakeBoss : MonoBehaviour
     public BossAbilityBulletRing bulletRingAbility;
 
     [Header("Attack Pattern")]
-    public float timeBetweenAttacks = 3f;   // segundos entre cada habilidade
+    public float timeBetweenAttacks = 3f;
     private BossMovement _movement;
     private Transform _playerTransform;
     private int       _attackIndex = 0;
     private bool      _isDead      = false;
+
+    [Header("Coin Drop")]
+    public GameObject coinPrefab;
+    public int        coinAmount    = 10;
+    public float      scatterRadius = 1.5f;
 
     void Start()
     {
@@ -80,7 +85,18 @@ public class SnakeBoss : MonoBehaviour
     private void OnBossDied()
     {
         _isDead = true;
+        DropCoins();
         Debug.Log("[SnakeBoss] Boss derrotado!");
-        // Aqui futuramente: dropar peça da nave
+    }
+
+    private void DropCoins()
+    {
+        if (coinPrefab == null) return;
+        for (int i = 0; i < coinAmount; i++)
+        {
+            Vector2 offset   = Random.insideUnitCircle * scatterRadius;
+            Vector3 spawnPos = transform.position + new Vector3(offset.x, offset.y, 0);
+            Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+        }
     }
 }

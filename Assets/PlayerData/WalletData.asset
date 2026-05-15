@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f940d9ca6906f5b40964904cfecfdb3e, type: 3}
   m_Name: WalletData
   m_EditorClassIdentifier: Assembly-CSharp::WalletData
-  coins: 11
+  coins: 100

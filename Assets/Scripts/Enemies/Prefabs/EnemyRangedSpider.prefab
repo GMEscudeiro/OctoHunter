@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -2499186389821477545}
   - component: {fileID: -9219428616594281704}
   - component: {fileID: 2803753778019301885}
+  - component: {fileID: 5404398545526363310}
+  - component: {fileID: 5184506188396719189}
   m_Layer: 6
   m_Name: EnemyRangedSpider
   m_TagString: Untagged
@@ -239,3 +241,38 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3356704118658751572, guid: 30c3c2a7a76972c45a48a76194c88b9a, type: 3}
   attackRate: 2
   damage: 1
+  rotationOffset: 90
+--- !u!195 &5404398545526363310
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037047060153579998}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.20500001
+  m_Speed: 4.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.33000004
+  m_BaseOffset: 0.16500002
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &5184506188396719189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037047060153579998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e39f6090724e4a4a8aadeb042afa2bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Extensions.AgentOverride2d

@@ -145,6 +145,9 @@ MonoBehaviour:
   dashAbility: {fileID: 4137808970361102630}
   bulletRingAbility: {fileID: 2966878335141716437}
   timeBetweenAttacks: 3
+  coinPrefab: {fileID: 7649442551854462850, guid: 274fe381d82a95e4cbd920b44264caf8, type: 3}
+  coinAmount: 10
+  scatterRadius: 1.5
 --- !u!114 &2966878335141716437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,8 +192,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAbilityVenomPool
   venomPoolPrefab: {fileID: 8161235389659960616, guid: d411463e81c740a4286a6a6193845d9e, type: 3}
+  venomWarningPrefab: {fileID: 8161235389659960616, guid: 97d360442df874264bf52684a223d8a0, type: 3}
   poolCount: 3
   spreadRadius: 3
+  warningDuration: 1.5
 --- !u!212 &3958016082576644403
 SpriteRenderer:
   m_ObjectHideFlags: 0

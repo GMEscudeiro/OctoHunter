@@ -13,6 +13,11 @@ public class WeaponBarUI : MonoBehaviour
     [Header("Settings")]
     public int totalSlots = 8;
 
+    public static event System.Action<int> OnWeaponSlotClicked;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() { OnWeaponSlotClicked = null; }
+
     private List<WeaponSlotUI> _instantiatedSlots = new List<WeaponSlotUI>();
     private int _firstSelectedIndex = -1;
 
@@ -65,6 +70,8 @@ public class WeaponBarUI : MonoBehaviour
     public void OnSlotClicked(int index)
     {
         if (index >= inventory.obtainedWeapons.Count) return;
+
+        OnWeaponSlotClicked?.Invoke(index);
 
         if (CasinoManager.instance != null)
         {

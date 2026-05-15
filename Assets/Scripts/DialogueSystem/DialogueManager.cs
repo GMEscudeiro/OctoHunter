@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public DialogueUI GetDialogueUI() => dialogueUI;
+
     public void StartDialogue(DialogueData data)
     {
         if (dialogueUI == null)

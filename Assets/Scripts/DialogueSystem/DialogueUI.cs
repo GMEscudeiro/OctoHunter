@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
@@ -24,8 +25,25 @@ public class DialogueUI : MonoBehaviour
 
     void Awake()
     {
-        if (_currentData == null && dialoguePanel != null)
-            dialoguePanel.SetActive(false);
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
+    }
+
+    void OnEnable()  => SceneManager.sceneLoaded += OnSceneLoaded;
+    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Hard-reset: don't fire OnDialogueEnded callbacks here — callers that
+        // triggered a scene load via a callback already completed their flow.
+        StopCurrentTyping();
+        _isTyping   = false;
+        _currentData = null;
+        _entryIndex  = 0;
+        _stopAtIndex = 0;
+        OnDialogueEnded = null;
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
     }
 
     public void ShowDialogue(DialogueData data)
@@ -45,14 +63,13 @@ public class DialogueUI : MonoBehaviour
         
         // Setup visual style
         SetupStyle(data.style);
-        
+
+        if (data.isCutscene) OnCutsceneStarted?.Invoke(data.hideHUD);
+
         dialoguePanel.SetActive(true);
 
-        // Garante que o container começa oculto até a primeira entrada definir sua visibilidade
         if (cutsceneImageContainer != null)
             cutsceneImageContainer.gameObject.SetActive(false);
-        else
-            Debug.LogWarning("[DialogueUI] cutsceneImageContainer não está referenciado no Inspector!");
 
         DisplayNextEntry();
     }
@@ -107,19 +124,17 @@ public class DialogueUI : MonoBehaviour
         {
             if (entry.displayImage != null)
             {
-                Debug.Log($"[DialogueUI] Exibindo imagem: {entry.displayImage.name}");
                 cutsceneImageContainer.sprite = entry.displayImage;
                 cutsceneImageContainer.gameObject.SetActive(true);
             }
             else
             {
-                Debug.Log("[DialogueUI] Entrada sem imagem — ocultando container.");
                 cutsceneImageContainer.gameObject.SetActive(false);
             }
         }
-        else
+        else if (entry.displayImage != null)
         {
-            Debug.LogWarning("[DialogueUI] cutsceneImageContainer é null durante TypeEntry!");
+            Debug.LogWarning("[DialogueUI] cutsceneImageContainer é null mas a entrada tem imagem.");
         }
 
         foreach (char letter in entry.text.ToCharArray())
@@ -164,16 +179,25 @@ public class DialogueUI : MonoBehaviour
 
     public System.Action OnDialogueEnded;
 
+    // bool = hideHUD: listeners decidem se devem esconder a HUD
+    public static event System.Action<bool> OnCutsceneStarted;
+    public static event System.Action<bool> OnCutsceneEnded;
+
     public void EndDialogue()
     {
         StopCurrentTyping();
         if (dialogueText != null) dialogueText.text = "";
         dialoguePanel.SetActive(false);
         if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
+
+        bool wasCutscene = _currentData != null && _currentData.isCutscene;
+        bool wasHideHUD  = wasCutscene && _currentData.hideHUD;
         _currentData = null;
 
+        if (wasCutscene) OnCutsceneEnded?.Invoke(wasHideHUD);
+
         System.Action tempAction = OnDialogueEnded;
-        OnDialogueEnded = null; // Clear before invoking to prevent wiping out new chained subscriptions
+        OnDialogueEnded = null;
         tempAction?.Invoke();
     }
 }

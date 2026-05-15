@@ -57,9 +57,9 @@ MonoBehaviour:
   intervalReduction: 0.05
   bossBaseHealth: 400
   bossHealthPerRound: 100
-  bossBaseMinCoins: 5
-  bossBaseMaxCoins: 10
+  bossBaseMinCoins: 15
+  bossBaseMaxCoins: 35
   bossCoinsPerRound: 3
   _currentRound: 1
   _currentHorde: 1
-  _isBossRound: 0
+  _isBossRound: 1

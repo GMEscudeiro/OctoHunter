@@ -19,4 +19,7 @@ public class DialogueData : ScriptableObject
     
     [Tooltip("Speed of the typewriter effect")]
     public float typingSpeed = 0.05f;
+
+    [Tooltip("Se false, não esconde a HUD ao exibir (use em tutoriais e diálogos in-game)")]
+    public bool hideHUD = true;
 }
