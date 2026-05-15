@@ -138,7 +138,7 @@ public class CasinoManager : MonoBehaviour
                 continue;
             }
 
-            slotPrices[i].text = $"{item.price} moedas";
+            slotPrices[i].text = $"{item.price}";
 
             if (slotIcons != null && slotIcons.Length > i)
                 slotIcons[i].sprite = item.GetIcon();
@@ -243,6 +243,9 @@ public class CasinoManager : MonoBehaviour
         walletData.coins += sellValue;
         weaponInventory.RemoveWeapon(inventoryIndex);
         PlayerWallet.NotifyChanged(walletData.coins);
+
+        isSelling = false;
+        ClearStatus();
 
         Debug.Log($"[Casino] Vendeu arma por {sellValue} moedas.");
     }

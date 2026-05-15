@@ -1,19 +1,23 @@
-# OctoHunter
+# Grupo O: OctoHunter
 
-## Sobre
-OctoHunter é um jogo no estilo Bullet Hell com elementos de apostas e deck-building.  
-Você deve construir seu deck de equipamentos e derrotar os inimigos no meio do turbilhão de inimigos.
+Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário FEI, como parte dos requisitos necessários para aprovação na disciplina de Desenvolvimento de Jogos Digitais (CC7140) do curso de Ciência da Computação, orientado pelo Prof. Dr. Fagner de Assis Moura Pimentel.
 
-## História
-Você controla um Polvo caçador de recompensas que durante uma de suas missões cai em um planeta desconhecido.  
-Chegando lá, você é resgatado por Leroy um habitante local do planeta que te guia na sua missão de recuperar sua nave que foi roubada pelos nativos.
+## Componentes do grupo
+- Guilherme Escudeiro
+- Gustavo Atui
+- Lucas Cabral
+- Pedro Valim
+- Renan Casemiro
 
-## Ambientação
-O jogo se passa em alguns lugares chave:
-- Ferro-velho: Ferro velho do Leroy, lugar onde sua nave cai e onde você fica abrigado.
-- Grande Cassino Intergalático: Principal local do planeta, você o visita para conseguir novos equipamentos
-- Biomas: Cada inimigo vive um bioma específico, você os visita para derrotá-los.
+## Sobre o Jogo
+OctoHunter é um jogo 2D de ação no estilo Bullet Hell com elementos de cassino e deck-building de armas. Você controla um Polvo caçador de recompensas que caiu em um planeta desconhecido e precisa recuperar sua nave derrotando os nativos hostis que a roubaram.
 
-## Mecânicas Principais
-
-
+## Tópicos
+| Arquivo | Conteúdo |
+|---|---|
+| [1 - Introdução](docs/1-introducao.md) | Conceito, narrativa e proposta do jogo |
+| [2 - Público-Alvo](docs/2-publico-alvo.md) | Perfil do jogador e desejos atendidos |
+| [3 - Estética](docs/3-estetica.md) | Arte, som e experiência sensorial |
+| [4 - Dinâmica](docs/4-dinamica.md) | Engajamento, decisões e sistemas |
+| [5 - Mecânica](docs/5-mecanica.md) | Elementos formais, controles e regras |
+| [6 - Prefabs](docs/6-prefabs.md) | Componentes e scripts dos objetos do jogo |

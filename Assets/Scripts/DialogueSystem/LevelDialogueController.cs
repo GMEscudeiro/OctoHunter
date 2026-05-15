@@ -32,19 +32,16 @@ public class LevelDialogueController : MonoBehaviour
         PlayerHealth.OnLastHeart -= HandleLastHeart;
     }
 
-    void Start()
-    {
-        _spawner = FindObjectOfType<WaveSpawner>();
-    }
-
     private void HandleHordeStarted(int round, int horde)
     {
+        // Atualiza o spawner a cada horda (necessário pois LDC persiste entre cenas via DM)
+        _spawner = FindObjectOfType<WaveSpawner>();
+
         if (levelStartDialogue == null) return;
         if (triggerStartOnFirstHordeOnly && horde != 1) return;
 
-        // Pequeno atraso para garantir que a UI está pronta
         StartCoroutine(DelayedStartDialogue(levelStartDialogue));
-        _hasTriggeredFewEnemies = false; // Reset for the new horde
+        _hasTriggeredFewEnemies = false;
     }
 
     private System.Collections.IEnumerator DelayedStartDialogue(DialogueData data)

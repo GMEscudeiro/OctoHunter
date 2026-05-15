@@ -167,7 +167,7 @@ public class TutorialManager : MonoBehaviour
     private void TutorialComplete()
     {
         if (GameFlowManager.Instance != null)
-            GameFlowManager.Instance.LaunchGame();
+            GameFlowManager.Instance.ReturnToStartMenu();
         else
             UnityEngine.SceneManagement.SceneManager.LoadScene(fallbackSceneName);
     }
