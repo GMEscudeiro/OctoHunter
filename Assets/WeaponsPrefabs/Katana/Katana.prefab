@@ -106,8 +106,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Katana
   damage: 10
-  attackRate: 0.1
+  attackRate: 0.4
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: a8194376b42cf1d45b86f552754743e3, type: 3}
+  soundVolume: 0.4
+  soundCooldown: 0.4
+  playSoundEnabled: 1
   range: 1.5
   arcAngle: 90
   visualTransform: {fileID: 5380654731578712733}

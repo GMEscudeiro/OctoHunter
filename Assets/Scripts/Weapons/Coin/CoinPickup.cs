@@ -6,6 +6,10 @@ public class CoinPickup : MonoBehaviour
     [Header("Value")]
     public int value = 1;
 
+    [Header("Sound")]
+    public AudioClip collectSound;
+    [Range(0f, 1f)] public float soundVolume = 1f;
+
     private Transform pullTarget;
     public float pullSpeed = 15f;
 
@@ -27,6 +31,8 @@ public class CoinPickup : MonoBehaviour
         if (other.TryGetComponent(out PlayerWallet wallet))
         {
             wallet.AddCoins(value);
+            if (collectSound != null)
+                AudioSource.PlayClipAtPoint(collectSound, transform.position, soundVolume);
             Destroy(gameObject);
         }
     }

@@ -107,6 +107,10 @@ MonoBehaviour:
   damage: 8
   attackRate: 1
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: e4c32e99a19e4ff4a9b46a3ed894eaaf, type: 3}
+  soundVolume: 0.4
+  soundCooldown: 0.1
+  playSoundEnabled: 1
   projectilePrefab: {fileID: 6438014449361756695, guid: 1a93d13c66ac91a4ba329335121338f2, type: 3}
   pelletCount: 5
   spreadAngle: 30

@@ -39,12 +39,15 @@ public class WeaponManager : MonoBehaviour
 
         if (inventory == null) return;
 
-        foreach (GameObject prefab in inventory.obtainedWeapons)
+        for (int i = 0; i < inventory.obtainedWeapons.Count; i++)
         {
+            GameObject prefab = inventory.obtainedWeapons[i];
             GameObject newWeapon = Instantiate(prefab, transform.position, Quaternion.identity, transform);
 
             if (newWeapon.TryGetComponent(out WeaponBase weaponScript))
             {
+                // Som apenas na arma do primeiro slot
+                weaponScript.playSoundEnabled = (i == 0);
                 weaponScript.Initialize(this.gameObject);
             }
 

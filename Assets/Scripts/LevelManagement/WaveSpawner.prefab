@@ -47,9 +47,9 @@ MonoBehaviour:
   spawnRadius: 12
   timeBetweenHordes: 3
   timeBetweenRounds: 2
-  baseEnemyCount: 5
-  enemiesPerRound: 2
-  enemiesPerHorde: 1
+  baseEnemyCount: 1
+  enemiesPerRound: 0
+  enemiesPerHorde: 0
   walletData: {fileID: 11400000, guid: 3e1ae5b5f0cf56444b52b4a82a4304bd, type: 2}
   levelData: {fileID: 11400000, guid: b2e52be05cb573b8c968e0230ec7c0fa, type: 2}
   baseSpawnInterval: 0.5

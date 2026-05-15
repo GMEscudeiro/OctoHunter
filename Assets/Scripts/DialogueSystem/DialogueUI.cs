@@ -5,6 +5,7 @@ using System.Collections;
 
 public class DialogueUI : MonoBehaviour
 {
+    public static bool IsDialogueActive { get; private set; }
     [Header("UI Components")]
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -46,6 +47,7 @@ public class DialogueUI : MonoBehaviour
         // Setup visual style
         SetupStyle(data.style);
         
+        IsDialogueActive = true;
         dialoguePanel.SetActive(true);
 
         // Garante que o container começa oculto até a primeira entrada definir sua visibilidade
@@ -170,6 +172,7 @@ public class DialogueUI : MonoBehaviour
         if (dialogueText != null) dialogueText.text = "";
         dialoguePanel.SetActive(false);
         if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
+        IsDialogueActive = false;
         _currentData = null;
 
         System.Action tempAction = OnDialogueEnded;
