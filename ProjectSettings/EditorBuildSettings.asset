@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SnakeScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 5d9f4ea740e2fd404a01f3286e3a7969
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 285a8c9293b0c231bb7a3b2455d0e026
+  - enabled: 1
+    path: Assets/Scenes/SnakeScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/CassinoScene.unity
     guid: 19e160486ddef7e4fa8c1f4f0c1def08
@@ -20,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScorpionScene.unity
     guid: 591d68373ebc06045938987d23cc379f
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 285a8c9293b0c231bb7a3b2455d0e026
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
