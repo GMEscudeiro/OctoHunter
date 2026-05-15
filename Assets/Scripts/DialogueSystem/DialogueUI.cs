@@ -6,6 +6,7 @@ using System.Collections;
 
 public class DialogueUI : MonoBehaviour
 {
+    public static bool IsDialogueActive { get; private set; }
     [Header("UI Components")]
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -63,6 +64,8 @@ public class DialogueUI : MonoBehaviour
         
         // Setup visual style
         SetupStyle(data.style);
+        
+        IsDialogueActive = true;
 
         if (data.isCutscene) OnCutsceneStarted?.Invoke(data.hideHUD);
 
@@ -189,6 +192,7 @@ public class DialogueUI : MonoBehaviour
         if (dialogueText != null) dialogueText.text = "";
         dialoguePanel.SetActive(false);
         if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
+        IsDialogueActive = false;
 
         bool wasCutscene = _currentData != null && _currentData.isCutscene;
         bool wasHideHUD  = wasCutscene && _currentData.hideHUD;

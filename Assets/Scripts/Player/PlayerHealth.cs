@@ -14,6 +14,12 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor = Color.white;
 
+    [Header("Sound")]
+    public AudioClip damageSound;
+    public AudioClip deathSound;
+    public AudioClip shieldBreakSound;
+    [Range(0f, 1f)] public float soundVolume = 1f;
+
     public int CurrentLives { get; private set; }
     public bool IsInvincible { get; private set; }
     public bool IsDead      {get; private set;}
@@ -72,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
         {
             ShieldHits--;
             Debug.Log($"[Player] Escudo absorveu o dano! ShieldHits restantes={ShieldHits}");
+            if (shieldBreakSound != null)
+                AudioSource.PlayClipAtPoint(shieldBreakSound, transform.position, soundVolume);
             FlashDamageEffect();
             StartCoroutine(InvincibilityRoutine());
             OnShieldBroken?.Invoke();
@@ -84,6 +92,8 @@ public class PlayerHealth : MonoBehaviour
         if (CurrentLives == 1)
             OnLastHeart?.Invoke();
 
+        if (damageSound != null)
+            AudioSource.PlayClipAtPoint(damageSound, transform.position, soundVolume);
         FlashDamageEffect();
 
         if (CurrentLives <= 0)
@@ -142,6 +152,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("[Player] Morreu!");
+        if (deathSound != null)
+            AudioSource.PlayClipAtPoint(deathSound, transform.position, soundVolume);
         IsDead = true;
         OnPlayerDied?.Invoke();
         gameObject.SetActive(false);

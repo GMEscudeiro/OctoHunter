@@ -120,8 +120,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaseballBat
   damage: 6
-  attackRate: 0.1
+  attackRate: 0.4
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 28dedf49c6f63c14888a202fa46cf7f7, type: 3}
+  soundVolume: 0.4
+  soundCooldown: 0.4
+  playSoundEnabled: 1
   range: 1.5
   arcAngle: 90
   visualTransform: {fileID: 0}

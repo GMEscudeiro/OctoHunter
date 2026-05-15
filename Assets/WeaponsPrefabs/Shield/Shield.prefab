@@ -108,6 +108,8 @@ MonoBehaviour:
   damage: 10
   attackRate: 1
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 82dae920c1c8a824a9744e8181130555, type: 3}
+  soundVolume: 1
   range: 1.5
   arcAngle: 90
   visualTransform: {fileID: 0}
@@ -143,4 +145,6 @@ MonoBehaviour:
   damage: 0
   attackRate: 1
   specialEffect: {fileID: 0}
-  bonusHearts: 1
+  attackSound: {fileID: 0}
+  soundVolume: 1
+  bonusHits: 1

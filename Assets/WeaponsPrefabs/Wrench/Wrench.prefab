@@ -107,6 +107,10 @@ MonoBehaviour:
   damage: 10
   attackRate: 1
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: b53ad28a0a1b1eb478c9ef0e2a995cc2, type: 3}
+  soundVolume: 0.4
+  soundCooldown: 1
+  playSoundEnabled: 1
   range: 1.5
   arcAngle: 90
   visualTransform: {fileID: 0}

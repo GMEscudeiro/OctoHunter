@@ -107,6 +107,10 @@ MonoBehaviour:
   damage: 10
   attackRate: 1
   specialEffect: {fileID: 11400000, guid: 1b0a896d1bf01f081b461747e22ef188, type: 2}
+  attackSound: {fileID: 8300000, guid: 2ce0eb523a4fbc646b144530697bc79a, type: 3}
+  soundVolume: 0.4
+  soundCooldown: 0.1
+  playSoundEnabled: 1
   projectilePrefab: {fileID: 8688517853605783996, guid: ecf189b7593b04be7a5f07743b429326, type: 3}
 --- !u!114 &4552569780282851992
 MonoBehaviour:

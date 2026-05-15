@@ -104,9 +104,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805bb35b3a967cafdb57b0fdafb7b936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pistol
-  damage: 8
+  damage: 100000
   attackRate: 0.5
   specialEffect: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 82dae920c1c8a824a9744e8181130555, type: 3}
+  soundVolume: 0.3
+  playSoundEnabled: 1
   projectilePrefab: {fileID: 6438014449361756695, guid: 03c0bb96656865407ba8145cc06bce07, type: 3}
 --- !u!114 &-8463566052293492035
 MonoBehaviour:

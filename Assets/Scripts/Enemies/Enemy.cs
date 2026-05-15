@@ -12,6 +12,11 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Color _originalColor;
 
+    [Header("Sound")]
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    [Range(0f, 1f)] public float soundVolume = 1f;
+
     public float SpeedMultiplier { get; private set; } = 1f;
 
     public void SetSpeedMultiplier(float multiplier) => SpeedMultiplier = Mathf.Clamp01(multiplier);
@@ -35,6 +40,8 @@ public class Enemy : MonoBehaviour
 
         _currentHealth -= data.Damage;
 
+        if (hitSound != null)
+            AudioSource.PlayClipAtPoint(hitSound, transform.position, soundVolume);
         FlashDamageEffect();
 
         if (data.Effect != null)
@@ -69,6 +76,8 @@ public class Enemy : MonoBehaviour
             playerEvents.AddScore(10);
         }
 
+        if (deathSound != null)
+            AudioSource.PlayClipAtPoint(deathSound, transform.position, soundVolume);
         OnEnemyDied?.Invoke();
         OnDied?.Invoke();
         Destroy(gameObject);
