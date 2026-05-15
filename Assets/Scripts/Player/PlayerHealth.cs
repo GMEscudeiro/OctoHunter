@@ -78,8 +78,7 @@ public class PlayerHealth : MonoBehaviour
         {
             ShieldHits--;
             Debug.Log($"[Player] Escudo absorveu o dano! ShieldHits restantes={ShieldHits}");
-            if (shieldBreakSound != null)
-                AudioSource.PlayClipAtPoint(shieldBreakSound, transform.position, soundVolume);
+            AudioManager.Instance?.PlaySFX(shieldBreakSound, soundVolume);
             FlashDamageEffect();
             StartCoroutine(InvincibilityRoutine());
             OnShieldBroken?.Invoke();
@@ -92,8 +91,7 @@ public class PlayerHealth : MonoBehaviour
         if (CurrentLives == 1)
             OnLastHeart?.Invoke();
 
-        if (damageSound != null)
-            AudioSource.PlayClipAtPoint(damageSound, transform.position, soundVolume);
+        AudioManager.Instance?.PlaySFX(damageSound, soundVolume);
         FlashDamageEffect();
 
         if (CurrentLives <= 0)
@@ -153,8 +151,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("[Player] Morreu!");
-        if (deathSound != null)
-            AudioSource.PlayClipAtPoint(deathSound, transform.position, soundVolume);
+        AudioManager.Instance?.PlaySFX(deathSound, soundVolume);
         IsDead = true;
         OnPlayerDied?.Invoke();
         gameObject.SetActive(false);

@@ -40,8 +40,7 @@ public class Enemy : MonoBehaviour
 
         _currentHealth -= data.Damage;
 
-        if (hitSound != null)
-            AudioSource.PlayClipAtPoint(hitSound, transform.position, soundVolume);
+        AudioManager.Instance?.PlaySFX(hitSound, soundVolume);
         FlashDamageEffect();
 
         if (data.Effect != null)
@@ -76,8 +75,7 @@ public class Enemy : MonoBehaviour
             playerEvents.AddScore(10);
         }
 
-        if (deathSound != null)
-            AudioSource.PlayClipAtPoint(deathSound, transform.position, soundVolume);
+        AudioManager.Instance?.PlaySFX(deathSound, soundVolume);
         OnEnemyDied?.Invoke();
         OnDied?.Invoke();
         Destroy(gameObject);

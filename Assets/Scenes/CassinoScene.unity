@@ -1704,6 +1704,8 @@ MonoBehaviour:
   weaponInventory: {fileID: 11400000, guid: 7bde58f83bf787b93b2a02bcd3682797, type: 2}
   walletData: {fileID: 11400000, guid: 3e1ae5b5f0cf56444b52b4a82a4304bd, type: 2}
   levelData: {fileID: 11400000, guid: b2e52be05cb573b8c968e0230ec7c0fa, type: 2}
+  purchaseSound: {fileID: 8300000, guid: e24de9d8ac9e3e5de9284ebefa502fd8, type: 3}
+  purchaseSoundVolume: 1
   slotIcons:
   - {fileID: 1643990703}
   - {fileID: 853871346}

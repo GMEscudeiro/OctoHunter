@@ -14,6 +14,10 @@ public class CasinoManager : MonoBehaviour
     public WalletData           walletData;
     public LevelData            levelData;    // para saber qual cena retornar
 
+    [Header("Sound")]
+    public AudioClip purchaseSound;
+    [Range(0f, 1f)] public float purchaseSoundVolume = 1f;
+
     public void Exit()
     {
         Time.timeScale = 1f;
@@ -187,6 +191,7 @@ public class CasinoManager : MonoBehaviour
         walletData.coins -= item.price;
         weaponInventory.AddWeapon(item.weaponPrefab);
         PlayerWallet.NotifyChanged(walletData.coins);
+        AudioManager.Instance?.PlaySFX(purchaseSound, purchaseSoundVolume);
         CasinoDialogueManager.Instance?.PlayBuyDialogue(item.rarity);
 
         _currentOffer[slotIndex] = null;
@@ -206,6 +211,7 @@ public class CasinoManager : MonoBehaviour
         weaponInventory.OnInventoryChanged?.Invoke();
 
         PlayerWallet.NotifyChanged(walletData.coins);
+        AudioManager.Instance?.PlaySFX(purchaseSound, purchaseSoundVolume);
         ClearStatus();
         _currentOffer[_pendingSwapSlotIndex] = null;
         RefreshSlotUI();

@@ -6,7 +6,8 @@ using System.Collections;
 
 public class DialogueUI : MonoBehaviour
 {
-    public static bool IsDialogueActive { get; private set; }
+    public static bool IsDialogueActive  { get; private set; }
+    public static bool IsCutsceneActive  { get; private set; }
     [Header("UI Components")]
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -38,11 +39,13 @@ public class DialogueUI : MonoBehaviour
         // Hard-reset: don't fire OnDialogueEnded callbacks here — callers that
         // triggered a scene load via a callback already completed their flow.
         StopCurrentTyping();
-        _isTyping   = false;
+        _isTyping    = false;
         _currentData = null;
         _entryIndex  = 0;
         _stopAtIndex = 0;
-        OnDialogueEnded = null;
+        OnDialogueEnded  = null;
+        IsDialogueActive = false;
+        IsCutsceneActive = false;
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
         if (cutsceneImageContainer != null) cutsceneImageContainer.gameObject.SetActive(false);
     }
@@ -67,7 +70,11 @@ public class DialogueUI : MonoBehaviour
         
         IsDialogueActive = true;
 
-        if (data.isCutscene) OnCutsceneStarted?.Invoke(data.hideHUD);
+        if (data.isCutscene)
+        {
+            IsCutsceneActive = true;
+            OnCutsceneStarted?.Invoke(data.hideHUD);
+        }
 
         dialoguePanel.SetActive(true);
 
@@ -198,7 +205,11 @@ public class DialogueUI : MonoBehaviour
         bool wasHideHUD  = wasCutscene && _currentData.hideHUD;
         _currentData = null;
 
-        if (wasCutscene) OnCutsceneEnded?.Invoke(wasHideHUD);
+        if (wasCutscene)
+        {
+            IsCutsceneActive = false;
+            OnCutsceneEnded?.Invoke(wasHideHUD);
+        }
 
         System.Action tempAction = OnDialogueEnded;
         OnDialogueEnded = null;

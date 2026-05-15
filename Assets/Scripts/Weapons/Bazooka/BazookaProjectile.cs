@@ -3,6 +3,10 @@ using UnityEngine;
 // Prefab precisa de: SpriteRenderer, Rigidbody2D (Kinematic), Collider2D (Is Trigger)
 public class BazookaProjectile : Projectile
 {
+    [Header("Sound")]
+    public AudioClip explosionSound;
+    [Range(0f, 1f)] public float explosionSoundVolume = 1f;
+
     private float    _explosionRadius;
     private int      _explosionDamage;
     private bool     _hasExploded;
@@ -11,10 +15,8 @@ public class BazookaProjectile : Projectile
     {
         base.Setup(hitData);
         speed = projectileSpeed;
-        
         _explosionRadius = explosionRadius;
         _explosionDamage = explosionDamage;
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -47,6 +49,7 @@ public class BazookaProjectile : Projectile
             }
         }
 
+        AudioManager.Instance?.PlaySFX(explosionSound, explosionSoundVolume);
         Destroy(gameObject);
     }
 

@@ -141,3 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup
   value: 1
+  collectSound: {fileID: 8300000, guid: 0180f9a3aa056565a852182f012e521f, type: 3}
+  soundVolume: 1
+  pullSpeed: 15

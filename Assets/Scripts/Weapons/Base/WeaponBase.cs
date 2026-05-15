@@ -46,8 +46,8 @@ public abstract class WeaponBase : MonoBehaviour
             {
                 if (_audioSource == null) 
                     Debug.LogWarning($"[WeaponBase] {gameObject.name} (Slot 0) tentou tocar som, mas _audioSource é nulo! attackSound={attackSound}");
-                else if (DialogueUI.IsDialogueActive)
-                    Debug.Log($"[WeaponBase] {gameObject.name} silenciado por causa de diálogo ativo.");
+                else if (DialogueUI.IsCutsceneActive)
+                    Debug.Log($"[WeaponBase] {gameObject.name} silenciado por cutscene ativa.");
                 else if (Time.time >= _lastSoundTime + soundCooldown)
                 {
                     // Usa PlayOneShot para não cortar o som se a arma atirar muito rápido,

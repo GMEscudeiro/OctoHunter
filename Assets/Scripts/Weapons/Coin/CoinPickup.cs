@@ -31,8 +31,7 @@ public class CoinPickup : MonoBehaviour
         if (other.TryGetComponent(out PlayerWallet wallet))
         {
             wallet.AddCoins(value);
-            if (collectSound != null)
-                AudioSource.PlayClipAtPoint(collectSound, transform.position, soundVolume);
+            AudioManager.Instance?.PlaySFX(collectSound, soundVolume);
             Destroy(gameObject);
         }
     }
