@@ -1,4 +1,4 @@
-# OctoHunter
+# Grupo O: OctoHunter
 
 Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário FEI, como parte dos requisitos necessários para aprovação na disciplina de Desenvolvimento de Jogos Digitais (CC7140) do curso de Ciência da Computação, orientado pelo Prof. Dr. Fagner de Assis Moura Pimentel.
 
