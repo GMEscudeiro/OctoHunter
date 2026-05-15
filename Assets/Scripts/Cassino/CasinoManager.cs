@@ -244,6 +244,9 @@ public class CasinoManager : MonoBehaviour
         weaponInventory.RemoveWeapon(inventoryIndex);
         PlayerWallet.NotifyChanged(walletData.coins);
 
+        isSelling = false;
+        ClearStatus();
+
         Debug.Log($"[Casino] Vendeu arma por {sellValue} moedas.");
     }
 

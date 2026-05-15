@@ -16,12 +16,20 @@ public class PlayerHealth : MonoBehaviour
 
     public int CurrentLives { get; private set; }
     public bool IsInvincible { get; private set; }
+    public bool IsDead      {get; private set;}
     public int ShieldHits { get; private set; }
 
     public static event Action<int> OnLivesChanged;  // passa as vidas restantes
     public static event Action        OnPlayerDied;
     public static event Action        OnLastHeart;   // disparado ao chegar em exatamente 1 vida
     public static event Action        OnShieldBroken; // disparado quando o escudo quebra
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics(){
+        OnLivesChanged = null;
+        OnPlayerDied = null;
+        OnLastHeart = null;
+    }
 
     void Start()
     {

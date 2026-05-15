@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03be5e23f9255a4eac85a7f0317f8c1, type: 3}
   m_Name: Shield_ShopItem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponShopItem
-  weaponName: Wrench
+  weaponName: Shield
   weaponPrefab: {fileID: 8127680015362568567, guid: e7ff86cf9e6dc834bb11d9668d378e9d, type: 3}
   price: 20
   description: "Um escudo para voc\xEA ter uma prote\xE7\xE3o"

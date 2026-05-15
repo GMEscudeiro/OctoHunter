@@ -40,10 +40,21 @@ public class GameFlowManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+
+            // Desvincula o Canvas de menu (filho direto do GFM) para que
+            // ele fique na cena e seja destruído normalmente ao sair dela.
+            // O DialogueManager deve ser um objeto RAIZ separado — não um
+            // filho do GFM — para que ele gerencie sua própria persistência.
+            transform.DetachChildren();
+
             DontDestroyOnLoad(gameObject);
         }
         else
         {
+            // Duplicata criada ao recarregar a StartScene.
+            // Libera o Canvas novo (com UI de menu fresca) para que
+            // ele permaneça ativo na cena recarregada.
+            transform.DetachChildren();
             Destroy(gameObject);
         }
     }
@@ -62,11 +73,17 @@ public class GameFlowManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Atualiza a referência se ela foi destruída junto com a cena anterior
-        if (dialogueUI == null)
+        // DialogueManager.Instance é o singleton persistente (DontDestroyOnLoad).
+        // Usar Instance diretamente evita achar um duplicado temporário via FindObjectOfType.
+        if (DialogueManager.Instance != null)
         {
-            var dm = FindObjectOfType<DialogueManager>();
-            if (dm != null) dialogueUI = dm.GetDialogueUI();
+            dialogueUI = DialogueManager.Instance.GetDialogueUI();
+            Debug.Log($"[GFM] OnSceneLoaded '{scene.name}': DialogueUI via DM.Instance → {dialogueUI != null}");
+        }
+        else
+        {
+            dialogueUI = null;
+            Debug.Log($"[GFM] OnSceneLoaded '{scene.name}': DialogueManager.Instance é null — sem dialogueUI.");
         }
     }
 
@@ -108,8 +125,11 @@ public class GameFlowManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        Debug.Log($"[GFM] LoadNextLevel: speciesIndex={levelData.currentSpeciesIndex}, round={levelData.roundInCurrentSpecies}, speciesCount={levelData.shuffledSpeciesList?.Count ?? -1}");
+
         if (levelData.shuffledSpeciesList == null || levelData.shuffledSpeciesList.Count == 0)
         {
+            Debug.LogWarning("[GFM] shuffledSpeciesList vazia! Chamando InitializeSession.");
             InitializeSession();
         }
 
@@ -121,6 +141,7 @@ public class GameFlowManager : MonoBehaviour
 
         if (levelData.currentSpeciesIndex >= levelData.shuffledSpeciesList.Count)
         {
+            Debug.Log("[GFM] Todos os bosses derrotados → Victory!");
             PlayDialogueSequence(gameVictoryDialogues, () => 
             {
                 SceneManager.LoadScene(startMenuSceneName);
@@ -129,6 +150,7 @@ public class GameFlowManager : MonoBehaviour
         }
 
         string targetScene = levelData.shuffledSpeciesList[levelData.currentSpeciesIndex].sceneName;
+        Debug.Log($"[GFM] Carregando cena: {targetScene}");
         SceneManager.LoadScene(targetScene);
     }
 
@@ -136,10 +158,12 @@ public class GameFlowManager : MonoBehaviour
     {
         if (sequence == null || sequence.Count == 0 || dialogueUI == null)
         {
+            Debug.Log($"[GFM] PlayDialogueSequence: pulando (sequence null/vazio ou dialogueUI null). dialogueUI={dialogueUI != null}");
             onComplete?.Invoke();
             return;
         }
 
+        Debug.Log($"[GFM] PlayDialogueSequence: iniciando sequência com {sequence.Count} item(s).");
         _currentSequence = sequence;
         _currentSequenceIndex = 0;
         _onSequenceComplete = onComplete;
@@ -182,16 +206,34 @@ public class GameFlowManager : MonoBehaviour
         SceneManager.LoadScene(tutorialSceneName);
     }
 
+    public void ReturnToStartMenu()
+    {
+        Debug.Log("[GFM] ReturnToStartMenu chamado.");
+        // Limpa qualquer sequência de diálogo em andamento
+        _currentSequence = null;
+        _currentSequenceIndex = 0;
+        _onSequenceComplete = null;
+        if (dialogueUI != null) dialogueUI.OnDialogueEnded = null;
+        SceneManager.LoadScene(startMenuSceneName);
+    }
+
     // Chamado ao fim do tutorial (ou diretamente pelo StartScreenUI).
     // Inicializa a sessão, toca a intro cutscene e carrega o primeiro nível.
     public void LaunchGame()
     {
+        Debug.Log($"[GFM] LaunchGame chamado. dialogueUI={dialogueUI != null}, introSequence count={introSequence?.Count ?? 0}");
         InitializeSession();
 
         if (introSequence != null && introSequence.Count > 0)
+        {
+            Debug.Log("[GFM] Iniciando intro cutscene...");
             PlayDialogueSequence(introSequence, LoadNextLevel);
+        }
         else
+        {
+            Debug.Log("[GFM] Sem intro cutscene, carregando próximo nível diretamente.");
             LoadNextLevel();
+        }
     }
 
     // Cancela a sequência em curso e executa o callback de conclusão imediatamente.

@@ -71,6 +71,8 @@ public class StartScreenUI : MonoBehaviour
 
     private void OnStartButtonClicked()
     {
+        Debug.Log("[StartScreenUI] Botão Start clicado!");
+        Debug.Log($"[StartScreenUI] GameFlowManager.Instance = {GameFlowManager.Instance != null}");
         startButton.interactable = false;
 
         if (menuVisuals != null)
