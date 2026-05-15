@@ -79,7 +79,7 @@ O jogador perde quando o Polvo fica **sem vidas**. O jogo retorna ao menu inicia
   | Pistola de Gelo | Distância | Aplica congelamento |
   | Katana | Corpo a corpo | Dano em arco |
   | Bazuca | Distância (explosivo) | Dano em área |
-  | Taco de Baseball | Corpo a corpo | — |
+  | Nunchaku | Corpo a corpo | — |
   | Ímã | Suporte | Atrai moedas automaticamente |
   | Escudo | Suporte/Defesa | Absorve 1 hit por carga |
 
