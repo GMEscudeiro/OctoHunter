@@ -14,7 +14,7 @@ public class CasinoManager : MonoBehaviour
     public WalletData           walletData;
     public LevelData            levelData;    // para saber qual cena retornar
 
-    private void Exit()
+    public void Exit()
     {
         Time.timeScale = 1f;
         if (GameFlowManager.Instance != null)
@@ -34,7 +34,7 @@ public class CasinoManager : MonoBehaviour
     [Header("Detail Card")]
     public WeaponDetailCard detailCard;
     [Header("UI - Geral")]
-    public TextMeshProUGUI coinsText;
+    public TextMeshProUGUI statusText;     // mensagens de modo (swap, venda) — não exibe moedas
     public Button          rerollButton;
     public TextMeshProUGUI rerollPriceText;
     public Button          exitButton;
@@ -47,12 +47,9 @@ public class CasinoManager : MonoBehaviour
 
     void Start()
     {
-        UpdateCoinsUI();
+        PlayerWallet.NotifyChanged(walletData.coins);
         rerollPriceText.text = $"Trocar ({RerollCost} moedas)";
 
-        rerollButton.onClick.AddListener(Reroll);
-        exitButton.onClick.AddListener(Exit);
-        if (sellButton != null) sellButton.onClick.AddListener(ToggleSellMode);
 
         RollNewOffers();
     }
@@ -116,8 +113,14 @@ public class CasinoManager : MonoBehaviour
         }
 
         walletData.coins -= RerollCost;
-        UpdateCoinsUI();
+        PlayerWallet.NotifyChanged(walletData.coins);
+        detailCard?.HideCard();
         RollNewOffers();
+    }
+
+    private void ClearStatus()
+    {
+        if (statusText != null) statusText.text = "";
     }
 
     // ── UI ────────────────────────────────────────────────────────────
@@ -144,12 +147,6 @@ public class CasinoManager : MonoBehaviour
             slotBuyButtons[i].onClick.AddListener(() => detailCard.ShowCard(_currentOffer[index], index));
             slotBuyButtons[i].interactable = true;
         }
-    }
-
-    private void UpdateCoinsUI()
-    {
-        if (coinsText != null)
-            coinsText.text = $"Moedas: {walletData.coins}";
     }
 
     public static CasinoManager instance;
@@ -182,14 +179,14 @@ public class CasinoManager : MonoBehaviour
             _pendingSwapSlotIndex = slotIndex;
             CasinoDialogueManager.Instance?.PlayInventoryFullDialogue();
 
-            if (coinsText != null)
-                coinsText.text = "Clique em um slot abaixo para trocar!";
+            if (statusText != null)
+                statusText.text = "Clique em um slot abaixo para trocar!";
             return;
         }
 
         walletData.coins -= item.price;
         weaponInventory.AddWeapon(item.weaponPrefab);
-        UpdateCoinsUI();
+        PlayerWallet.NotifyChanged(walletData.coins);
         CasinoDialogueManager.Instance?.PlayBuyDialogue(item.rarity);
 
         _currentOffer[slotIndex] = null;
@@ -204,11 +201,12 @@ public class CasinoManager : MonoBehaviour
 
         WeaponShopItem item = _currentOffer[_pendingSwapSlotIndex];
         walletData.coins -= item.price;
-        
+
         weaponInventory.obtainedWeapons[inventoryIndex] = item.weaponPrefab;
         weaponInventory.OnInventoryChanged?.Invoke();
 
-        UpdateCoinsUI();
+        PlayerWallet.NotifyChanged(walletData.coins);
+        ClearStatus();
         _currentOffer[_pendingSwapSlotIndex] = null;
         RefreshSlotUI();
         isSwapping = false;
@@ -217,12 +215,11 @@ public class CasinoManager : MonoBehaviour
 
     public void ToggleSellMode()
     {
-        if (isSwapping) return; // Não permite vender enquanto está trocando
+        if (isSwapping) return;
         isSelling = !isSelling;
-        UpdateCoinsUI();
 
-        if (isSelling && coinsText != null)
-            coinsText.text = "MODO VENDA: Clique em uma arma para vender!";
+        if (statusText != null)
+            statusText.text = isSelling ? "MODO VENDA: Clique em uma arma para vender!" : "";
     }
 
     public void SellWeapon(int inventoryIndex)
@@ -245,7 +242,7 @@ public class CasinoManager : MonoBehaviour
 
         walletData.coins += sellValue;
         weaponInventory.RemoveWeapon(inventoryIndex);
-        UpdateCoinsUI();
+        PlayerWallet.NotifyChanged(walletData.coins);
 
         Debug.Log($"[Casino] Vendeu arma por {sellValue} moedas.");
     }

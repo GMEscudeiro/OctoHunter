@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossMovement : MonoBehaviour
 {
@@ -18,10 +20,19 @@ public class BossMovement : MonoBehaviour
     public enum BossState { Chasing, Retreating, Idle }
     public BossState CurrentState { get; private set; } = BossState.Chasing;
 
-    private Rigidbody2D _rb;
-    private Transform   _playerTransform;
-    private float       _retreatTimer;
-    private Enemy       _enemy;
+    private Rigidbody2D  _rb;
+    private NavMeshAgent _agent;
+    private Transform    _playerTransform;
+    private float        _retreatTimer;
+    private Enemy        _enemy;
+
+    void Awake()
+    {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.updatePosition = false;
+        _agent.updateRotation = false;
+        _agent.updateUpAxis   = false;
+    }
 
     void Start()
     {
@@ -32,71 +43,86 @@ public class BossMovement : MonoBehaviour
         if (p != null) _playerTransform = p.transform;
     }
 
+    void Update()
+    {
+        if (_playerTransform == null || !_agent.isOnNavMesh) return;
+
+        _agent.nextPosition = transform.position;
+
+        switch (CurrentState)
+        {
+            case BossState.Chasing:
+                UpdateChasingDestination();
+                break;
+            case BossState.Retreating:
+                Vector2 away = (_rb.position - (Vector2)_playerTransform.position).normalized;
+                _agent.SetDestination(_rb.position + away * 5f);
+                break;
+            case BossState.Idle:
+                _agent.ResetPath();
+                break;
+        }
+    }
+
     void FixedUpdate()
     {
         if (_playerTransform == null) return;
 
         switch (CurrentState)
         {
-            case BossState.Chasing:
-                HandleChasing();
-                break;
-            case BossState.Retreating:
-                HandleRetreating();
-                break;
-            case BossState.Idle:
-                break;
+            case BossState.Chasing:    HandleChasing();    break;
+            case BossState.Retreating: HandleRetreating(); break;
         }
 
         FacePlayer();
     }
 
-    private void HandleChasing()
+    private void UpdateChasingDestination()
     {
-        Vector2 toPlayer      = (Vector2)_playerTransform.position - _rb.position;
-        float   distance      = toPlayer.magnitude;
-        Vector2 direction     = toPlayer.normalized;
-        Vector2 wallAvoidance = GetWallAvoidance();
-
-        Vector2 moveDir;
+        Vector2 toPlayer = (Vector2)_playerTransform.position - _rb.position;
+        float   distance = toPlayer.magnitude;
 
         if (distance > preferredRange + reachTolerance)
-            moveDir = (direction + wallAvoidance).normalized;
+            _agent.SetDestination(_playerTransform.position);
         else if (distance < preferredRange - reachTolerance)
-            moveDir = (-direction + wallAvoidance).normalized * 0.5f;
+            _agent.SetDestination(_rb.position + (-toPlayer.normalized * preferredRange));
         else
-            moveDir = wallAvoidance;
+            _agent.ResetPath();
+    }
 
-        float speed = moveSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
-        _rb.MovePosition(_rb.position + moveDir * speed * Time.fixedDeltaTime);
+    private void HandleChasing()
+    {
+        Vector2 toPlayer = (Vector2)_playerTransform.position - _rb.position;
+        float   distance = toPlayer.magnitude;
+        float   speed    = moveSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
+
+        if (Mathf.Abs(distance - preferredRange) <= reachTolerance) return;
+
+        Vector2 moveDir = GetNavDirection(distance > preferredRange ? toPlayer : -toPlayer);
+        float   s       = distance < preferredRange ? speed * 0.5f : speed;
+        _rb.MovePosition(_rb.position + moveDir * s * Time.fixedDeltaTime);
     }
 
     private void HandleRetreating()
     {
         _retreatTimer -= Time.fixedDeltaTime;
 
-        Vector2 awayFromPlayer = (_rb.position - (Vector2)_playerTransform.position).normalized;
-        float speed = retreatSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
-        _rb.MovePosition(_rb.position + awayFromPlayer * speed * Time.fixedDeltaTime);
+        float   speed = retreatSpeed * (_enemy != null ? _enemy.SpeedMultiplier : 1f);
+        Vector2 away  = (_rb.position - (Vector2)_playerTransform.position).normalized;
+        Vector2 dir   = GetNavDirection(away);
+        _rb.MovePosition(_rb.position + dir * speed * Time.fixedDeltaTime);
 
-        if (_retreatTimer <= 0f)
-            SetState(BossState.Chasing);
+        if (_retreatTimer <= 0f) SetState(BossState.Chasing);
     }
 
-    private Vector2 GetWallAvoidance()
+    private Vector2 GetNavDirection(Vector2 fallback)
     {
-        Vector2 avoidance     = Vector2.zero;
-        float   checkDistance = 2f;
-
-        Vector2[] directions = { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
-        foreach (Vector2 dir in directions)
+        if (_agent.isOnNavMesh && _agent.hasPath && _agent.path.corners.Length > 1)
         {
-            RaycastHit2D hit = Physics2D.Raycast(_rb.position, dir, checkDistance);
-            if (hit.collider != null && hit.collider.CompareTag("Wall"))
-                avoidance -= dir * (1f - hit.distance / checkDistance);
+            Vector2 nextCorner = _agent.path.corners[1];
+            return (nextCorner - _rb.position).normalized;
         }
-
-        return avoidance;
+        return fallback.normalized;
     }
 
     private void FacePlayer()
@@ -112,5 +138,8 @@ public class BossMovement : MonoBehaviour
 
         if (state == BossState.Retreating)
             _retreatTimer = duration > 0f ? duration : retreatDuration;
+
+        if (state == BossState.Idle && _agent.isOnNavMesh)
+            _agent.ResetPath();
     }
 }

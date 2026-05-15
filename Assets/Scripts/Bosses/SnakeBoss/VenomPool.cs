@@ -22,11 +22,8 @@ public class VenomPool : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        // O dano por tick é controlado pelo PlayerHealth via cooldown próprio
-        // Usamos a mesma lógica do EnemyMelee
-        if (other.TryGetComponent(out PlayerHealth ph))
-        {
+        if (!other.gameObject.activeInHierarchy) return;
+        if (other.TryGetComponent(out PlayerHealth ph) && !ph.IsDead)
             ph.TakeDamage(damagePerTick);
-        }
     }
 }

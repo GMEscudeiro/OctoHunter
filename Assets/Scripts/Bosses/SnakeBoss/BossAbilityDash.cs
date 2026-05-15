@@ -21,20 +21,22 @@ public class BossAbilityDash : MonoBehaviour
     {
         _isDashing = true;
 
+        // Trava a direção uma única vez — EnemyMovement ficaria sobrescrevendo
+        // linearVelocity a cada FixedUpdate, causando a curva; desabilita durante o dash
         Vector2 direction = ((Vector2)playerTransform.position - rb.position).normalized;
         Debug.Log("[SnakeBoss] Habilidade: Investida!");
 
         Enemy enemy = rb.GetComponent<Enemy>();
         float effectiveDashSpeed = dashSpeed * (enemy != null ? enemy.SpeedMultiplier : 1f);
 
-        float elapsed = 0f;
-        while (elapsed < dashDuration)
-        {
-            rb.MovePosition(rb.position + direction * effectiveDashSpeed * Time.fixedDeltaTime);
-            elapsed += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
-        }
+        EnemyMovement enemyMovement = rb.GetComponent<EnemyMovement>();
+        if (enemyMovement != null) enemyMovement.enabled = false;
 
+        rb.linearVelocity = direction * effectiveDashSpeed;
+        yield return new WaitForSeconds(dashDuration);
+        rb.linearVelocity = Vector2.zero;
+
+        if (enemyMovement != null) enemyMovement.enabled = true;
         _isDashing = false;
     }
 }

@@ -6,14 +6,20 @@ using System.Collections;
 public class SpiderBoss : MonoBehaviour
 {
     [Header("References")]
-    public BossAbilityDash dashAbility; // Reuse the dash ability
-    
+    public BossAbilityDash dashAbility;
+    public GameObject paralysisProjectilePrefab;
+
     [Header("Attack Pattern")]
     public float timeBetweenAttacks = 3f;
     private BossMovement _movement;
     private Transform _playerTransform;
     private bool _isDead = false;
     private Rigidbody2D _rb;
+
+    [Header("Coin Drop")]
+    public GameObject coinPrefab;
+    public int        coinAmount    = 10;
+    public float      scatterRadius = 1.5f;
 
     void Start()
     {
@@ -23,14 +29,6 @@ public class SpiderBoss : MonoBehaviour
 
         GetComponent<Enemy>().OnDied += OnBossDied;
         _movement = GetComponent<BossMovement>();
-        
-        // Setup Paralyze
-        EnemyMelee melee = GetComponent<EnemyMelee>();
-        if (melee != null)
-        {
-            melee.appliesParalysis = true;
-            melee.paralyzeDuration = 2f;
-        }
 
         StartCoroutine(AttackLoop());
     }
@@ -44,10 +42,13 @@ public class SpiderBoss : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenAttacks);
             if (_isDead) yield break;
 
-            if (Random.value > 0.5f)
+            float r = Random.value;
+            if (r < 0.34f)
                 StartCoroutine(DashAndResume());
-            else
+            else if (r < 0.67f)
                 StartCoroutine(JumpAttack());
+            else
+                ShootParalysisProjectile();
         }
     }
 
@@ -95,9 +96,38 @@ public class SpiderBoss : MonoBehaviour
         _movement?.SetState(BossMovement.BossState.Chasing);
     }
 
+    private void ShootParalysisProjectile()
+    {
+        if (_playerTransform == null || paralysisProjectilePrefab == null) return;
+
+        Vector2 direction = ((Vector2)_playerTransform.position - (Vector2)transform.position).normalized;
+        float   angle     = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Vector2 spawnPos  = (Vector2)transform.position + direction * 0.6f;
+
+        GameObject bullet = Instantiate(paralysisProjectilePrefab, spawnPos, Quaternion.Euler(0, 0, angle));
+        if (bullet.TryGetComponent(out EnemyProjectile ep))
+        {
+            ep.appliesParalysis = true;
+            ep.paralyzeDuration = 2f;
+            ep.Setup(0, direction);
+        }
+    }
+
     private void OnBossDied()
     {
         _isDead = true;
+        DropCoins();
         Debug.Log("[SpiderBoss] Boss derrotado!");
+    }
+
+    private void DropCoins()
+    {
+        if (coinPrefab == null) return;
+        for (int i = 0; i < coinAmount; i++)
+        {
+            Vector2 offset   = Random.insideUnitCircle * scatterRadius;
+            Vector3 spawnPos = transform.position + new Vector3(offset.x, offset.y, 0);
+            Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+        }
     }
 }

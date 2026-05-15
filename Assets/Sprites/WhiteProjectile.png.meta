@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: 3139ffa7e74b30226a67a2cd715fb5ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 525278019713220929
+    second: PC _ Computer - Geneforge 5 - Overthrow - Miscellaneous - Projectiles
+      (1) 1_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhiteProjectile_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483146bb08d0b10d4af7e932fcfaeec9
+      internalID: -1874408753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e77d87099d02ff0c92334fdc2e6a363
+      internalID: -11066408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155046a51455565c3aa46730faf08d6e
+      internalID: 1406180460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0dcec99215cc371ac2c52c276efd4e
+      internalID: 545887982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d30c4e182c581f0e82400c2a8dd7f73
+      internalID: 60204729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 205
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e220bd9412eefe4808cd1daaddf53432
+      internalID: -1394453550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3e812bd6d8d794e9d6c6d69da68e45
+      internalID: 456469591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cca912dbb39248bb2b32a848fba8d9
+      internalID: 858291448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaa78a61f08eb7a7984f903fd7a128f
+      internalID: 1532375910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbb7afabcf1d4cf5a92e563e2f64b3c
+      internalID: -1866857990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5158f5152bb7875c9b77aa20d15a7026
+      internalID: -1394583045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_11
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 176
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563fddfc7c4ae79cea31e3899726e47c
+      internalID: 56851193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27e827e09f3c4bd4b0e383b7110a670
+      internalID: 821615973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3478bd7a79c91dd19995bf1b8449ec6e
+      internalID: -1476659747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_14
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46f45d9454f0fc02815ea76be5e055f
+      internalID: 476085812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2938c8fc36c95544aa7f261505f3f632
+      internalID: 2131547907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8b458815b9a006d9be79620e5c85c7
+      internalID: 117421364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 147
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8304e151fac0056f8c005cf021ad964
+      internalID: 655174625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a24173659302459a3786825a347538
+      internalID: 1787853733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5058515b46a3040a6a0ab2a1283d21
+      internalID: 187416069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ef54f2ed829ccb18c0272974f8f3c1
+      internalID: -1667871201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90db88c1e99e2f9e5a0e0ebe96f054b0
+      internalID: 1341199787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_22
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb9c7255363cbc2f8c17b0c7bd7aa3e
+      internalID: 1515457888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 118
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41bfb550582f7894bc0450ecc293a05
+      internalID: -1684755132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c7e38fab6f2699e887319d294aa659
+      internalID: -2113803857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e3dbe956cd4e01fb1017257117ff29
+      internalID: 588225695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_26
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82164c5e10e85f3d9b311590d8caf406
+      internalID: 1087693393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c4446a2cb5eb9d79155f85005b3c54
+      internalID: -1756293096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_28
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119b761c4ba8c2aef8101a81eecd2904
+      internalID: -852480516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_29
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 89
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda41ccbade06323aaadd8229b70e24f
+      internalID: 1438451581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a442f024f02bdc0c6b879dc8bd5be480
+      internalID: -1837126264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cede853324c78ae99afb7f9d1e92a64a
+      internalID: -1222612062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_32
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0789a0563bae3d8f814659e5e8568c1
+      internalID: 1317390857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7952b000bb954187f81311328740e7d0
+      internalID: -175376981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_34
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfb004576de30e81a824342b55b499d
+      internalID: -1543999648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_35
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 60
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e70b38865ba2c91faff03c9f9fb270e
+      internalID: 273901589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68b620b42d22bcba947067ae29ab92d
+      internalID: 652597401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c68bf7561a5d0a79a1396ed3d124b1d
+      internalID: -1287473064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a072fa510c4f3a469ade4dd512c48da
+      internalID: -1043078483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_39
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68ca346cafd5d4da8736ef7906c9f4f
+      internalID: -2075022063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_40
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04912364596806c34bcb4727d35f7884
+      internalID: -1678984676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_41
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 31
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d19ae9a1475c6aaafe1817a32d8d60
+      internalID: 68540902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d2c40df96f4ad5ebab22322e5fba3e
+      internalID: 921703923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1af325405b5582abd049e1f2fec22a
+      internalID: 287172435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_44
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bf2bd0ea29ac88095af8639f16f13f
+      internalID: -420808262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2abe961d21865b982808ef9442896f
+      internalID: -1075552275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_46
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8966252c99a195731b0453dc2ff88baf
+      internalID: 367283230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteProjectile_47
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b905f8ba1aa1df4578eeca33f10355d0
+      internalID: 993916786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7ccd0282b18128503ab97876003fb478
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":26.0,"y":26.0},"gridSpriteOffset":{"x":3.0,"y":2.0},"gridSpritePadding":{"x":3.0,"y":3.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      WhiteProjectile_0: -1874408753
+      WhiteProjectile_1: -11066408
+      WhiteProjectile_10: -1394583045
+      WhiteProjectile_11: 56851193
+      WhiteProjectile_12: 821615973
+      WhiteProjectile_13: -1476659747
+      WhiteProjectile_14: 476085812
+      WhiteProjectile_15: 2131547907
+      WhiteProjectile_16: 117421364
+      WhiteProjectile_17: 655174625
+      WhiteProjectile_18: 1787853733
+      WhiteProjectile_19: 187416069
+      WhiteProjectile_2: 1406180460
+      WhiteProjectile_20: -1667871201
+      WhiteProjectile_21: 1341199787
+      WhiteProjectile_22: 1515457888
+      WhiteProjectile_23: -1684755132
+      WhiteProjectile_24: -2113803857
+      WhiteProjectile_25: 588225695
+      WhiteProjectile_26: 1087693393
+      WhiteProjectile_27: -1756293096
+      WhiteProjectile_28: -852480516
+      WhiteProjectile_29: 1438451581
+      WhiteProjectile_3: 545887982
+      WhiteProjectile_30: -1837126264
+      WhiteProjectile_31: -1222612062
+      WhiteProjectile_32: 1317390857
+      WhiteProjectile_33: -175376981
+      WhiteProjectile_34: -1543999648
+      WhiteProjectile_35: 273901589
+      WhiteProjectile_36: 652597401
+      WhiteProjectile_37: -1287473064
+      WhiteProjectile_38: -1043078483
+      WhiteProjectile_39: -2075022063
+      WhiteProjectile_4: 60204729
+      WhiteProjectile_40: -1678984676
+      WhiteProjectile_41: 68540902
+      WhiteProjectile_42: 921703923
+      WhiteProjectile_43: 287172435
+      WhiteProjectile_44: -420808262
+      WhiteProjectile_45: -1075552275
+      WhiteProjectile_46: 367283230
+      WhiteProjectile_47: 993916786
+      WhiteProjectile_5: -1394453550
+      WhiteProjectile_6: 456469591
+      WhiteProjectile_7: 858291448
+      WhiteProjectile_8: 1532375910
+      WhiteProjectile_9: -1866857990
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

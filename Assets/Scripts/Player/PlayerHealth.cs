@@ -63,7 +63,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount = 1)
     {
-        if (IsInvincible) return;
+        if (IsInvincible || IsDead) return;
 
         // Shield absorbs the hit completely
         if (ShieldHits > 0)
@@ -147,8 +147,8 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("[Player] Morreu!");
         if (deathSound != null)
             AudioSource.PlayClipAtPoint(deathSound, transform.position, soundVolume);
+        IsDead = true;
         OnPlayerDied?.Invoke();
-        // Desativa o player; a cena de Game Over pode ser carregada por outro script
         gameObject.SetActive(false);
     }
 }

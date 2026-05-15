@@ -6,14 +6,19 @@ using System.Collections;
 public class ScorpionBoss : MonoBehaviour
 {
     [Header("References")]
-    public BossAbilityDash dashAbility; // Reuse the dash ability
-    
+    public BossAbilityDash dashAbility;
+
     [Header("Attack Pattern")]
     public float timeBetweenAttacks = 3f;
     private BossMovement _movement;
     private Transform _playerTransform;
     private bool _isDead = false;
     private Rigidbody2D _rb;
+
+    [Header("Coin Drop")]
+    public GameObject coinPrefab;
+    public int        coinAmount    = 10;
+    public float      scatterRadius = 1.5f;
 
     void Start()
     {
@@ -99,6 +104,18 @@ public class ScorpionBoss : MonoBehaviour
     private void OnBossDied()
     {
         _isDead = true;
+        DropCoins();
         Debug.Log("[ScorpionBoss] Boss derrotado!");
+    }
+
+    private void DropCoins()
+    {
+        if (coinPrefab == null) return;
+        for (int i = 0; i < coinAmount; i++)
+        {
+            Vector2 offset   = Random.insideUnitCircle * scatterRadius;
+            Vector3 spawnPos = transform.position + new Vector3(offset.x, offset.y, 0);
+            Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+        }
     }
 }

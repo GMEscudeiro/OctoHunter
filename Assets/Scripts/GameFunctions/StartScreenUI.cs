@@ -4,11 +4,21 @@ using UnityEngine.UI;
 public class StartScreenUI : MonoBehaviour
 {
     [SerializeField] private Button startButton;
+    [SerializeField] private Button tutorialButton;
     [SerializeField] private Button skipButton;
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private DialogueData initialStoryDialogue;
 
     [SerializeField] private GameObject menuVisuals;
+
+#if UNITY_EDITOR
+    [Header("Debug - Pular para Cena (somente Editor)")]
+    [SerializeField] private GameObject debugPanel;
+    [SerializeField] private Button debugSnakeButton;
+    [SerializeField] private Button debugSpiderButton;
+    [SerializeField] private Button debugScorpionButton;
+    [SerializeField] private Button debugCasinoButton;
+#endif
 
     private void Start()
     {
@@ -16,67 +26,70 @@ public class StartScreenUI : MonoBehaviour
         {
             startButton.onClick.AddListener(OnStartButtonClicked);
         }
+        if (tutorialButton != null)
+        {
+            tutorialButton.onClick.AddListener(OnTutorialButtonClicked);
+        }
         if (skipButton != null)
         {
             skipButton.onClick.AddListener(OnSkipButtonClicked);
-            skipButton.gameObject.SetActive(false); // Inicia oculto
+            skipButton.gameObject.SetActive(false);
         }
+
+#if UNITY_EDITOR
+        SetupDebugButtons();
+#endif
+    }
+
+#if UNITY_EDITOR
+    private void SetupDebugButtons()
+    {
+        if (debugPanel != null) debugPanel.SetActive(true);
+
+        debugSnakeButton?  .onClick.AddListener(() => DebugLoad("SnakeScene"));
+        debugSpiderButton? .onClick.AddListener(() => DebugLoad("SpiderScene"));
+        debugScorpionButton?.onClick.AddListener(() => DebugLoad("ScorpionScene"));
+        debugCasinoButton? .onClick.AddListener(() => DebugLoad("CassinoScene"));
+    }
+
+    private void DebugLoad(string sceneName)
+    {
+        if (GameFlowManager.Instance != null)
+            GameFlowManager.Instance.DebugLoadScene(sceneName);
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
+#endif
+
+    private void OnTutorialButtonClicked()
+    {
+        if (GameFlowManager.Instance != null)
+            GameFlowManager.Instance.LoadTutorial();
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene("TutorialScene");
     }
 
     private void OnStartButtonClicked()
     {
-        if (initialStoryDialogue != null && dialogueUI != null)
-        {
-            startButton.interactable = false;
-            
-            // Oculta apenas os visuais do menu, em vez do objeto inteiro,
-            // para não inativar acidentalmente o objeto do DialogueUI (caso seja filho).
-            if (menuVisuals != null)
-            {
-                menuVisuals.SetActive(false);
-            }
+        startButton.interactable = false;
 
-            if (skipButton != null)
-            {
-                skipButton.gameObject.SetActive(true);
-            }
+        if (menuVisuals != null)
+            menuVisuals.SetActive(false);
 
-            dialogueUI.OnDialogueEnded += StartGame;
-            dialogueUI.ShowDialogue(initialStoryDialogue);
-        }
+        if (skipButton != null)
+            skipButton.gameObject.SetActive(true);
+
+        if (GameFlowManager.Instance != null)
+            GameFlowManager.Instance.LaunchGame();
         else
-        {
-            StartGame();
-        }
+            Debug.LogError("[StartScreenUI] GameFlowManager não encontrado!");
     }
 
     private void OnSkipButtonClicked()
     {
-        if (dialogueUI != null)
-        {
-            dialogueUI.OnDialogueEnded -= StartGame; // Remove evento para não chamar o StartGame 2 vezes
-            dialogueUI.EndDialogue(); // Para e esconde o diálogo
-        }
-        
-        StartGame();
-    }
-
-    private void StartGame()
-    {
         if (skipButton != null)
-        {
-            skipButton.gameObject.SetActive(false); // Esconde se o diálogo acabar normalmente
-        }
+            skipButton.gameObject.SetActive(false);
 
-        if (GameFlowManager.Instance != null)
-        {
-            GameFlowManager.Instance.InitializeSession();
-            GameFlowManager.Instance.LoadNextLevel();
-        }
-        else
-        {
-            Debug.LogError("[StartScreenUI] GameFlowManager não encontrado!");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
-        }
+        GameFlowManager.Instance?.SkipCurrentSequence();
     }
 }
