@@ -204,3 +204,7 @@ MonoBehaviour:
   speed: 20
   lifetime: 3
   rotationOffset: -90
+  isIceProjectile: 0
+  frozenDamageMultiplier: 2
+  explosionSound: {fileID: 8300000, guid: a2c4d865c9544784a85d66e24b83b6b5, type: 3}
+  explosionSoundVolume: 1
