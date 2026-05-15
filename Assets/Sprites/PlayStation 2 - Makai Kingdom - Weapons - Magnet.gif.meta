@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: c74da87dd4c69d74cb6a4082d270d978
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1437938882503875659
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_0
+  - first:
+      213: 2432591681034296776
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_1
+  - first:
+      213: -8199876675369645104
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_2
+  - first:
+      213: -3702315631306006705
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_3
+  - first:
+      213: -1638422260262707002
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_4
+  - first:
+      213: -199757117067240019
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_5
+  - first:
+      213: -8491444903336740014
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_6
+  - first:
+      213: 7609443426598467388
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_7
+  - first:
+      213: 2022759001190235530
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_8
+  - first:
+      213: 6918778948192892475
+    second: PlayStation 2 - Makai Kingdom - Weapons - Magnet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 49
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c9d5c8bc594f310800000000000000
+      internalID: 1437938882503875659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 50
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd9e97de3d42c120800000000000000
+      internalID: 2432591681034296776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 48
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbc49acb9f243e80800000000000000
+      internalID: -8199876675369645104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 50
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f11ad8c8bbe9cc0800000000000000
+      internalID: -3702315631306006705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 49
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0e2f092a72349e0800000000000000
+      internalID: -1638422260262707002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 9
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadd9dbd5f15a3df0800000000000000
+      internalID: -199757117067240019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 8
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bffca99d3582a80800000000000000
+      internalID: -8491444903336740014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3735dcda7c2a9960800000000000000
+      internalID: 7609443426598467388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dfa243898421c10800000000000000
+      internalID: 2022759001190235530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation 2 - Makai Kingdom - Weapons - Magnet_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 9
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36fc7ecbc0740060800000000000000
+      internalID: 6918778948192892475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_0: 1437938882503875659
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_1: 2432591681034296776
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_2: -8199876675369645104
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_3: -3702315631306006705
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_4: -1638422260262707002
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_5: -199757117067240019
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_6: -8491444903336740014
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_7: 7609443426598467388
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_8: 2022759001190235530
+      PlayStation 2 - Makai Kingdom - Weapons - Magnet_9: 6918778948192892475
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

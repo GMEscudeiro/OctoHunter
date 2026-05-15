@@ -16,10 +16,12 @@ public class PlayerHealth : MonoBehaviour
 
     public int CurrentLives { get; private set; }
     public bool IsInvincible { get; private set; }
+    public int ShieldHits { get; private set; }
 
     public static event Action<int> OnLivesChanged;  // passa as vidas restantes
     public static event Action        OnPlayerDied;
     public static event Action        OnLastHeart;   // disparado ao chegar em exatamente 1 vida
+    public static event Action        OnShieldBroken; // disparado quando o escudo quebra
 
     void Start()
     {
@@ -30,9 +32,43 @@ public class PlayerHealth : MonoBehaviour
         if (_spriteRenderer != null) _originalColor = _spriteRenderer.color;
     }
 
+    public void AddShield(int hits)
+    {
+        ShieldHits += hits;
+        Debug.Log($"[Player] Escudo adicionado! ShieldHits={ShieldHits}");
+    }
+
+    public void RemoveShield(int hits)
+    {
+        ShieldHits = Mathf.Max(0, ShieldHits - hits);
+    }
+
+    public void Heal(int amount)
+    {
+        CurrentLives = Mathf.Min(CurrentLives + amount, maxLives);
+        OnLivesChanged?.Invoke(CurrentLives);
+    }
+
+    public void SetLives(int value)
+    {
+        CurrentLives = Mathf.Clamp(value, 0, maxLives);
+        OnLivesChanged?.Invoke(CurrentLives);
+    }
+
     public void TakeDamage(int amount = 1)
     {
         if (IsInvincible) return;
+
+        // Shield absorbs the hit completely
+        if (ShieldHits > 0)
+        {
+            ShieldHits--;
+            Debug.Log($"[Player] Escudo absorveu o dano! ShieldHits restantes={ShieldHits}");
+            FlashDamageEffect();
+            StartCoroutine(InvincibilityRoutine());
+            OnShieldBroken?.Invoke();
+            return;
+        }
 
         CurrentLives -= amount;
         OnLivesChanged?.Invoke(CurrentLives);
