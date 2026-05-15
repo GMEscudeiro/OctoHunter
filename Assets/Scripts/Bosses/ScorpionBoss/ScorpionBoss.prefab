@@ -221,6 +221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScorpionBoss
   dashAbility: {fileID: 1555585499222395382}
   timeBetweenAttacks: 3
+  coinPrefab: {fileID: 7649442551854462850, guid: 274fe381d82a95e4cbd920b44264caf8, type: 3}
+  coinAmount: 10
+  scatterRadius: 1.5
 --- !u!114 &5119762062174748710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +241,7 @@ MonoBehaviour:
   reachTolerance: 0.5
   retreatSpeed: 4
   retreatDuration: 1.2
+  rotationOffset: 90
 --- !u!114 &1555585499222395382
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,10 @@ public class EnemyProjectile : MonoBehaviour
     public float speed    = 8f;
     public float lifetime = 4f;
 
+    [Header("Special Effects")]
+    public bool  appliesParalysis  = false;
+    public float paralyzeDuration  = 2f;
+
     private int     _damage;
     private Vector2 _direction;
     private bool    _hasHit;
@@ -36,10 +40,18 @@ public class EnemyProjectile : MonoBehaviour
         PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
         if (playerHealth == null) playerHealth = other.GetComponentInParent<PlayerHealth>();
 
-        if (playerHealth != null)
+        if (playerHealth != null && !playerHealth.IsDead)
         {
             _hasHit = true;
-            playerHealth.TakeDamage(_damage);
+            if (_damage > 0) playerHealth.TakeDamage(_damage);
+
+            if (appliesParalysis)
+            {
+                PlayerController controller = other.GetComponent<PlayerController>();
+                if (controller == null) controller = other.GetComponentInParent<PlayerController>();
+                controller?.Paralyze(paralyzeDuration);
+            }
+
             Destroy(gameObject);
         }
         else if (other.CompareTag("Wall"))

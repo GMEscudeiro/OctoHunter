@@ -220,7 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpiderBoss
   dashAbility: {fileID: 2199658850314119066}
+  paralysisProjectilePrefab: {fileID: 5588443630831203683, guid: cd3fd7dc760ba0b3ca4b5e1f885ee490, type: 3}
   timeBetweenAttacks: 3
+  coinPrefab: {fileID: 7649442551854462850, guid: 274fe381d82a95e4cbd920b44264caf8, type: 3}
+  coinAmount: 10
+  scatterRadius: 1.5
 --- !u!114 &2199658850314119066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +257,7 @@ MonoBehaviour:
   reachTolerance: 0.5
   retreatSpeed: 4
   retreatDuration: 1.2
+  rotationOffset: 90
 --- !u!114 &9103129951579188243
 MonoBehaviour:
   m_ObjectHideFlags: 0

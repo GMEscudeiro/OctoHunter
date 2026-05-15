@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85c0599a13c5c13fbefa264abe2cd46, type: 3}
+  m_Name: Tutorial3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  entries:
+  - text: "No topo da sua tela h\xE1 uma barra que indica as armas que possui."
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 1139480493496450326, guid: 5f504932316d0bd2bada3acd4aed28e3, type: 3}
+  - text: "A arma no primeiro slot segue seu mouse, as outras s\xE3o distribuidas
+      ao redor do player."
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 1139480493496450326, guid: 5f504932316d0bd2bada3acd4aed28e3, type: 3}
+  - text: "Voc\xEA pode trocar suas armas de tent\xE1culo."
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 1139480493496450326, guid: 5f504932316d0bd2bada3acd4aed28e3, type: 3}
+  - text: "Voc\xEA pode clicar em uma arma para selecion\xE1-la."
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 1139480493496450326, guid: 5f504932316d0bd2bada3acd4aed28e3, type: 3}
+  - text: E clicar em outra para trocar.
+    displayImage: {fileID: 0}
+    borderSprite: {fileID: 1139480493496450326, guid: 5f504932316d0bd2bada3acd4aed28e3, type: 3}
+  style: 0
+  isCutscene: 1
+  randomEntry: 0
+  ambientDisplayDuration: 3
+  typingSpeed: 0.05
+  hideHUD: 0

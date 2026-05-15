@@ -10,6 +10,12 @@ public class PlayerWallet : MonoBehaviour
 
     public static event Action<int> OnCoinsChanged;
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() { OnCoinsChanged = null; }
+
+    // Permite que sistemas sem acesso ao componente (ex: CasinoManager) notifiquem a UI
+    public static void NotifyChanged(int coins) => OnCoinsChanged?.Invoke(coins);
+
     void Start()
     {
         OnCoinsChanged?.Invoke(Coins);
