@@ -6,6 +6,22 @@ public class CoinPickup : MonoBehaviour
     [Header("Value")]
     public int value = 1;
 
+    private Transform pullTarget;
+    public float pullSpeed = 15f;
+
+    public void StartPull(Transform target)
+    {
+        pullTarget = target;
+    }
+
+    private void Update()
+    {
+        if (pullTarget != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, pullTarget.position, pullSpeed * Time.deltaTime);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent(out PlayerWallet wallet))
